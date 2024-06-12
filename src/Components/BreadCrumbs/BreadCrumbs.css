@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.breadcrumb-container {
+  padding: 18px 16.45%;
+  background-color: #F5F5F5;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  /* لتوسيط البردكروم */
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  content: '\f054';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  margin: 4px 8px 0 0px;
+  color: #9D9D9D;
+  font-size: 12px;
+  padding: 0;
+}
+
+.breadcrumb-item a {
+
+  line-height: 24px;
+  text-align: left;
+
+  text-decoration: none;
+  color: #555555;
+}
+
+.breadcrumb-item.active {
+  color: #9D9D9D;
+}
+
+@media only screen and (max-width: 992px) {
+  .breadcrumb-item a {
+
+    font-size: 14px;
+  }
+}
