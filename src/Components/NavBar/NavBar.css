@@ -1,0 +1,229 @@
+
+/* تعيين أنماط عامة */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.rb-navbar-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.rb-navbar-sticky {
+    position: sticky;
+    top: 0;
+}
+.ra-nav-comp {
+    position: sticky;
+    border-bottom: solid 1px #eaeaea;
+    padding: 0px 16.45%;
+}
+
+.ra-nav-comp .rb-search {
+    font-size: 8px;
+    background-color: white;
+    border: 1px solid #FF782D;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+/* تغيير الخلفية عند التمرير أو التركيز */
+.ra-nav-comp .rb-search:hover,
+.ra-nav-comp .rb-search:focus {
+    background-color: #FF782D;
+}
+
+/* تغيير لون الأيقونة عند التمرير أو التركيز */
+.ra-nav-comp .rb-search:hover .rb-search-icon,
+.ra-nav-comp .rb-search:focus .rb-search-icon {
+    color: white !important;
+}
+
+.ra-nav-comp .container-fluid {
+    padding: 0px;
+    align-items: baseline;
+}
+
+.ra-nav-comp .navbar-nav {
+    align-items: baseline;
+    align-items: baseline;
+    padding: 0 91.85px;
+
+}
+
+.ra-nav-comp h5 {
+    width: max-content;
+    margin: 0;
+    font-family: "Exo", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+  /*   padding: 0 20px 0 20px; */
+    color: black;
+}
+.ra-nav-comp #navbarScrollingDropdown .rb-NavDropdown .rb-nav-link {
+    color: black;
+    padding: 2px 68px 4px 0;
+    text-decoration: none;
+}
+.ra-nav-comp #navbarScrollingDropdown {
+
+    font-family: "Exo", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    font-size: 16px;
+    color: black;
+    /* padding: 17px 2px 9px 2px; */
+    padding: 26.5px 20px 26.5px 20px;
+}
+
+.ra-nav-comp .navbar-collapse {
+    align-items: self-end;
+}
+
+.ra-nav-comp .rb-nav-link {
+    padding: 26.5px 20px 26.5px 20px;
+    text-decoration: none;
+}
+.ra-nav-comp .rb-nav-link:hover,
+.ra-nav-comp .rb-nav-link:focus,
+.ra-nav-comp #navbarScrollingDropdown:hover 
+ {
+    background-color: #F5F5F5;
+
+}
+.ra-nav-comp .rb-Dropdown-nav .rb-NavDropdown a {
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 0;
+    background-color: white;
+    color: black;
+
+}
+.ra-nav-comp .rb-Dropdown-nav .rb-NavDropdown a:hover {
+    background-color: transparent;
+    color: #FF782D;
+}
+.ra-nav-comp .rb-nav-link:hover h5,
+.ra-nav-comp .rb-nav-link:focus h5 ,
+.ra-nav-comp #navbarScrollingDropdown:hover 
+{
+    color: #FF782D;
+}
+
+.ra-nav-comp .d-flex a{
+    width: max-content;
+    text-decoration: none;
+    color: black;
+}
+.ra-nav-comp .d-flex a:hover{
+    text-decoration: none;
+    color: #FF782D;
+}
+.ra-nav-comp .d-flex {
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    gap: 15px;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.ra-nav-comp .rb-search .rb-search-icon {
+    color: #FF782D;
+    font-size: 20px;
+}
+
+.ra-nav-comp .rb-logo-nav {
+    margin: 0px;
+}
+
+/* Media Queries--------------------------------------------------------------------------------------------- */
+
+/* Styles for large screens */
+@media only screen and (max-width: 1837px) {
+    .ra-nav-comp .rb-search {
+        width: 33px;
+        height: 33px;
+        font-size: 0;
+    }
+    .ra-nav-comp .rb-search .rb-search-icon {
+        font-size: 15px;
+    }
+
+    .ra-nav-comp .rb-logo-nav img {
+        width: 120px;
+    }
+    .ra-nav-comp .rb-nav-link {
+        padding: 26.5px 6px;}
+
+        .ra-nav-comp .navbar-nav {
+            padding: 0 34.225px;
+        }
+
+    .ra-nav-comp h5 {
+        font-size: 14px;
+        width: max-content;
+        /* padding: 0 0px 0 14px; */
+    }
+
+    .ra-nav-comp .d-flex {
+        font-size: 15px;
+        width: max-content;
+        gap: 6px;
+        margin-bottom: 4px;
+    }
+
+    .ra-nav-comp #navbarScrollingDropdown {
+        font-size: 14px;
+        padding: 26.5px 6px;
+    }
+
+
+}
+
+/* Styles for medium screens */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .ra-nav-comp .rb-search {
+        font-size: 0px;
+        width: 28px;
+        height: 28px;
+    }
+
+    .ra-nav-comp .rb-search .rb-search-icon {
+        font-size: 14px;
+    }
+
+    .ra-nav-comp .d-flex a {
+        font-size: 15px;}
+    .ra-nav-comp .d-flex {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+
+    .ra-nav-comp .navbar-nav {
+        padding: 0px 19.225px;
+    }
+
+    .ra-nav-comp .rb-logo-nav img {
+        width: 100px;
+    }
+
+    .ra-nav-comp h5 {
+        font-size: 12px;
+        /* padding: 0px 0px 0 11px; */
+    }
+
+    .ra-nav-comp #navbarScrollingDropdown {
+        font-size: 12px;
+    }
+}
+
+/* Styles for small to medium screens */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+}

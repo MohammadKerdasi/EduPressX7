@@ -1,12 +1,18 @@
-import './App.css'
+
+import { Outlet } from 'react-router-dom';
+import './App.css';
+import NavBarCom from './Components/NavBar/NavBarCom';
+import Footer from './Components/Footer/Footer';
+
 
 function App() {
-
   return (
-    <>
-      <h1>Vite + React</h1>
-    </>
-  )
+    <section className="app">
+      <NavBarCom />
+      <Outlet />
+      <Footer />
+    </section>
+  );
 }
 
-export default App
+export default App;
