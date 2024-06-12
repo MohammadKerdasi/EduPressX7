@@ -2,8 +2,20 @@
 import './Footer.css'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXTwitter, faPinterest, faInstagram, faFacebookF,faYoutube } from '@fortawesome/free-brands-svg-icons';
+import "./../../index.css"
+
 
 const Footer = () => {
+
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
+  
   return (
     <footer className="rb-footer">
     <div className="rb-footer-columns">
@@ -41,6 +53,7 @@ const Footer = () => {
         </div>
       </div>
       </div>
+      <button onClick={scrollToTop} className="rb-scroll-to-top-button"></button>
       <hr className='rb-footer-hr'/>
       <p className='rb-Copyright'>Copyright © 2024 LearnPress LMS | Powered by ThimPress</p>
     </footer>

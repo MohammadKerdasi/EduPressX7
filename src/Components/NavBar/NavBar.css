@@ -5,27 +5,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-.rb-navbar-fixed {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
 
-.rb-navbar-sticky {
-    position: sticky;
-    top: 0;
-}
 .ra-nav-comp {
-    position: sticky;
-    border-bottom: solid 1px #eaeaea;
-    padding: 0px 16.45%;
+   
+    border-bottom: solid 1px var( --light-gray) ;
+    padding: 0px 16.43%;
 }
 
 .ra-nav-comp .rb-search {
     font-size: 8px;
-    background-color: white;
-    border: 1px solid #FF782D;
+    background-color: var(--white  );
+    border: 1px solid var(--main-color );
     border-radius: 50%;
     width: 48px;
     height: 48px;
@@ -34,13 +24,13 @@
 /* تغيير الخلفية عند التمرير أو التركيز */
 .ra-nav-comp .rb-search:hover,
 .ra-nav-comp .rb-search:focus {
-    background-color: #FF782D;
+    background-color: var(--main-color );
 }
 
 /* تغيير لون الأيقونة عند التمرير أو التركيز */
 .ra-nav-comp .rb-search:hover .rb-search-icon,
 .ra-nav-comp .rb-search:focus .rb-search-icon {
-    color: white !important;
+    color: var(--white  ) !important;
 }
 
 .ra-nav-comp .container-fluid {
@@ -92,7 +82,7 @@
 .ra-nav-comp .rb-nav-link:focus,
 .ra-nav-comp #navbarScrollingDropdown:hover 
  {
-    background-color: #F5F5F5;
+    background-color: var(--light-gray );
 
 }
 .ra-nav-comp .rb-Dropdown-nav .rb-NavDropdown a {
@@ -100,46 +90,66 @@
     font-weight: 400;
     font-size: 18px;
     padding: 0;
-    background-color: white;
+    background-color: var(--white  );
     color: black;
 
 }
 .ra-nav-comp .rb-Dropdown-nav .rb-NavDropdown a:hover {
     background-color: transparent;
-    color: #FF782D;
+    color: var(--main-color );
 }
 .ra-nav-comp .rb-nav-link:hover h5,
 .ra-nav-comp .rb-nav-link:focus h5 ,
 .ra-nav-comp #navbarScrollingDropdown:hover 
 {
-    color: #FF782D;
+    color: var(--main-color );
 }
 
 .ra-nav-comp .d-flex a{
+    /* font-family: "Jost", sans-serif; */
+    /* font-weight: 400; */
+    /* font-size: 18px; */
     width: max-content;
     text-decoration: none;
     color: black;
 }
 .ra-nav-comp .d-flex a:hover{
     text-decoration: none;
-    color: #FF782D;
+   
+    color: var(--main-color );
 }
-.ra-nav-comp .d-flex {
+.ra-nav-comp .d-flex .rb-log-reg{
     font-family: "Jost", sans-serif;
     font-weight: 400;
     font-size: 18px;
+}
+.ra-nav-comp .d-flex {
+    /* font-family: "Jost", sans-serif; */
+    /* font-weight: 400; */
+    /* font-size: 18px; */
     gap: 15px;
     align-items: center;
     padding: 12px 0;
 }
 
 .ra-nav-comp .rb-search .rb-search-icon {
-    color: #FF782D;
+    color: var(--main-color );
     font-size: 20px;
 }
 
 .ra-nav-comp .rb-logo-nav {
     margin: 0px;
+}
+.rb-navbar-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.rb-navbar-sticky {
+    position: sticky;
+    top: 0;
 }
 
 /* Media Queries--------------------------------------------------------------------------------------------- */
