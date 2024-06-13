@@ -1,11 +1,13 @@
-import React from 'react'
-import BreadCrumbs from '../Components/BreadCrumbs/BreadCrumbs'
-
+import BreadCrumbs from './../Components/BreadCrumbs/BreadCrumbs'
+import Location from './../Components/Location/Location'
+import "./../index.css"
 export default function Contact() {
   return (
     <div>
     <BreadCrumbs />
-       <h1>hi from Contact</h1>
+      <div className='Project-Container'>
+          <Location/> 
+      </div>
     </div>
   )
 }
