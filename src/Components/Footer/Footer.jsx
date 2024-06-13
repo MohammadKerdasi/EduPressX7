@@ -1,9 +1,20 @@
-
 import './Footer.css'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXTwitter, faPinterest, faInstagram, faFacebookF,faYoutube } from '@fortawesome/free-brands-svg-icons';
+import "./../../index.css"
+
 
 const Footer = () => {
+
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
+  
   return (
     <footer className="rb-footer">
     <div className="rb-footer-columns">
@@ -27,7 +38,7 @@ const Footer = () => {
       </div>
       <div className="rb-footer-column ">
         <h4>CONTACT US</h4>
-        <a className='rb-footer-addr' href="#">Address: 2321 New Design Str,Lorem Ipsum10  Hudson Yards, USA</a>
+        <a className='rb-footer-addr' href="#">Address: 2321 New Design Str,Lorem Ipsum10  Hudson Yards, USA <p></p></a>
         <a href="tel:+12325005678988">Tel: + (123) 2500-567-8988</a>
         <a  href="mailto:supportlms@gmail.com">Mail: supportlms@gmail.com</a>
         <div className="rb-social-icons">
@@ -41,6 +52,7 @@ const Footer = () => {
         </div>
       </div>
       </div>
+      <button onClick={scrollToTop} className="rb-scroll-to-top-button"></button>
       <hr className='rb-footer-hr'/>
       <p className='rb-Copyright'>Copyright © 2024 LearnPress LMS | Powered by ThimPress</p>
     </footer>
