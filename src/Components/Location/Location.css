@@ -1,16 +1,19 @@
 .Mk-ContactTitle
 {
-    flex-basis: 291px;
+    flex-basis: 29.1%;
 }
 .Mk-ContactTitle h1 
 {
     font-size: 25.6px;
-    margin-bottom: 17px ;
+    margin-bottom: 24px ;
+    font-weight: 600;
+    
 }
 .Mk-ContactTitle p 
 {
     font-size: 12.8px;
     margin: 0;
+    color: var(--dark-gray);
 }
 .MK-Square
 {
@@ -19,25 +22,60 @@
     height: 39.7px;
     display: grid;
     place-items: center;
+    border-radius: 8px;
 }
 .Mk-Icons-Gap
 {
     gap: 17px;
 }
+.Mk-Bold
+{
+    margin-left: 7px;
+}
 .Mk-Bold b 
 {
     font-size: 11.3px;
+ font-family: var(--Title); 
 }
 .Mk-Margin-Contact
 {
     margin: 11.3px 0 ;
 }
-.Mk-padding-iframe
+/* .Mk-padding-iframe
 {
-    padding: 42.5px 0;
+    padding: 60px 0 30px 0;
+} */
+.Mk-Iframe
+{
+    width: 70.1%;
+    height: 319.5px;
+    display: flex;
+    justify-content: space-between;
+    
 }
 Iframe
 {
-    width: 603.3px;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
+}
+.Mk-Contact-Us
+{
+    padding: 30px 0 0 0 ;
+
+
+}
+
+.Mk-Contact-Us h1
+{
+    font-size: 25.6px;
+    margin-bottom: 24px ;
+    font-weight: 600;
+
+}
+.Mk-Contact-Us p
+{
+    font-size: 12.8px;
+    margin: 0;
+    color: var(--dark-gray);
 }
