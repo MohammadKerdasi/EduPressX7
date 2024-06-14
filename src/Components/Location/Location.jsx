@@ -53,13 +53,6 @@ const Location = () => {
           ></iframe>
         </div>
       </div>
-      <div className="Mk-Contact-Us">
-        <h1>Contact Us</h1>
-        <p>
-          Your email address will not be published. Required fields are marked *
-        </p>
-      </div>
-      <div></div>
     </>
   );
 };

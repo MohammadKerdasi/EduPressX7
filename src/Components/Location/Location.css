@@ -47,19 +47,6 @@ Iframe {
   height: 100%;
   border-radius: 20px;
 }
-.Mk-Contact-Us {
-  padding: 30px 0;
-}
-
-.Mk-Contact-Us h1 {
-  font-size: 25.6px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-.Mk-Contact-Us p {
-  font-size: 12.8px;
-  margin: 0;
-}
   /* media------------------------------------------- */
 
   @media (max-width:992px)
