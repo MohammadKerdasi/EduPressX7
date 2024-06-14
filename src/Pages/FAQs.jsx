@@ -1,13 +1,14 @@
 import React from 'react'
 import BreadCrumbs from '../Components/BreadCrumbs/BreadCrumbs'
+import FAQs from '../Components/FAQs/FAQs'
 import "./../index.css"
 
-export default function FAQs() {
+export default function fAQs() {
   return (
     <div>
     <BreadCrumbs />
     <div className='Project-Container'>
-       <h1>hi from FAQs</h1>
+       <FAQs/>
        </div>
     </div>
   )
