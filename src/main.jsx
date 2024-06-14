@@ -8,7 +8,7 @@ import Home from './Pages/Home.jsx';
 import Courses from './Pages/Courses.jsx';
 import Blog from './Pages/Blog.jsx';
 import Contact from './Pages/Contact.jsx';
-import FAQs from './Pages/FAQs.jsx';
+import FAQs from './Pages/fAQs.jsx';
 import LoginRegister from './Pages/LoginRegister.jsx';
 import CourseSingle from './Pages/CourseSingle.jsx';
 import BlogSingle from './Pages/BlogSingle.jsx';

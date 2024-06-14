@@ -24,3 +24,11 @@ p,a{
 .Project-Container{
   padding: 60px 16.4063%;
 }
+
+@media (max-width:420px)
+{
+  .Project-Container{
+    padding: 60px 10%;
+  }
+
+}
