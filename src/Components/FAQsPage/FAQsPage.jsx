@@ -57,7 +57,6 @@ const FAQsPage = () => {
   return (
     <>
     <div className='Mk-faq-container'>
-
       <div className='Mk-faq-set'>
         {faqs.slice(0, 4).map((faq, index) => (
           <div key={index} className={`Mk-faq ${activeIndexSet1 === index ? 'active' : ''}`}>
@@ -65,9 +64,9 @@ const FAQsPage = () => {
               <h5>{faq.question}</h5>
               <svg
                 className={`arrow-icon ${activeIndexSet1 === index ? 'active' : ''}`}
-                width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"
+                width="12px" height="7"
               >
-                <path d="M10.59 0.590088L6 5.17009L1.41 0.590088L0 2.00009L6 8.00009L12 2.00009L10.59 0.590088Z" fill="#9D9D9D" />
+                <path d="M10.59 0.590088L6 5.17009L1.41 0.590088L0 2.00009L6 8.00009L12 2.00009L10.59 0.590088Z" fill="var(--grey)" />
               </svg>
             </div>
             <div
@@ -91,8 +90,8 @@ const FAQsPage = () => {
             <div className='Mk-Question' onClick={() => toggleAccordionSet2(index)}>
               <h5>{faq.question}</h5>
               <svg
-                className={`arrow-icon ${activeIndexSet2 === index ? 'active' : ''}`}
-                width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"
+                className={`arrow-icon ${activeIndexSet1 === index ? 'active' : ''}`}
+                width="12px" height="7"
               >
                 <path d="M10.59 0.590088L6 5.17009L1.41 0.590088L0 2.00009L6 8.00009L12 2.00009L10.59 0.590088Z" fill="#9D9D9D" />
               </svg>

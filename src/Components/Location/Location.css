@@ -5,16 +5,17 @@
   font-size: 25.6px;
   margin-bottom: 24px;
   font-weight: 600;
+  padding: 0;
 }
 .Mk-ContactTitle p {
   font-size: 12.8px;
-  margin: 0;
+  margin: 0 0 16px 0;
   color: var(--dark-gray);
 }
 .MK-Square {
   background-color: var(--light-gray);
-  width: 39.7px;
-  height: 39.7px;
+  width: 56.7px;
+  height: 56.7px;
   display: grid;
   place-items: center;
   border-radius: 8px;
@@ -32,10 +33,6 @@
 .Mk-Margin-Contact {
   margin: 11.3px 0;
 }
-/* .Mk-padding-iframe
-{
-    padding: 60px 0 30px 0;
-} */
 .Mk-Iframe {
   width: 70.1%;
   height: 319.5px;
@@ -46,7 +43,9 @@ Iframe {
   width: 100%;
   height: 100%;
   border-radius: 20px;
+  pointer-events: none;
 }
+
   /* media------------------------------------------- */
 
   @media (max-width:992px)

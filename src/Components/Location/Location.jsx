@@ -18,7 +18,7 @@ const Location = () => {
               <div className="MK-Square">
                 <FontAwesomeIcon
                   icon={faPhone}
-                  size="l"
+                  size="xl"
                   style={{ color: "var(--main-color)" }}
                 />
               </div>
@@ -31,7 +31,7 @@ const Location = () => {
               <div className="MK-Square">
                 <FontAwesomeIcon
                   icon={faEnvelope}
-                  size="l"
+                  size="xl"
                   style={{ color: "var(--main-color)" }}
                 />
               </div>
