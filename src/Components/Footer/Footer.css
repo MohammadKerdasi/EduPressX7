@@ -1,0 +1,157 @@
+/* src/components/Footer.rb-css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .rb-footer {
+    position: relative;
+    padding: 0 16.4063%;
+    width: 100%;
+    background-color: #F5F5F5;
+    color:  var(--dark-grey );
+    }
+    .rb-footer .rb-footer-columns{
+      padding: 90px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+    }
+  
+    .rb-footer-column {
+      max-width: 410px;
+      display: flex;
+      flex-direction: column;
+      
+  }
+    
+    .rb-footer-column h4 {
+      font-family: "Exo", sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      margin-bottom: 32px;
+    }
+    
+    .rb-footer-column p, .rb-footer-column a {
+      margin-bottom: 16px;
+      text-decoration: none;
+      color: var(--dark-grey );
+      font-family: "Jost", sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+    }
+    
+    .rb-footer-column a:hover,.rb-footer-column a:focus {
+      color: var(--main-color );
+    }
+    
+    .rb-social-icons {
+      display: flex;
+      gap: 10px;
+    }
+    .rb-footer-column a{
+      width: max-content;
+    }
+    .rb-social-icons a {
+      text-decoration: none;
+      color: inherit;
+    }
+    
+    .rb-social-icons a:hover, .rb-social-icons a:focus{
+      color: var(--main-color );
+    }
+    .rb-footer .rb-footer-addr {
+      max-width: 268px;
+    }
+  .rb-scroll-to-top-button{
+ 
+    background-color: black;
+    right: 2.9%;
+    bottom: 7%;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+    .rb-footer-hr{
+      border: solid 1px #eaeaea;
+      width: 100%;
+      margin: 0;
+    }
+    .rb-footer .rb-Copyright{
+      margin: 0;
+      padding:  32px 0;
+      text-align: center;
+      color: #555555;
+      color: var(--dark-grey  );
+  font-family: Jost ,sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+
+  }
+  
+  
+  
+  
+    /* Media Queries--------------------------------------------------------------------------------------------- */
+  
+  /* Styles for large screens */
+  @media only screen and (max-width: 1600px) {
+    .rb-footer {
+      flex-wrap: nowrap;
+      /* gap: 53px; */
+  
+    }
+    .rb-footer-column {
+      max-width: 252px;}
+  
+  
+  }
+  
+  /* Styles for medium screens */
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  
+    .rb-footer {
+      flex-wrap: wrap;
+  }
+    .rb-footer-column p, .rb-footer-column a {
+      width: 280px;
+      font-size: 15px;
+  }
+  .rb-social-icons {
+    width: 117px;}
+  }
+  
+  /* Styles for small to medium screens */
+  @media only screen /* and (min-width: 768px) */ and (max-width: 991px) {
+    .rb-footer {
+      flex-wrap: wrap;
+    }
+    .rb-footer .rb-footer-addr {
+      width: 201px;
+  }}
+  
+  /* Styles for small to medium screens */
+  @media only screen and (max-width: 767px) {
+    /* .footer { */
+      /* flex-wrap: wrap; */
+      /* justify-content: flex-start; */
+  /* } */
+  .footer .rb-footer-addr {
+    width: 220px;
+  }.rb-footer .rb-footer-columns {
+    padding: 90px 0;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-around; */
+    gap: 30px;
+    flex-direction: column;
+  }
+  }

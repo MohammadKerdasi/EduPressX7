@@ -1,0 +1,43 @@
+.Mk-ContactTitle
+{
+    flex-basis: 291px;
+}
+.Mk-ContactTitle h1 
+{
+    font-size: 25.6px;
+    margin-bottom: 17px ;
+}
+.Mk-ContactTitle p 
+{
+    font-size: 12.8px;
+    margin: 0;
+}
+.MK-Square
+{
+    background-color: var(--light-gray);
+    width: 39.7px;
+    height: 39.7px;
+    display: grid;
+    place-items: center;
+}
+.Mk-Icons-Gap
+{
+    gap: 17px;
+}
+.Mk-Bold b 
+{
+    font-size: 11.3px;
+}
+.Mk-Margin-Contact
+{
+    margin: 11.3px 0 ;
+}
+.Mk-padding-iframe
+{
+    padding: 42.5px 0;
+}
+Iframe
+{
+    width: 603.3px;
+    border-radius: 20px;
+}

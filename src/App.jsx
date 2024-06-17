@@ -1,16 +1,21 @@
-import './App.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { fas, far, fal } from '@awesome.me/kit-KIT_CODE/icons'
-function App() {
+import { Outlet } from "react-router-dom";
+import "./App.css";
+import NavBarCom from "./Components/NavBar/NavBarCom";
+import Footer from "./Components/Footer/Footer";
 
+
+function App() {
   return (
     <>
-      <h1>Vite + React</h1>
-      <p><FontAwesomeIcon icon={fas.faHouse} />
-    <FontAwesomeIcon icon={far.faMouse} />
-    <FontAwesomeIcon icon={fal.faCheese} /></p>
+      <section className="app">
+        <NavBarCom />
+        <Outlet />
+        
+        
+        <Footer />
+      </section>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
