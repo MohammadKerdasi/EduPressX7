@@ -1,9 +1,9 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import './CourseSingleDetail.css'
 
 const CourseSingleDetail = () => {
 
-  }
+  
 
   return (
     <>

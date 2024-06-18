@@ -1,10 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   /* colors */
   --main-color : #FF782D; 
   --green : #55BE24;
   --red : #F51A1A;
   --blue : #2580D5;
-  --light-gray : #F5F5F5;
+  --light-gray : #EAEAEA;
   --grey : #9D9D9D;
   --dark-grey : #555555;
   --white : white;
@@ -12,19 +18,21 @@
   --paragarph : Jost; 
 
 }
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6 {
   font-family: "Exo", sans-serif;
   font-weight: 600;
 }
-p,a{
+p,a {
   font-family: "Jost",sans-serif;
   font-weight: 400;
 }
+
 
 .Project-Container{
   padding: 60px 16.4063%;
 }
 .Project-Container-FAQs{
+
   padding: 0px 16.4063%;
 }
 
