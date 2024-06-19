@@ -1,0 +1,119 @@
+.Mk-CourseSingleTabsAndCard
+{
+  display: flex;
+  justify-content: space-between;
+ gap: 30px; 
+}
+.Mk-CommentsAndTabs
+{
+  width: 65%;
+}
+.Mk-tabs {
+    width: 100%;
+    
+  }
+  
+  .Mk-tab-headers {
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    margin-bottom:0px;
+  }
+  
+  .Mk-tab-header {
+    flex: 1;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--Title);
+    padding: 10px 20px;
+    text-align: center;
+    background-color: var(--white);
+    border: 1px solid var(--light-gray);
+    border-bottom: none;
+    transition: background-color 0.3s;
+  }
+  
+  .Mk-tab-header:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .Mk-tab-header.active {
+    background-color: var(--light-gray);
+    color: var(--main-color);
+  }
+  
+  .Mk-tab-body {
+    border: 1px solid var(--light-gray);
+    background-color: var(--light-gray);
+    padding: 30px;
+  }
+  .Mk-CourseSingleCard
+  {
+    width: 35%;
+    position: relative;
+    
+  }
+  .Mk-CardStyling
+  {
+    position: absolute;
+    top: -280px;
+    border-radius: 20px;
+    border: 1px solid var(--light-gray);
+  }
+  .Mk-CardBody
+  {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 74.5px;
+    gap: 10px;
+  }
+  .Mk-CardBtn
+  {
+    padding: 10px 24px;
+  }
+  .Mk-CardText
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 73.9px;
+  }
+  .Mk-CardText span 
+  {
+    margin: 0%;
+    font-size: 11.3px;
+    text-decoration: line-through;
+  }
+  .Mk-CardText h4
+  {
+    font-size: 16.2px;
+    margin: 0px 0px 0px 3px;
+    color: red;
+  } 
+  .Mk-CardBtn
+  {
+    width: 120px;
+    
+    border-radius: 24px;
+    background-color: var(--main-color);
+    padding: 10px 24px;
+    border: 1px solid var(--main-color);
+  }
+  @media (max-width: 768px) {
+    .Mk-tab-header {
+      flex: 100%;
+      border-right: none;
+      border-left: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Mk-tab-header {
+      padding: 10px 5px;
+    }
+  
+    .Mk-tab-body {
+      padding: 10px;
+    }
+  }

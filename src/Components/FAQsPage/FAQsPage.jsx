@@ -90,8 +90,8 @@ const FAQsPage = () => {
             <div className='Mk-Question' onClick={() => toggleAccordionSet2(index)}>
               <h5>{faq.question}</h5>
               <svg
-                className={`arrow-icon ${activeIndexSet1 === index ? 'active' : ''}`}
-                width="12px" height="7"
+                className={`arrow-icon ${activeIndexSet2 === index ? 'active' : ''}`}
+                width="12" height="8" 
               >
                 <path d="M10.59 0.590088L6 5.17009L1.41 0.590088L0 2.00009L6 8.00009L12 2.00009L10.59 0.590088Z" fill="#9D9D9D" />
               </svg>

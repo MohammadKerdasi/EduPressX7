@@ -1,0 +1,24 @@
+.Mk-accordion {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+}
+
+.Mk-accordion-title {
+  padding: 10px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+}
+
+.Mk-accordion-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+.Mk-accordion-content.open {
+  max-height: 1000px; /* قيمة كبيرة لتكون كافية لاحتواء المحتوى */
+  padding: 10px;
+}
