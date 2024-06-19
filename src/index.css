@@ -14,6 +14,8 @@
   --grey : #9D9D9D;
   --dark-grey : #555555;
   --white : white;
+  --Title : Exo;
+  --paragarph : Jost; 
 
 }
 h1,h2,h3,h4,h5,h6 {
@@ -24,6 +26,25 @@ p,a {
   font-family: "Jost",sans-serif;
   font-weight: 400;
 }
-.Project-Container {
+
+
+
+
+.Project-Container{
+  padding: 60px 16.4063%;
+}
+.Project-Container-FAQs{
+
   padding: 0px 16.4063%;
+}
+
+@media (max-width:420px)
+{
+  .Project-Container{
+    padding: 60px 10%;
+  }
+  .Project-Container-FAQs{
+    padding: 0px 10%;
+  }
+
 }
