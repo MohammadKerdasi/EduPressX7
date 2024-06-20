@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nz-error-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.nz-h2-div{
+    width: 67%;
+    margin-top: 50px;
+}
+.nz-img-div{
+    width: 67%;
+    margin-bottom: 60px;
+    /* height: 67%; */
+}
+.nz-img-div img{
+    width:100% ;
+    
+}
