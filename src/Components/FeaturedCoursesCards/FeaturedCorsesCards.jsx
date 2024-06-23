@@ -1,14 +1,4 @@
 import { useState } from "react";
-// for icons
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faClock,
-  faGraduationCap,
-  faSignal,
-  faCopy,
-} from "@fortawesome/free-solid-svg-icons";
-
 // for css
 
 import "./FeaturedCoursesCards.css";
@@ -111,7 +101,8 @@ export default function FeaturedCoursesCards(props) {
 
   return (
     <>
-      <section className="NA-featuredCards-Section">
+    
+      <section className="NA-featuredCards-Section Project-Container">
         <div className="NA-featuredCards NA-flex">
           {FeaturedCards.map((item) => {
             return (

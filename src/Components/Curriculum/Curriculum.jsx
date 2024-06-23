@@ -27,7 +27,6 @@ const Curriculum = () => {
           <li>Lesson 3: Expert Tips (6:30)</li>
         </ul>
       </Accordion>
-      {/* أضف المزيد من الأكورديونات حسب الحاجة */}
     </div>
   );
 };
