@@ -7,7 +7,6 @@
 }
 
 .ra-nav-comp {
-   
     border-bottom: solid 1px var( --light-gray) ;
     padding: 0px 16.4063%;
 }
@@ -151,7 +150,7 @@
 .rb-navbar-sticky {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 999;
 }
 
 /* Media Queries--------------------------------------------------------------------------------------------- */

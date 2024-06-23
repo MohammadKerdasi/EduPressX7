@@ -1,0 +1,47 @@
+.NA-growskills-Section {
+  justify-content: space-between;
+  align-items: center;
+}
+.NA-grow-img {
+  width: 644px;
+}
+.NA-grow-img img {
+  width: 100%;
+}
+.NA-grow-content {
+  width: 520px;
+}
+.NA-grow-content h2 {
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+.NA-grow-content h2 span {
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.NA-grow-content p {
+  color: var(--dark-grey);
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+.NA-grow-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+.NA-grow-content > ul > li {
+  font-family: var(--paraghraph);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: black;
+}
+.NA-grow-content > ul > li:not(:last-child) {
+   margin-bottom: 12px;
+  }
+.NA-grow-content > ul > li > img {
+  width: 16px;
+  margin-right: 5.5px;
+}

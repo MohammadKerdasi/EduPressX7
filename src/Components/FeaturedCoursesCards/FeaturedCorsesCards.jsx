@@ -1,16 +1,20 @@
 import { useState } from "react";
-// for css
 
+// for css
 import "./FeaturedCoursesCards.css";
 
+// for components
+import Title from "../Title/Title";
 // for images
 
-import featuredcard1 from "./../../../public/assetsProject/imges/card(1).png";
-import featuredcard2 from "./../../../public/assetsProject/imges/card(2).png";
-import featuredcard3 from "./../../../public/assetsProject/imges/card(3).png";
-import featuredcard4 from "./../../../public/assetsProject/imges/card(4).png";
-import featuredcard5 from "./../../../public/assetsProject/imges/card(5).png";
-import featuredcard6 from "./../../../public/assetsProject/imges/card(6).png";
+
+// import featuredcard1 from "./../../../public/assetsProject/imges/card(1).png";
+// import featuredcard2 from "./../../../public/assetsProject/imges/card(2).png";
+// import featuredcard3 from "./../../../public/assetsProject/imges/card(3).png";
+// import featuredcard4 from "./../../../public/assetsProject/imges/card(4).png";
+// import featuredcard5 from "./../../../public/assetsProject/imges/card(5).png";
+// import featuredcard6 from "./../../../public/assetsProject/imges/card(6).png";
+
 import graduationHat from "./../../../public/assetsProject/imges/hat.svg"
 import clock from "./../../../public/assetsProject/imges/time.svg"
 import copyFile from "./../../../public/assetsProject/imges/lesson.svg"
@@ -18,97 +22,101 @@ import signal from "./../../../public/assetsProject/imges/leavl.svg"
 import { Link } from "react-router-dom";
 
 export default function FeaturedCoursesCards(props) {
-  const [FeaturedCards] = useState([
-    {
-      id: 1,
-      img: featuredcard6,
-      note: "Photography",
-      detail: " Determined-Poitras",
-      title: "Create an lms website with learnPress",
-      time: "2Weeks",
-      number: "156 Students",
-      levels: "All Levels",
-      lessons: "20 Lessons",
-      price: "29.0",
-      viewMore: "view more",
-    },
-    {
-      id: 2,
-      img: featuredcard1,
-      note: "Photography",
-      detail: " Determined-Poitras",
-      title: "design a website with thimPress",
-      time: "2Weeks",
-      number: "156 Students",
-      levels: "All Levels",
-      lessons: "20 Lessons",
-      price: "29.0",
-      viewMore: "view more",
-    },
-    {
-        id: 3,
-        img: featuredcard2,
-        note: "Photography",
-        detail: " Determined-Poitras",
-        title: "Create an lms website with learnPress",
-        time: "2Weeks",
-        number: "156 Students",
-        levels: "All Levels",
-        lessons: "20 Lessons",
-        price: "29.0",
-        viewMore: "view more",
-      },
-      {
-        id: 4,
-        img: featuredcard3,
-        note: "Photography",
-        detail: " Determined-Poitras",
-        title: "Create an lms website with learnPress",
-        time: "2Weeks",
-        number: "156 Students",
-        levels: "All Levels",
-        lessons: "20 Lessons",
-        price: "29.0",
-        viewMore: "view more",
-      },
-      {
-        id: 5,
-        img: featuredcard4,
-        note: "Photography",
-        detail: " Determined-Poitras",
-        title: "Create an lms website with learnPress",
-        time: "2Weeks",
-        number: "156 Students",
-        levels: "All Levels",
-        lessons: "20 Lessons",
-        price: "29.0",
-        viewMore: "view more",
-      },
-      {
-        id: 6,
-        img: featuredcard5,
-        note: "Photography",
-        detail: " Determined-Poitras",
-        title: "Create an lms website with learnPress",
-        time: "2Weeks",
-        number: "156 Students",
-        levels: "All Levels",
-        lessons: "20 Lessons",
-        price: "29.0",
-        viewMore: "view more",
-      },
-  ]);
-
+  // const [FeaturedCards] = useState([
+  //   {
+  //     id: 1,
+  //     img: featuredcard6,
+  //     note: "Photography",
+  //     detail: " Determined-Poitras",
+  //     title: "Create an lms website with learnPress",
+  //     time: "2Weeks",
+  //     number: "156 Students",
+  //     levels: "All Levels",
+  //     lessons: "20 Lessons",
+  //     price: "29.0",
+  //     viewMore: "view more",
+  //   },
+  //   {
+  //     id: 2,
+  //     img: featuredcard1,
+  //     note: "Photography",
+  //     detail: " Determined-Poitras",
+  //     title: "design a website with thimPress",
+  //     time: "2Weeks",
+  //     number: "156 Students",
+  //     levels: "All Levels",
+  //     lessons: "20 Lessons",
+  //     price: "29.0",
+  //     viewMore: "view more",
+  //   },
+  //   {
+  //       id: 3,
+  //       img: featuredcard2,
+  //       note: "Photography",
+  //       detail: " Determined-Poitras",
+  //       title: "Create an lms website with learnPress",
+  //       time: "2Weeks",
+  //       number: "156 Students",
+  //       levels: "All Levels",
+  //       lessons: "20 Lessons",
+  //       price: "29.0",
+  //       viewMore: "view more",
+  //     },
+  //     {
+  //       id: 4,
+  //       img: featuredcard3,
+  //       note: "Photography",
+  //       detail: " Determined-Poitras",
+  //       title: "Create an lms website with learnPress",
+  //       time: "2Weeks",
+  //       number: "156 Students",
+  //       levels: "All Levels",
+  //       lessons: "20 Lessons",
+  //       price: "29.0",
+  //       viewMore: "view more",
+  //     },
+  //     {
+  //       id: 5,
+  //       img: featuredcard4,
+  //       note: "Photography",
+  //       detail: " Determined-Poitras",
+  //       title: "Create an lms website with learnPress",
+  //       time: "2Weeks",
+  //       number: "156 Students",
+  //       levels: "All Levels",
+  //       lessons: "20 Lessons",
+  //       price: "29.0",
+  //       viewMore: "view more",
+  //     },
+  //     {
+  //       id: 6,
+  //       img: featuredcard5,
+  //       note: "Photography",
+  //       detail: " Determined-Poitras",
+  //       title: "Create an lms website with learnPress",
+  //       time: "2Weeks",
+  //       number: "156 Students",
+  //       levels: "All Levels",
+  //       lessons: "20 Lessons",
+  //       price: "29.0",
+  //       viewMore: "view more",
+  //     },
+  // ]);
+// const FeaturedCards = props.FeaturedCards;
   return (
-    <>
-    
       <section className="NA-featuredCards-Section Project-Container">
+        <Title
+        header="featured courses"
+        desc="Explore our Popular courses"
+        btn=" all courses "
+        showBtn={true}
+      />
         <div className="NA-featuredCards NA-flex">
-          {FeaturedCards.map((item) => {
+          {props.FeaturedCards.map((item) => {
             return (
               <div key={item.id} className={props.view || "NA-feature-card"}>
                 <div className="NA-feature-card-img">
-                  <img src={item.img} alt="img" />
+                  <img src={item.img} alt="features-img" />
                   <p className="NA-card-note">{item.note}</p>
                 </div>
                 <div className="NA-feature-card-content">
@@ -148,6 +156,5 @@ export default function FeaturedCoursesCards(props) {
           })}
         </div>
       </section>
-    </>
   );
 }

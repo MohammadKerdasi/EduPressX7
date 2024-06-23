@@ -1,0 +1,123 @@
+.NA-ExploreCourses {
+  background-image: url("./../../../public/assetsProject/imges/banner.png");
+  background-size: cover;
+  border-radius: 20px;
+  width: 100%;
+  min-height: 324px;
+  position: relative;
+  overflow: hidden;
+}
+.NA-ExploreCourses-text {
+  width: 500px;
+  padding: 54.5px 0 54.5px 50px;
+}
+.NA-ExploreCourses-text h3 {
+    font-size: 32px;
+    margin-bottom: 24px;
+    text-transform: capitalize;
+    color: black;
+}
+.NA-ExploreCourses-text .NA-ExploreCourses-subtitle {
+    margin-bottom: 16px;
+}
+.NA-ExploreCourses-text p {
+    color: var(--dark-grey);
+}
+.NA-ExploreCourses-text .NA-ExploreCourses-desc {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+.NA-banner {
+  position: absolute;
+  animation: float 3s ease-in-out infinite;
+}
+.NA-bannerGreen {
+  /* width: 79px; */
+  /* height: 79px; */
+  /* top: 224px;
+  left: 859.97px; */
+  bottom: 3%;
+  right: 29%;
+  animation-duration: 5s;
+}
+.NA-bannerPurple {
+  width: 94px;
+  height: 94px;
+  bottom: 0;
+  right: 14%;
+  animation-duration: 5s;
+}
+.NA-bannerPink {
+  /* width: 66px; */
+  /* height: 66px; */
+  top: 57%;
+    left: 45.3%;
+  animation-duration: 4s;
+}
+.NA-bannerBabyblue {
+  /* width: 100px; */
+  /* height: 100px; */
+  /* top: 58px; */
+  /* left: 1036.43px; */
+  right: 18%;
+  top: 17%;
+  animation-duration: 6s;
+}
+.NA-bannerYellow {
+  /* width: 79px; */
+  /* height: 79px; */
+  /* top: 136px;
+  left: 882px; */
+  /* height: 79px; */
+  right: 24%;
+  top: 43%;
+  animation-duration: 3s;
+}
+.NA-bannerDarkpurple {
+  /* width: 96px; */
+  /* height: 96px; */
+  top: 26%;
+  left: 45%;
+  animation-duration: 5s;
+}
+.NA-bannerRed {
+  /* width: 120px; */
+  /* height: 120px; */
+  top: 133px;
+  right: 0;
+  animation-duration: 4s;
+}
+.NA-bannerOrange {
+  /* width: 64px; */
+  /* height: 64px; */
+  top: 0;
+  right: 10%;
+  animation-duration: 5s;
+}
+.NA-bannerBlue {
+  /* top: 3.3333333%;
+  left: 54.341%; */
+/* top: 143.81px;
+left: 834.65px; */
+top: 14%;
+left: 56%;
+}
+
+@keyframes float {
+	0% {
+		
+		transform: translatey(0px);
+    /* transform: rotate(180deg); */
+	}
+	50% {
+    /* transform: rotate(180deg); */
+		
+		transform: translatey(-20px);
+	}
+	100% {
+    /* transform: rotate(180deg); */
+	
+		transform: translatey(0px);
+	}
+}
