@@ -1,7 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
-import './CourseSingleAccordions.css'
+import './CourseSingleAccordions.css';
+import arrow_icon from './../../../public/assetsProject/imges/navBar-Vector.png';
 
-const Accordion = ({ title, children }) => {
+// eslint-disable-next-line react/prop-types
+const Accordion = ({ title, subTitle, subTitle2, children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const contentRef = useRef(null);
 
@@ -15,8 +17,19 @@ const Accordion = ({ title, children }) => {
 
   return (
     <div className="Mk-accordion">
-      <div className="Mk-accordion-title" onClick={() => setIsOpen(!isOpen)}>
-        {title}
+      <div className="Mk-accordion-titleAndSub" onClick={() => setIsOpen(!isOpen)}>
+        <div className={`Mk-AccordionTitle ${isOpen ? 'open' : ''}`} >
+          <img
+            className={`Mk-AccordionArrowIcon ${isOpen ? 'open' : ''}`}
+            src={arrow_icon}
+            alt="arrow icon"
+          />
+          {title}
+        </div>
+        <div className='Mk-AccordionsubTitle'>
+          <span>{subTitle}</span>
+          <span>{subTitle2}</span>
+        </div>
       </div>
       <div ref={contentRef} className={`Mk-accordion-content ${isOpen ? 'open' : ''}`}>
         {children}

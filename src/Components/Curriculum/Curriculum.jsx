@@ -1,5 +1,4 @@
-import React from 'react';
-import Accordion from './../CourseSingleAccordions/CourseSingleAccordions.jsx'; // تأكد من مسار الاستيراد
+import Accordion from './../CourseSingleAccordions/CourseSingleAccordions.jsx'; 
 
 const Curriculum = () => {
   return (

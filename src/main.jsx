@@ -12,6 +12,7 @@ import FAQs from './Pages/FAQs.jsx';
 import LoginRegister from './Pages/LoginRegister.jsx';
 import CourseSingle from './Pages/CourseSingle.jsx';
 import BlogSingle from './Pages/BlogSingle.jsx';
+import Errorpage from './Pages/Errorpage.jsx';
 
 
 const router = createBrowserRouter([
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
     {
       path: "BlogSingle", 
       element: <BlogSingle />,
+    },
+    {
+      path: "*", 
+      element: <Errorpage />,
     },
     ],
   },

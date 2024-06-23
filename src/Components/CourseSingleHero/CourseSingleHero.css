@@ -45,6 +45,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     width: 550.55104166px;
     padding: 0;
 }
@@ -60,4 +61,85 @@
 {
     font-size: 16px ;
     margin-left: 5.33px;
+}
+@media (max-width: 1390px)
+{
+    .Mk-hero-heading
+    {
+        width: 100%;
+    }
+   
+}
+@media (max-width: 850px){
+    .Mk-hero-heading h1
+    {
+        font-size: 25px;
+    }
+    .Mk-ul
+    {
+        width: 400px;
+        
+    }
+    .Mk-list-item
+    {
+        margin-top: 10px;
+    }
+
+}
+@media (max-width: 600px)
+{
+    .Mk-hero-heading h1
+    {
+        font-size: 20px;
+    }
+    .Mk-ul
+    {
+        width: 300px;
+        justify-content: space-between; 
+    }
+    .Mk-list-item
+    {
+        margin: 10px 10px;
+    }
+    .Mk-Photography-by-Determined-Poitras
+    {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start !important;
+    }
+    .Mk-by 
+    {
+        margin-left: 0;
+    }
+    
+}
+@media (max-width: 450px){
+    .Mk-ul
+    {
+        width: 250px;
+        justify-content: stretch; 
+    }
+    .Mk-list-item span 
+    {
+        font-size: 12px;
+    }
+}
+@media (max-width: 350px){
+    .Mk-ul
+    {
+        width: 220px;
+        justify-content: space-between; 
+    }
+}
+@media (max-width: 300px){
+    .Mk-ul
+    {
+        width: 200px;
+        justify-content: stretch; 
+    }
+    .Mk-list-item
+    {
+        margin: 10px 10px;
+    }
+
 }
