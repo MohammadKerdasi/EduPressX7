@@ -1,27 +1,26 @@
-h1{
+/* h1{
     margin: 0;
     padding-bottom: 60px;
-}
-.Mk-faq-container {
-    margin-top: 60px;
+} */
+.Mk-SingelCourseFAQs-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     
   }
-  .Mk-faq 
+  .Mk-SingleCourseFAQs
   {
     background-color: var(--light-gray);
     width: 100%; 
-    margin-bottom: 30px; 
+    margin-bottom: 20px; 
     border-radius: 8px; 
   }
-  .Mk-faq-set {
-    width: 48.5%; 
+  .Mk-SingleCorseFAQs-set {
+    width: 100%; 
   }
 
-  .Mk-faq {
+  .Mk-SingleCourseFAQs {
     background-color: var(--light-gray);    
     
   }
@@ -29,7 +28,8 @@ h1{
     margin-bottom: 0; 
   }
   
-  .Mk-Question {
+  .Mk-SingleCourseQuestion {
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,25 +37,26 @@ h1{
     padding: 20px 30px;
   }
   
-  .Mk-Question h5 {
+  .Mk-SingleCourseQuestion h5 {
     
     font-size: 14px;
     font-weight: 600;
     margin: 0;
   }
   
-  .Mk-answer {
+  .Mk-SingleCourseAnswer {
     max-height: 0px;
     overflow: hidden;
-    transition: 0.5s ease-out;
+    transition: 0.3s ease-out;
+    background-color: white;
   }
-  .Mk-answer p
+  .Mk-SingleCourseAnswer p
   {
     padding: 10px 30px;
     font-size: 14px;
   }
   
-  .Mk-faq.active .Mk-Question h5 {
+  .Mk-SingleCourseFAQs.active .Mk-SingleCourseQuestion h5 {
     color: var(--main-color);
     max-height: max-content;
     transform: rotate(360deg);
@@ -67,40 +68,24 @@ h1{
   .arrow-icon.active {
     transform: rotate(180deg);
   }
-  .Mk-FAQs-Img img
-  {
-    margin-top: 60px;
-    width: 395.5708px;
-  }
-  .Project-Container-FAQs{
-    padding: 0px 16.4063%;
-  }
+
  
 
   @media (max-width: 992px) {
-    .Mk-faq-set {
+    .Mk-SingleCorseFAQs-set {
         width: 100%; 
         
       }
-      .Mk-faq-set:first-child
+      .Mk-SingleCorseFAQs-set:first-child
       {
         margin-bottom: 30px;
       }
   }
   @media (max-width: 550px){
-    .Mk-Question h5
+    .Mk-SingleCourseQuestion h5
     {
-        font-size: 12px;
+        font-size: 10px;
         margin-right: 20px;
-    }
-    .Mk-FAQs-Img img
-    {
-        width: 200px;
-    }
-  }
-  @media (max-width: 420px){
-    .Project-Container-FAQs{
-      padding: 0px 10%;
     }
   }
  

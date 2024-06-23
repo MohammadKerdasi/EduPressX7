@@ -1,6 +1,7 @@
 :root {
   /* colors */
   --main-color : #FF782D; 
+  --orange : #F6B40A;
   --green : #55BE24;
   --red : #F51A1A;
   --blue : #2580D5;
@@ -24,17 +25,19 @@ p,a{
 .Project-Container{
   padding: 60px 16.4063% 90px 16.4063%  ;
 }
-.Project-Container-FAQs{
-  padding: 0px 16.4063%;
-}
 
-@media (max-width:420px)
+@media (max-width:670px)
 {
   .Project-Container{
-    padding: 60px 10%;
+    padding: 60px 12%;
   }
-  .Project-Container-FAQs{
-    padding: 0px 10%;
+}
+
+@media (max-width:580px)
+{
+  .Project-Container{
+    padding: 60px 7%;
   }
+  
 
 }

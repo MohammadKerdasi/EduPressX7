@@ -12,8 +12,8 @@ function App() {
     <>
       <section className="app">
         <NavBarCom />
-        {/* <Outlet/> */}
-        <CourseSingle/> 
+         <Outlet/> 
+         <CourseSingle/>  
         <Footer />
       </section>
     </>
