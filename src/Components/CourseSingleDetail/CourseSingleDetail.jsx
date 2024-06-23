@@ -598,6 +598,9 @@ const Tabs = ({ config }) => {
 };
 
 const CourseSingleDetail = () => {
+
+  
+
   return (
     <>
       <div className="Mk-CourseSingleTabsAndCard">
