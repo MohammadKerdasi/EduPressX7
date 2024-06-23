@@ -4,7 +4,7 @@ import './App.css';
 import NavBarCom from './Components/NavBar/NavBarCom';
 import Footer from './Components/Footer/Footer';
 import "./App.css";
-import CourseSingle from './Pages/CourseSingle';
+// import CourseSingle from './Pages/CourseSingle';
 
 
 function App() {
@@ -12,10 +12,8 @@ function App() {
     <>
       <section className="app">
         <NavBarCom />
-
          <Outlet/> 
-          <CourseSingle/>
-        <Outlet/> 
+          {/* <CourseSingle/> */}
         <Footer />
       </section>
     </>
