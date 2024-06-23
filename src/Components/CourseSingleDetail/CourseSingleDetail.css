@@ -310,13 +310,6 @@
   }
 
 }
-
-@media (max-width: 780px) {
-  .Mk-tab-header:first-child , .Mk-tab-header:last-child
-  {
-    border-radius: 0px;
-  }
-}
   @media (max-width: 768px) {
     .Mk-tab-header {
       flex: 100%;
