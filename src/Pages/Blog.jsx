@@ -1,11 +1,6 @@
-import React from 'react'
-import BreadCrumbs from '../Components/BreadCrumbs/BreadCrumbs'
+import React from "react";
+import BlogDtails from "../Components/BlogDetails/BlogDetails";
 
 export default function Blog() {
-  return (
-    <div>
-    <BreadCrumbs />
-       <h1>hi from Blog</h1>
-    </div>
-  )
+  return <BlogDtails />;
 }

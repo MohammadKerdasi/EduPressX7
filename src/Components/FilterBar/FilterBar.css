@@ -1,0 +1,63 @@
+.SHaaban-category-area,
+.SHaaban-recent-posts-area {
+    margin-bottom: 30px;
+}
+
+.SHaaban-adding-margin-bottom {
+    margin-bottom: 20px;
+}
+
+.SHaaban-remove-margin {
+    margin: 0;
+}
+
+.SHaaban-category-body {
+    display: flex;
+    justify-content: space-between;
+    color: var(--dark-grey);
+    margin-bottom: 10px;
+    transition: color .2s;
+}
+
+.SHaaban-category-area-title,
+.SHaaban-recent-posts-area-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.SHaaban-category-body:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.SHaaban-recent-post-body {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+    transition: color .2s;
+}
+
+.SHaaban-recent-post-body:hover {
+    cursor: pointer;
+    color: #FF782D;
+}
+
+.SHaaban-adding-style-for-tags-area {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+    color: var(--dark-grey);
+}
+
+@media (max-width:1366px) {
+
+    .SHaaban-adding-style-for-recent-posts-img {
+        width: 64.0313px;
+        height: 64.0313px;
+    }
+
+    .SHaaban-adding-style-for-recent-posts-paragraph {
+        font-size: 12px !important;
+    }
+}
