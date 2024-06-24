@@ -10,6 +10,10 @@ import Blog from './Pages/Blog.jsx';
 import Contact from './Pages/Contact.jsx';
 import FAQs from './Pages/FAQs.jsx';
 import LoginRegister from './Pages/LoginRegister.jsx';
+import CourseSingle from './Pages/CourseSingle.jsx';
+import BlogSingle from './Pages/BlogSingle.jsx';
+import Errorpage from './Pages/Errorpage.jsx';
+
 
 const router = createBrowserRouter([
   {
@@ -39,6 +43,18 @@ const router = createBrowserRouter([
       {
       path: "LoginRegister",
       element: <LoginRegister />,
+    },
+    {
+      path: "CourseSingle",
+      element: <CourseSingle />,
+    },
+    {
+      path: "BlogSingle", 
+      element: <BlogSingle />,
+    },
+    {
+      path: "*", 
+      element: <Errorpage />,
     },
     ],
   },

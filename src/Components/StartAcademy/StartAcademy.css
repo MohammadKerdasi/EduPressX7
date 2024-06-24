@@ -1,0 +1,39 @@
+.NA-StartAcademy {
+  background-image: url("./../../../../public/assetsProject/imges/StartAcademy-Rectangle\ 143.png");
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  position: relative;
+}
+.NA-StartAcademy-content {
+    justify-content: space-between;
+    align-items: center;
+}
+.NA-StartAcademy-content h3 {
+    margin-left: 32px;
+    font-size: 20px;
+    color: black;
+}
+.NA-StartAcademy-bttns button:first-child {
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    margin-right: 20px;
+}
+.NA-StartAcademy-bttns button:nth-child(2) {
+    width: 219px;
+}
+.NA-student-banner {
+    position: absolute;
+}
+.NA-student-banner1 {
+    right: 2%;
+    top: 0;
+}
+.NA-student-banner2 {
+    left: 3%;
+    bottom: 0;
+}

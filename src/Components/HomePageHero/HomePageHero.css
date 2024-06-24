@@ -1,0 +1,116 @@
+.NA-header {
+  background-image: url(./../../../public/assetsProject/imges/header-Rectangle\ 88.png);
+  background-size: cover;
+  max-height: 700px;
+  position: relative;
+  overflow: hidden;
+}
+.NA-header .Project-Container {
+  padding: 0 11.1% 0 16.4063%;
+}
+.NA-hero-Wrapper {
+  justify-content: space-between;
+  align-items: center;
+}
+.NA-hero-Wrapper .NA-hero-img {
+  width: 696px;
+  z-index: 1;
+}
+.NA-hero-content {
+  width: 520px;
+  z-index: 1;
+}
+.NA-hero-content h1 {
+  flex-direction: column;
+  text-transform: capitalize;
+  margin-bottom: 24px;
+  padding: 0; /*Taking off bootstrap default value*/
+}
+.NA-hero-content h1 span {
+  font-size: 48px;
+  font-family: var(--Title);
+  font-weight: 600;
+}
+.NA-hero-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--dark-grey);
+}
+.NA-btn {
+  width: 170px;
+  height: 48px;
+  padding: 10px 24px;
+  border-radius: 24px;
+  border: none;
+  background-color: var(--main-color);
+  color: white;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.NA-header-img {
+  position: absolute;
+}
+.NA-img-center {
+  width: 977px;
+  height: 419px;
+  top: 141px;
+  left: 720px;
+  opacity: 0.5px;
+}
+.NA-img-left {
+  width: 439.5px;
+  height: 354.13px;
+  top: 40px;
+  left: 87px;
+  opacity: 0.5;
+}
+.NA-img-right {
+  width: 346.87px;
+  height: 311.75px;
+  bottom: 2.275%;
+  right: 0;
+  opacity: 0.5;
+}
+.NA-hero-Wrapper .NA-hero-img img {
+  width: 100%;
+}
+.NA-img-top-right {
+  top: 0;
+  right: 0;
+}
+.NA-img-top-right-child {
+  top: 7.31px;
+  left: 1345px;
+}
+.NA-img-bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+/* btn-hover */
+.NA-btn-effect {
+  position: relative;
+  overflow: hidden;
+  transition:  all 1s ease;
+  z-index: 1;
+}
+
+.NA-btn-effect::before {
+  background-color: black;
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+  width: 100%;
+  height: 0;
+}
+.NA-btn-effect:hover {
+  color: white !important;
+  border: none !important;
+}
+.NA-btn-effect:hover::before {
+  height: 100%;
+}

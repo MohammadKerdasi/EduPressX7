@@ -1,11 +1,16 @@
 import React from 'react'
 import BreadCrumbs from '../Components/BreadCrumbs/BreadCrumbs'
-
-export default function LoginRegister() {
+import "./../index.css"
+import LoginRegister from './../Components/LoginRegister/LoginRegister.jsx'
+export default function LoginandRegister() {
   return (
     <div>
+    
        <BreadCrumbs />
-       <h1>hi from login</h1>
-    </div>
+       <div className='Project-Container'>
+       <LoginRegister/>
+       </div>
+       </div>
+
   )
 }
