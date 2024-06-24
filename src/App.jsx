@@ -3,7 +3,7 @@ import './App.css';
 import NavBarCom from './Components/NavBar/NavBarCom';
 import Footer from './Components/Footer/Footer';
 import "./App.css";
-import CourseSingle from './Pages/CourseSingle';
+// import CourseSingle from './Pages/CourseSingle';
 // import BlogSingle from './Pages/BlogSingle';
 
 function App() {
@@ -11,9 +11,9 @@ function App() {
     <>
       <section className="app">
         <NavBarCom />
-         {/* <Outlet/>  */}
+         <Outlet/> 
          {/* <BlogSingle/> */}
-         <CourseSingle/>
+         {/* <CourseSingle/> */}
         <Footer />
       </section>
     </>
