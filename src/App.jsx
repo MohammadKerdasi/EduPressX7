@@ -6,7 +6,7 @@ import Footer from './Components/Footer/Footer';
 
 
 import "./App.css";
-// import CourseSingle from './Pages/CourseSingle';
+ import CourseSingle from './Pages/CourseSingle';
 
 
 
@@ -16,7 +16,7 @@ function App() {
       <section className="app">
         <NavBarCom />
          <Outlet/> 
-          {/* <CourseSingle/> */}
+         <CourseSingle/> 
         <Footer />
       </section>
     </>
