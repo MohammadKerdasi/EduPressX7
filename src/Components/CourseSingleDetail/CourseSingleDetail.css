@@ -41,7 +41,7 @@
   }
   
   .Mk-tab-header.active {
-    background-color: var(--light-gray);
+    background-color: var(--white-grey);
     color: var(--main-color);
   }
   .Mk-tab-header:last-child
@@ -55,7 +55,7 @@
   
   .Mk-tab-body {
     border: 1px solid var(--light-gray);
-    background-color: var(--light-gray);
+    background-color: var(--white-grey);
     padding: 30px;
   }
   .Mk-CourseSingleCard
@@ -251,6 +251,22 @@
   background-color: var(--orange);
   
   
+}
+.Mk-Comments
+{
+  width: 48% !important;
+}
+.Mk-Inputs
+{
+  width: 100% !important;
+}
+.Mk-FormArea
+{
+  margin-top: 40px;
+}
+.Mk-CommentSection
+{
+  margin: 20px 0px;
 }
 @media (max-width: 1390px){
   .Mk-CourseSingleTabsAndCard

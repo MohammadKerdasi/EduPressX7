@@ -239,7 +239,7 @@
  }
 
  .SHaaban-styling-form-inputs input {
-     width: 485px;
+     width: 48%;
      height: 48px;
      outline: none;
      border: 1px solid var(--grey);
