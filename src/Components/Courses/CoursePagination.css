@@ -1,0 +1,79 @@
+
+.rb-CoursePagination .rb-CoursePagination-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 170.75px;
+  margin-bottom: 40px;
+}
+.rb-CoursePagination .rb-CoursePagination-head button:hover,.rb-CoursePagination .rb-CoursePagination-head .rb-view-active{
+  color: var(--main-color);
+}
+  .rb-CoursePagination .rb-CoursePagination-head h1{
+    font-size: 36px;
+    padding-bottom: 0;
+  }
+  .rb-CoursePagination .rb-CoursePagination-head .search-view .rb-search-with-icone .rb-searchbox {
+    border: none;
+    border-bottom: 1px solid var(--dark-grey);
+    width: 192.03px;
+}
+  .rb-CoursePagination .rb-CoursePagination-head .search-view{
+    display: flex;
+      gap: 20px;
+      align-items: flex-end;
+  }
+  .rb-CoursePagination .rb-CoursePagination-head .search-view button{
+    border: none;
+    background-color: transparent;
+  }
+  .rb-CoursePagination .rb-CoursePagination-head .search-view .rb-search-with-icone .rb-search-pag{
+    position: absolute;
+    right: 0;
+  }
+  .rb-search-with-icone{
+    position: relative;
+    width: max-content;
+  }
+  
+  
+  .rb-CoursePagination .rb-ul-pagination{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px ;
+  }
+  .rb-CoursePagination .rb-ul-pagination .rb-PageActive{
+    background-color: black;
+    color: var(--white);
+    width: 35px;
+    height: 35px;
+    padding-top: 5px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+  }
+  
+  .rb-CoursePagination .rb-ul-pagination li
+  {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+   border: 1px solid var(--light-gray);
+    padding-top: 5px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+  }
+  .rb-CoursePagination .rb-ul-pagination li svg{
+    font-size: 10px;
+    padding-bottom: 1px;
+  }

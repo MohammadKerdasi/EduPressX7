@@ -1,0 +1,30 @@
+.CoursesSidebar{
+    width: 28.931%;
+}
+.CoursesSidebar .rb-flex-check{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+}
+.CoursesSidebar .rb-flex-check svg{
+    font-size: 11px;
+    margin-bottom: 3px;
+    margin-right: 2px;
+}
+.CoursesSidebar .rb-tit-sidebar{
+    font-size: 20px;
+    margin-bottom: 20px;
+    /* padding-right: 82.529px; */
+}
+.CoursesSidebar .rb-flex-check input:checked  label {
+    color: black;
+  }
+  .CoursesSidebar .rb-flex-check label{
+margin: 0 4px;
+  }
+p{
+    margin-bottom: 0;
+}

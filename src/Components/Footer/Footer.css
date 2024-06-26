@@ -1,157 +1,154 @@
 /* src/components/Footer.rb-css */
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .rb-footer {
-    position: relative;
-    padding: 0 16.4063%;
-    width: 100%;
-    background-color: #F5F5F5;
-    color:  var(--dark-grey );
-    }
-    .rb-footer .rb-footer-columns{
-      padding: 90px 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 30px;
-    }
-  
-    .rb-footer-column {
-      max-width: 410px;
-      display: flex;
-      flex-direction: column;
-      
-  }
-    
-    .rb-footer-column h4 {
-      font-family: "Exo", sans-serif;
-      font-weight: 600;
-      font-size: 20px;
-      margin-bottom: 32px;
-    }
-    
-    .rb-footer-column p, .rb-footer-column a {
-      margin-bottom: 16px;
-      text-decoration: none;
-      color: var(--dark-grey );
-      font-family: "Jost", sans-serif;
-      font-weight: 400;
-      font-size: 18px;
-    }
-    
-    .rb-footer-column a:hover,.rb-footer-column a:focus {
-      color: var(--main-color );
-    }
-    
-    .rb-social-icons {
-      display: flex;
-      gap: 10px;
-    }
-    .rb-footer-column a{
-      width: max-content;
-    }
-    .rb-social-icons a {
-      text-decoration: none;
-      color: inherit;
-    }
-    
-    .rb-social-icons a:hover, .rb-social-icons a:focus{
-      color: var(--main-color );
-    }
-    .rb-footer .rb-footer-addr {
-      max-width: 268px;
-    }
-  .rb-scroll-to-top-button{
- 
-    background-color: black;
-    right: 2.9%;
-    bottom: 7%;
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    border: none;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-    .rb-footer-hr{
-      border: solid 1px #eaeaea;
-      width: 100%;
-      margin: 0;
-    }
-    .rb-footer .rb-Copyright{
-      margin: 0;
-      padding:  32px 0;
-      text-align: center;
-      color: #555555;
-      color: var(--dark-grey  );
-  font-family: Jost ,sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-
+.rb-footer {
+  position: relative;
+  padding: 0 16.4063%;
+  width: 100%;
+  background-color: #F5F5F5;
+  color:  var(--dark-grey );
   }
-  
-  
-  
-  
-    /* Media Queries--------------------------------------------------------------------------------------------- */
-  
-  /* Styles for large screens */
-  @media only screen and (max-width: 1600px) {
-    .rb-footer {
-      flex-wrap: nowrap;
-      /* gap: 53px; */
-  
-    }
-    .rb-footer-column {
-      max-width: 252px;}
-  
-  
-  }
-  
-  /* Styles for medium screens */
-  @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  
-    .rb-footer {
-      flex-wrap: wrap;
-  }
-    .rb-footer-column p, .rb-footer-column a {
-      width: 280px;
-      font-size: 15px;
-  }
-  .rb-social-icons {
-    width: 117px;}
-  }
-  
-  /* Styles for small to medium screens */
-  @media only screen /* and (min-width: 768px) */ and (max-width: 991px) {
-    .rb-footer {
-      flex-wrap: wrap;
-    }
-    .rb-footer .rb-footer-addr {
-      width: 201px;
-  }}
-  
-  /* Styles for small to medium screens */
-  @media only screen and (max-width: 767px) {
-    /* .footer { */
-      /* flex-wrap: wrap; */
-      /* justify-content: flex-start; */
-  /* } */
-  .footer .rb-footer-addr {
-    width: 220px;
-  }.rb-footer .rb-footer-columns {
+  .rb-footer .rb-footer-columns{
     padding: 90px 0;
     display: flex;
-    /* flex-wrap: wrap; */
-    /* justify-content: space-around; */
-    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 29px
+  }
+
+  .rb-footer-column {
+    max-width: 256.25px;
+    display: flex;
     flex-direction: column;
+}
+  
+  .rb-footer-column h4 {
+    font-size: 19px;
+    margin-bottom: 32px;
+    color: black;
   }
+  
+  .rb-footer-column p, .rb-footer-column a {
+    margin-bottom: 16px;
+    text-decoration: none;
+    color: var(--dark-grey );
+    font-size: 18px;
   }
+  
+  .rb-footer-column a:hover,.rb-footer-column a:focus {
+    color: var(--main-color );
+    transition: color 0.3s ease;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+  }
+  
+  .rb-social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  .rb-footer-column a{
+    width: max-content;
+  }
+  .rb-social-icons a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* .rb-social-icons a:hover, .rb-social-icons a:focus{ */
+    /* color: var(--main-color ); */
+  /* } */
+
+
+
+.rb-social-icons a:hover, 
+.rb-social-icons a:focus {
+    color: var(--main-color);
+    transition: color 0.3s ease;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+}
+
+
+  .rb-footer .rb-footer-addr {
+    max-width: 268px;
+  }
+.rb-scroll-to-top-button{
+  background-color: black;
+  right: 4.9%;
+  bottom: 9.19%;
+  position: absolute;
+  width: 37.5px;
+  height: 37.5px;
+  border: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  font-size: 1px;
+}
+.rb-scroll-to-top-button *{
+color: var(--white);
+font-size: 22px;
+}
+
+  .rb-footer-hr{
+    border: solid 1px #eaeaea;
+    width: 100%;
+    margin: 0;
+  }
+  .rb-footer .rb-Copyright{
+    margin: 0;
+    padding:  32px 0;
+    text-align: center;
+    color: #555555;
+    color: var(--dark-grey  );
+font-size: 18px;
+}
+
+
+
+
+  /* Media Queries--------------------------------------------------------------------------------------------- */
+
+/* Styles for large screens */
+@media only screen and (min-width: 992px) and (max-width: 1200px)  {
+
+  .rb-footer .rb-footer-columns {
+  
+    gap: 7px;
+}
+
+
+}
+
+/* Styles for medium screens */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+
+  .rb-footer .rb-footer-columns {
+  
+    gap: 7px;
+}
+}
+
+
+/* Styles for small to medium screens---------------------------------------- */
+@media only screen and (max-width: 767px) {
+
+  .rb-footer .rb-footer-columns {
+
+    gap: 19px;
+}
+.rb-footer .rb-footer-addr {
+  max-width: 219px;
+}
+
+}
