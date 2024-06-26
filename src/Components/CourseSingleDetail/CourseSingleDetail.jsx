@@ -1,10 +1,10 @@
 import { useState, useRef } from "react";
 import "./CourseSingleDetail.css";
- import Col from "react-bootstrap/Col";
- import Form from "react-bootstrap/Form";
- import Row from "react-bootstrap/Row";
-import FloatingLabel from "react-bootstrap/FloatingLabel";
-import ContactTitle from "../ContactTitle/ContactTitle";
+//  import Col from "react-bootstrap/Col";
+//  import Form from "react-bootstrap/Form";
+//  import Row from "react-bootstrap/Row";
+// import FloatingLabel from "react-bootstrap/FloatingLabel";
+// import ContactTitle from "../ContactTitle/ContactTitle";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Accordion from "./../CourseSingleAccordions/CourseSingleAccordions.jsx";
@@ -22,10 +22,18 @@ import {
   faFacebookF,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import {
+  faChevronRight,
+  faChevronLeft,
+} from "@fortawesome/free-solid-svg-icons";
+
 import SingleCourseFAQs from "../SinglePageFAQs/SinglePageFAQs.jsx";
 import filled_star from "./../../../public/assetsProject/imges/filled-star.png";
 import not_filled_star from "./../../../public/assetsProject/imges/not-filled-star.png";
-import Pagination from "../Pagination/Pagination.jsx";
+// import Pagination from "../Pagination/Pagination.jsx";
+import './../PagenationReviews/PagenationRevies.css'
+
+
 
 const Overview = () => {
   return (
@@ -548,485 +556,6 @@ const FAQs = () => {
   );
 };
 
-const Reviews = () => {
-  // قسم الهوكس
-  //  التحكم بالانديكس الخاص بالصورة الرئيسية ومراقبته
-
-  // التحكم بمصفوفة الكومينتس ومراقبتها
-  let [comments, setComments] = useState([
-    {
-      id: 1,
-      text: "First Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel.",
-      replys: [],
-    },
-    {
-      id: 2,
-      text: "Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel.",
-      replys: [],
-    },
-    {
-      id: 3,
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eius iste eum. Possimus id itaque in?",
-      replys: [],
-    },
-    {
-      id: 4,
-      text: "Lorem ipsum dolor Eveniet eius iste eum. sit amet consectetur adipisicing elit. Possimus id itaque in?",
-      replys: [],
-    },
-    {
-      id: 5,
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id itaque in?",
-      replys: [],
-    },
-    {
-      id: 6,
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing elit. Possimus id itaque in?",
-      replys: [],
-    },
-    {
-      id: 7,
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing elit. Possimus id itaque in?",
-      replys: [],
-    },
-    {
-      id: 8,
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing elit. Possimus id itaque in?",
-      replys: [],
-    },
-    {
-      id: 9,
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing elit. Possimus id itaque in?",
-      replys: [],
-    },
-    {
-      id: 10,
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing elit. Possimus id itaque in?",
-      replys: [],
-    },
-    {
-      id: 11,
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing elit. Possimus id itaque in?",
-      replys: [],
-    },
-  ]);
-
-  //
-  let [currentPage, setCurrentPage] = useState(1);
-
-  // تتحكم بعدد الكومينتس في صفحة الباجينيشن (Pagination)
-  let [commentsPerPage, setCommentsPerPage] = useState(5);
-
-  // مراقبة انبوت الاسم
-  let [name, setName] = useState("");
-
-  // مراقبة انبوت الايميل
-  let [email, setEmail] = useState("");
-
-  // مراقبة التيكست اريا
-  let [commentText, setCommentText] = useState("");
-
-  //  (Posts Replay Comment) تتحكم بحالة زر
-  let [displayNone, setDisplayNone] = useState(true);
-
-  // للتيكست اريا Auto Focus تتحكم قي حالة
-  let [autoFocus, setAutoFocus] = useState(false);
-
-  // تبين حالة الكومينت فيما اذا كان رد ام لا
-  let [isReply, setIsReply] = useState(false);
-
-  // تعيد المعرف الخاص بالرد
-  let [replyCommentId, setReplyCommentId] = useState(null);
-
-  // تعيد المعرف الخاص بالرد على الرد
-  let [replyOnReplyCommentId, setReplyOnReplyCommentId] = useState(null);
-
-  // انشاء مرجع لربط التيكست اريا به
-  const textAreaRef = useRef(null);
-
-  // متغيرات تساعد في الباجينيشن (Pagination)
-  const indexOfLastComment = currentPage * commentsPerPage;
-  const indexOfFirstComment = indexOfLastComment - commentsPerPage;
-  const currentComments = comments.slice(
-    indexOfFirstComment,
-    indexOfLastComment
-  );
-
-  // تابع يتعامل مع رقم الصفحة القادم من كومبوننت الباجنيشن
-  function paginate(pageNumber) {
-    setCurrentPage(pageNumber);
-  }
-
-  // (التقدم الى الامام) التعامل مع صفحات الباجنيشن من خلال الاسهم
-  function handlePaginationWithArrowINC() {
-    if (currentPage < comments.length / commentsPerPage) {
-      setCurrentPage(currentPage + 1);
-    }
-  }
-
-  // (الرجوع الى الخلف) التعامل مع صفحات الباجنيشن من خلال الاسهم
-  function handlePaginationWithArrowDEC() {
-    if (currentPage > 1) {
-      setCurrentPage(currentPage - 1);
-    }
-  }
-
-  // (Submit) تابع يفعل عند النقر على زر
-  // function handleSubmit() {
-  //   // (newComment) انشاء اوبجيكت
-  //   const newComment = {
-  //     id: comments.length + 1,
-  //     text: commentText,
-  //     replys: [],
-  //   };
-
-  //   setComments([newComment, ...comments]); // اضافة الاوبجيكت السابق الى مصفوفة الكومينتس
-
-  //   // تصفير قيم الانبوتس
-  //   setName("");
-  //   setEmail("");
-  //   setCommentText("");
-  // }
-
-  // تابع يفعل قي حالة الرد على الكومينت
-  function handleReplayComments(commentId) {
-    setComments(
-      comments.map((comment) => {
-        return commentId === comment.id // مقارنة المعرف الصحيح من اجل الاضافة فيه
-          ? {
-              ...comment,
-              replys: [
-                ...comment.replys,
-                {
-                  // لكي يكون المعرف فريد قي جميع مصفوفات الريببليز وليس فريد في المصفوفة الواحدة فقط
-                  id: comments.reduce((total, comment) => {
-                    return total + comment.replys.length;
-                  }, 1),
-                  replayTetx: commentText,
-                },
-              ],
-            }
-          : comment;
-      })
-    );
-
-    // تصفير قيم الانبوتس
-    setCommentText("");
-  }
-
-  // تابع يفعل قي حالة الرد على رد الكومينت
-  function handleReplayOnReplayComments(replayOnReplayCommentId) {
-    setComments(
-      comments.map((comment) => {
-        if (
-          comment.replys.some((reply) => reply.id === replayOnReplayCommentId) // مقارنة المعرف الصحيح من اجل الاضافة فيه
-        ) {
-          return {
-            ...comment,
-            replys: [
-              ...comment.replys,
-              {
-                // لكي يكون المعرف فريد قي جميع مصفوفات الريببليز وليس فريد في المصفوفة الواحدة فقط
-                id: comments.reduce((total, comment) => {
-                  return total + comment.replys.length;
-                }, 1),
-                replayTetx: commentText,
-              },
-            ],
-          };
-        }
-        return comment;
-      })
-    );
-
-    // تصفير قيم الانبوتس
-    setCommentText("");
-  }
-
-  // تابع يفعل في حالة الضغط على مربع الريبلاي الخاص بالكومينت
-  function handleClickingOnReplay() {
-    // (Posts Replay Comment) عن زر (display: none;) ازالة
-    setDisplayNone(false);
-
-    // الى التيكست اريا (Auto Focus) اضافة خاصية
-    setAutoFocus(true);
-    if (textAreaRef.current) {
-      textAreaRef.current.focus();
-    }
-  }
-
-  // (Posts Replay Comment) تابع يفعل عند الضغط على زر
-  function handlePostsReplayComment() {
-    if (isReply) {
-      handleReplayComments(replyCommentId);
-    } else {
-      handleReplayOnReplayComments(replyOnReplyCommentId);
-    }
-
-    // (Posts Replay Comment) الى زر (display: none;) اضافة
-    setDisplayNone(true);
-    // عن التيكست اريا (Auto Focus) ازالة خاصية
-    setAutoFocus(false);
-  }
-
-  return (
-    <>
-      <h4 className="Mk-ReviewsHeading">Comments</h4>
-      <div className="Mk-40Rating">
-        <h1>4.0</h1>
-        <div className="Mk-StarsRatings">
-          <div className="Mk-Stars">
-            <img style={{ width: "18px" }} src={filled_star} alt="" />
-            <img style={{ width: "18px" }} src={filled_star} alt="" />
-            <img style={{ width: "18px" }} src={filled_star} alt="" />
-            <img style={{ width: "18px" }} src={filled_star} alt="" />
-            <img style={{ width: "18px" }} src={not_filled_star} alt="" />
-          </div>
-          <p>based on 146,951 ratings</p>
-        </div>
-      </div>
-      <div className="Mk-Rating">
-        <span className="Mk-Stars-2">
-          <img className="Mk-Starswidth" src={filled_star} alt="" />
-          <img className="Mk-Starswidth" src={filled_star} alt="" />
-          <img className="Mk-Starswidth" src={filled_star} alt="" />
-          <img className="Mk-Starswidth" src={filled_star} alt="" />
-          <img className="Mk-Starswidth" src={filled_star} alt="" />
-        </span>
-        <span className="Mk-NumOfRate">90%</span>
-        <div className="Mk-RatingBar">
-          <div className="Mk-RatingBarInner" style={{ width: "90%" }}></div>
-        </div>
-      </div>
-      <div className="Mk-Rating">
-        <span className="Mk-Stars-2">
-          <img className="Mk-Starswidth" src={filled_star} alt="" />
-          <img className="Mk-Starswidth" src={filled_star} alt="" />
-          <img className="Mk-Starswidth" src={filled_star} alt="" />
-          <img className="Mk-Starswidth" src={filled_star} alt="" />
-          <img className="Mk-Starswidth" src={not_filled_star} alt="" />
-        </span>
-        <span className="Mk-NumOfRate">5%</span>
-        <div className="Mk-RatingBar">
-          <div className="Mk-RatingBarInner" style={{ width: "5%" }}></div>
-        </div>
-      </div>
-      <div className="Mk-Rating">
-        <span className="Mk-Stars-2">
-          <img className="Mk-Starswidth" src={filled_star} alt="" />
-          <img className="Mk-Starswidth" src={filled_star} alt="" />
-          <img className="Mk-Starswidth" src={filled_star} alt="" />
-          <img className="Mk-Starswidth" src={not_filled_star} alt="" />
-          <img className="Mk-Starswidth" src={not_filled_star} alt="" />
-        </span>
-        <span className="Mk-NumOfRate">2%</span>
-        <div className="Mk-RatingBar">
-          <div className="Mk-RatingBarInner" style={{ width: "2%" }}></div>
-        </div>
-      </div>
-      <div className="Mk-Rating">
-        <span className="Mk-Stars-2">
-          <img className="Mk-Starswidth" src={filled_star} alt="" />
-          <img className="Mk-Starswidth" src={filled_star} alt="" />
-          <img className="Mk-Starswidth" src={not_filled_star} alt="" />
-          <img className="Mk-Starswidth" src={not_filled_star} alt="" />
-          <img className="Mk-Starswidth" src={not_filled_star} alt="" />
-        </span>
-        <span className="Mk-NumOfRate">2%</span>
-        <div className="Mk-RatingBar">
-          <div className="Mk-RatingBarInner" style={{ width: "2%" }}></div>
-        </div>
-      </div>
-      <div className="Mk-Rating">
-        <span className="Mk-Stars-2">
-          <img className="Mk-Starswidth" src={filled_star} alt="" />
-          <img className="Mk-Starswidth" src={not_filled_star} alt="" />
-          <img className="Mk-Starswidth" src={not_filled_star} alt="" />
-          <img className="Mk-Starswidth" src={not_filled_star} alt="" />
-          <img className="Mk-Starswidth" src={not_filled_star} alt="" />
-        </span>
-        <span className="Mk-NumOfRate">1%</span>
-        <div className="Mk-RatingBar">
-          <div className="Mk-RatingBarInner" style={{ width: "1%" }}></div>
-        </div>
-      </div>
-      <div className="SHaaban-comment-section Mk-CommentSection">
-        {currentComments.map((comment) => {
-          return (
-            <div className="SHaaban-comment-body" key={comment.id}>
-              
-              <div className="SHaaban-adding-flex">
-                <img
-                  className="SHaaban-adding-style-for-comment-imange"
-                  src="./../../public/assetsProject/imges/card(12).png"
-                  alt=""
-                />
-                <div className="SHaaban-adding-flex-grow">
-                  <div className="SHaaban-adding-flex-center-spaceBetween">
-                    <p className="SHaaban-comment-userName">Laura Hipster</p>
-                    <p className="SHaaban-comment-date">October 03, 2022</p>
-                  </div>
-                  <p className="SHaaban-comment-content">{comment.text}</p>
-                  <div
-                    onClick={() => {
-                      handleClickingOnReplay();
-                      setIsReply(true);
-                      setReplyCommentId(comment.id);
-                    }}
-                    className="SHaaban-adding-margin-bottom SHaaban-adding-style-with-hover"
-                  >
-                    <img
-                      src="../../public/assetsProject/imageFromHaidar/Vector.svg"
-                      alt=""
-                    />
-                    <span className="SHaaban-adding-style-for-replay">
-                      Replay
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="SHaaban-replay-comment-body">
-                {comment.replys.map((c) => {
-                  return (
-                    <div
-                      className="SHaaban-comment-body SHaaban-adding-flex SHaaban-adding-width"
-                      key={c.id}
-                    >
-                      <img
-                        className="SHaaban-adding-style-for-comment-imange"
-                        src="./../../public/assetsProject/imges/card(12).png"
-                        alt=""
-                      />
-                      <div className="SHaaban-adding-flex-grow">
-                        <div className="SHaaban-adding-flex-center-spaceBetween">
-                          <p className="SHaaban-comment-userName">
-                            Laura Hipster
-                          </p>
-                          <p className="SHaaban-comment-date">
-                            October 03, 2022
-                          </p>
-                        </div>
-                        <p className="SHaaban-comment-content">
-                          {c.replayTetx}
-                        </p>
-                        <div
-                          onClick={() => {
-                            // تتعامل مع الرد على الردود الخاصة بالتعليقات
-                            handleClickingOnReplay();
-                            setReplyOnReplyCommentId(c.id);
-                          }}
-                          className="SHaaban-adding-margin-bottom SHaaban-adding-style-with-hover"
-                        >
-                          <img
-                            src="../../public/assetsProject/imageFromHaidar/Vector.svg"
-                            alt=""
-                          />
-                          <span className="SHaaban-adding-style-for-replay">
-                            Replay
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          );
-        })}
-      </div>
-        {currentComments.map((comment) => {
-              return (
-                <div className="SHaaban-comment-body" key={comment.id}>
-                  <div className="SHaaban-adding-flex">
-                    <img
-                      className="SHaaban-adding-style-for-comment-imange"
-                      src="./../../public/assetsProject/imges/card(12).png"
-                      alt=""
-                    />
-                    <div className="SHaaban-adding-flex-grow">
-                      <div className="SHaaban-adding-flex-center-spaceBetween">
-                        <p className="SHaaban-comment-userName">
-                          Laura Hipster
-                        </p>
-                        <p className="SHaaban-comment-date">October 03, 2022</p>
-                      </div>
-                      <p className="SHaaban-comment-content">{comment.text}</p>
-                      <div
-                        onClick={() => {
-                          handleClickingOnReplay();
-                          setIsReply(true);
-                          setReplyCommentId(comment.id);
-                        }}
-                        className="SHaaban-adding-margin-bottom SHaaban-adding-style-with-hover"
-                      >
-                        <img
-                          src="../../public/assetsProject/imageFromHaidar/Vector.svg"
-                          alt=""
-                        />
-                        <span className="SHaaban-adding-style-for-replay">
-                          Replay
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="SHaaban-replay-comment-body">
-                    {comment.replys.map((c) => {
-                      return (
-                        <div
-                          className="SHaaban-comment-body SHaaban-adding-flex SHaaban-adding-width"
-                          key={c.id}
-                        >
-                          <img
-                            className="SHaaban-adding-style-for-comment-imange"
-                            src="./../../public/assetsProject/imges/card(12).png"
-                            alt=""
-                          />
-                          <div className="SHaaban-adding-flex-grow">
-                            <div className="SHaaban-adding-flex-center-spaceBetween">
-                              <p className="SHaaban-comment-userName">
-                                Laura Hipster
-                              </p>
-                              <p className="SHaaban-comment-date">
-                                October 03, 2022
-                              </p>
-                            </div>
-                            <p className="SHaaban-comment-content">
-                              {c.replayTetx}
-                            </p>
-                            <div
-                              onClick={() => {
-                                // تتعامل مع الرد على الردود الخاصة بالتعليقات
-                                handleClickingOnReplay();
-                                setReplyOnReplyCommentId(c.id);
-                              }}
-                              className="SHaaban-adding-margin-bottom SHaaban-adding-style-with-hover"
-                            >
-                              <img
-                                src="../../public/assetsProject/imageFromHaidar/Vector.svg"
-                                alt=""
-                              />
-                              <span className="SHaaban-adding-style-for-replay">
-                                Replay
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              );
-            })}
-      <Pagination
-        commentsPerPageProp={commentsPerPage}
-        totalCommentsProp={comments.length}
-        paginate={paginate}
-        handlePaginationWithArrowINC={handlePaginationWithArrowINC}
-        handlePaginationWithArrowDEC={handlePaginationWithArrowDEC}
-      />
-    </>
-  );
-};
 
 const Tabs = ({ config }) => {
   const [activeTab, setActiveTab] = useState(0);
@@ -1035,9 +564,9 @@ const Tabs = ({ config }) => {
       <div className="Mk-tab-headers">
         {config.map((entry, index) => (
           <div
-            key={index}
-            className={`Mk-tab-header ${activeTab === index ? "active" : ""}`}
-            onClick={() => setActiveTab(index)}
+          key={index}
+          className={`Mk-tab-header ${activeTab === index ? "active" : ""}`}
+          onClick={() => setActiveTab(index)}
           >
             {entry.header}
           </div>
@@ -1047,32 +576,210 @@ const Tabs = ({ config }) => {
     </div>
   );
 };
+const PaginationReviews = ({
+  commentsPerPage,
+  totalComments,
+  currentPage,
+  paginate,
+  handlePaginationWithArrowINC,
+  handlePaginationWithArrowDEC,
+}) => {
+  const pageNumbers = [];
+
+  for (let i = 1; i <= Math.ceil(totalComments / commentsPerPage); i++) {
+    pageNumbers.push(i);
+  }
+  
+
+  return (
+    <div className="Mk-PaginationContainer">
+      <button
+        className="Mk-PaginationButton"
+        onClick={handlePaginationWithArrowDEC}
+        disabled={currentPage === 1}
+      >
+        <FontAwesomeIcon icon={faChevronLeft} size="xs" />
+      </button>
+      {pageNumbers.map((number) => (
+        <span
+          key={number}
+          className={`Mk-PaginationPageNumber ${
+            number === currentPage ? "Mk-ActivePage" : ""
+          }`}
+          onClick={() => paginate(number)}
+        >
+          {number}
+        </span>
+      ))}
+      <button
+        className="Mk-PaginationButton"
+        onClick={handlePaginationWithArrowINC}
+        disabled={currentPage === pageNumbers.length}
+      >
+        <FontAwesomeIcon  icon={faChevronRight} size="xs"/>
+      </button>
+    </div>
+  );
+};
+
+const Reviews = ({ comments,   }) => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const commentsPerPage = 3; // Updated to 3 comments per page
+
+  const indexOfLastComment = currentPage * commentsPerPage;
+  const indexOfFirstComment = indexOfLastComment - commentsPerPage;
+  const currentComments = comments.slice(indexOfFirstComment, indexOfLastComment);
+
+  const handlePagination = (pageNumber) => setCurrentPage(pageNumber);
+
+  const handlePaginationArrow = (direction) => {
+    if (direction === "next" && currentPage < Math.ceil(comments.length / commentsPerPage)) {
+      setCurrentPage(currentPage + 1);
+    } else if (direction === "prev" && currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+
+  return (
+    <>
+      <h4 className="Mk-ReviewsHeading">Comments</h4>
+      <div className="Mk-40Rating">
+        <h1>4.0</h1>
+        <div className="Mk-StarsRatings">
+          <div className="Mk-Stars">
+            <img style={{ width: "18px" }} src={filled_star} alt="star" />
+            <img style={{ width: "18px" }} src={filled_star} alt="star" />
+            <img style={{ width: "18px" }} src={filled_star} alt="star" />
+            <img style={{ width: "18px" }} src={filled_star} alt="star" />
+            <img style={{ width: "18px" }} src={not_filled_star} alt="star" />
+          </div>
+          <p>based on 146,951 ratings</p>
+        </div>
+      </div>
+      {/* Rating Bar */}
+      {[90, 5, 2, 2, 1].map((percentage, index) => (
+        <div className="Mk-Rating" key={index}>
+          <span className="Mk-Stars-2">
+            {[...Array(5)].map((_, i) => (
+              <img
+                key={i}
+                className="Mk-Starswidth"
+                src={i < percentage / 20 ? filled_star : not_filled_star}
+                alt="star"
+              />
+            ))}
+          </span>
+          <span className="Mk-NumOfRate">{percentage}%</span>
+          <div className="Mk-RatingBar">
+            <div className="Mk-RatingBarInner" style={{ width: `${percentage}%` }}></div>
+          </div>
+        </div>
+      ))}
+      {/* Comment Section */}
+      <div className="SHaaban-comment-section Mk-CommentSection">
+        {currentComments.map((comment) => (
+          <Comment
+            key={comment.id}
+            comment={comment}
+          />
+        ))}
+      </div>
+      {/* Pagination Component */}
+      <PaginationReviews
+        commentsPerPage={commentsPerPage}
+        totalComments={comments.length}
+        currentPage={currentPage}
+        paginate={handlePagination}
+        handlePaginationWithArrowINC={() => handlePaginationArrow("next")}
+        handlePaginationWithArrowDEC={() => handlePaginationArrow("prev")}
+      />
+    </>
+  );
+};
+
+const Comment = ({
+  comment,
+  handleClickingOnReply,
+  setIsReply,
+  setReplyCommentId,
+  setReplyOnReplyCommentId,
+}) => {
+  return (
+    <div className="SHaaban-comment-body">
+      <div className="SHaaban-adding-flex">
+        <img
+          className="SHaaban-adding-style-for-comment-imange"
+          src="./../../public/assetsProject/imges/card(12).png"
+          alt="user"
+        />
+        <div className="SHaaban-adding-flex-grow">
+          <div className="SHaaban-adding-flex-center-spaceBetween">
+            <p className="SHaaban-comment-userName Mk-CommentUsername">Laura Hipster</p>
+            <p className="SHaaban-comment-date Mk-CommentDate">October 03, 2022</p>
+          </div>
+          <p className="SHaaban-comment-content Mk-CommentContent">{comment.text}</p>
+          <div
+            onClick={() => {
+              handleClickingOnReply(comment.id);
+              setIsReply(true);
+              setReplyCommentId(comment.id);
+            }}
+            className="SHaaban-adding-margin-bottom SHaaban-adding-style-with-hover"
+          >
+            <img
+              src="../../public/assetsProject/imageFromHaidar/Vector.svg"
+              alt="reply"
+            />
+            <span className="SHaaban-adding-style-for-replay">Reply</span>
+          </div>
+        </div>
+      </div>
+      <div className="SHaaban-reply-comment-body">
+        {comment.replys.map((reply) => (
+          <div
+            className="SHaaban-comment-body SHaaban-adding-flex SHaaban-adding-width"
+            key={reply.id}
+          >
+            <img
+              className="SHaaban-adding-style-for-comment-imange"
+              src="./../../public/assetsProject/imges/card(12).png"
+              alt="user"
+            />
+            <div className="SHaaban-adding-flex-grow">
+              <div className="SHaaban-adding-flex-center-spaceBetween">
+                <p className="SHaaban-comment-userName">Laura Hipster</p>
+                <p className="SHaaban-comment-date">
+                  October 03, 2022
+                </p>
+              </div>
+              <p className="SHaaban-comment-content ">
+                {reply.replayText}
+              </p>
+              <div
+                onClick={() => {
+                  handleClickingOnReply(comment.id);
+                  setReplyOnReplyCommentId(reply.id);
+                }}
+                className="SHaaban-adding-margin-bottom SHaaban-adding-style-with-hover"
+              >
+                <img
+                  src="../../public/assetsProject/imageFromHaidar/Vector.svg"
+                  alt="reply"
+                />
+                <span className="SHaaban-adding-style-for-replay">Reply</span>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+
 
 const CourseSingleDetail = () => {
-
-  
-  let [email, setEmail] = useState("");
-  let [commentText, setCommentText] = useState("");
-  const textAreaRef = useRef(null);
-  let [autoFocus, setAutoFocus] = useState(false);
-   function handleSubmit() {
-    // (newComment) انشاء اوبجيكت
-    const newComment = {
-      id: comments.length + 1,
-      text: commentText,
-      replys: [],
-    };
-    console.log(comments);
-
-    setComments([newComment, ...comments]); // اضافة الاوبجيكت السابق الى مصفوفة الكومينتس
-
-    // تصفير قيم الانبوتس
-    setName("");
-    setEmail("");
-    setCommentText("");
-    
-  }
-  let [comments, setComments] = useState([
+  const [comments, setComments] = useState([
     {
       id: 1,
       text: "First Quisque nec non amet quis. Varius tellus justo odio parturient mauris curabitur lorem in. Pulvinar sit ultrices mi ut eleifend luctus ut. Id sed faucibus bibendum augue id cras purus. At eget euismod cursus non. Molestie dignissim sed volutpat feugiat vel.",
@@ -1098,135 +805,75 @@ const CourseSingleDetail = () => {
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id itaque in?",
       replys: [],
     },
-    {
-      id: 6,
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing elit. Possimus id itaque in?",
-      replys: [],
-    },
-    {
-      id: 7,
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing elit. Possimus id itaque in?",
-      replys: [],
-    },
-    {
-      id: 8,
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing elit. Possimus id itaque in?",
-      replys: [],
-    },
-    {
-      id: 9,
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing elit. Possimus id itaque in?",
-      replys: [],
-    },
-    {
-      id: 10,
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing elit. Possimus id itaque in?",
-      replys: [],
-    },
-    {
-      id: 11,
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. dolor sit amet consectetur adipisicing elit. Possimus id itaque in?",
-      replys: [],
-    },
   ]);
-  let [name, setName] = useState("");
 
-  let [displayNone, setDisplayNone] = useState(true);
-  let [currentPage, setCurrentPage] = useState(1);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [commentText, setCommentText] = useState("");
+  const [isReply, setIsReply] = useState(false);
 
-  // تتحكم بعدد الكومينتس في صفحة الباجينيشن (Pagination)
-  let [commentsPerPage, setCommentsPerPage] = useState(5);
-  const indexOfLastComment = currentPage * commentsPerPage;
-  const indexOfFirstComment = indexOfLastComment - commentsPerPage;
-  const currentComments = comments.slice(
-    indexOfFirstComment,
-    indexOfLastComment
-  );
-  
-  
+
+  const handleSubmit = () => {
+    if (isReply) {
+      handlePostReply();
+    } else {
+      const newComment = {
+        id: comments.length + 1,
+        text: commentText,
+        replys: [],
+      };
+
+      setComments([newComment, ...comments]);
+    }
+
+    setName("");
+    setEmail("");
+    setCommentText("");
+    
+  };
+
+  const handlePostReply = () => {
+    const updatedComments = comments.map((comment) => {
+      if (comment.id === replyCommentId) {
+        return {
+          ...comment,
+          replys: [
+            ...comment.replys,
+            {
+              id: comment.replys.length + 1,
+              replayText: commentText,
+            },
+          ],
+        };
+      }
+      return comment;
+    });
+
+    setComments(updatedComments);
+  };
+
   return (
     <>
       <div className="Mk-CourseSingleTabsAndCard">
         <div className="Mk-CommentsAndTabs">
-          <Tabs
-            config={[
-              { header: "Overview", component: <Overview /> },
-              { header: "Curriculum", component: <Curriculum /> },
-              { header: "Instructor", component: <Instructor /> },
-              { header: "FAQs", component: <FAQs /> },
-              { header: "Reviews", component: <Reviews /> },
-            ]}
-          />
-          <div>
-            {/* <ContactTitle
-              Title="Leave a comment"
-              subTitle="Your email address will not be published. Required fields are marked *"
-            /> */}
-            <div className="SHaaban-form-area Mk-FormArea">
-            <h4 className="SHaaban-form-area-title">Leave A Comment</h4>
-            <p className="SHaaban-form-area-paragraph">
-              Your email address will not be published. Required fields are
-              marked *
-            </p>
-            <form id="SHaaban-form-body" action="">
-              <div className="SHaaban-styling-form-inputs">
-                <input
-                  type="text"
-                  name=""
-                  id=""
-                  placeholder="Name*"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                />
-                <input
-                  type="email"
-                  name=""
-                  id=""
-                  placeholder="Email*"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-              </div>
-              
-            
-              <textarea
-                className="SHaaban-styling-text-area"
-                name=""
-                id=""
-                placeholder="Comment"
-                value={commentText}
-                onChange={(e) => setCommentText(e.target.value)}
-                ref={textAreaRef}
-                autoFocus={autoFocus}
-                onSubmit={handleSubmit}
-              ></textarea>
-              <input type="checkbox" name="" id="SHaaban-checkbox" value="" />
-              <label
-                id="SHaaban-adding-style-for-label"
-                htmlFor="SHaaban-checkbox"
-              >
-                Save my name, email in this brower for the next time I comment
-              </label>
-            </form>
-            <div className="SHaaban-btn-area">
-              <button
-                onClick={handleSubmit}
-                id="SHaaban-adding-style-for-button"
-              >
-                Posts Comment
-              </button>
-              <button
-                onClick={() => {
-                  handlePostsReplayComment();
-                }}
-                id="SHaaban-adding-style-for-replay-button"
-                className={displayNone ? "d-none" : ""}
-              >
-                Posts Replay Comment
-              </button>
-            </div>
-          </div>
-          </div>
+        <Tabs
+config={[
+  { header: "Overview", component: <Overview /> },
+  { header: "Curriculum", component: <Curriculum /> },
+  { header: "Instructor", component: <Instructor /> },
+  { header: "FAQs", component: <FAQs /> },
+  { header: "Reviews", component: <Reviews
+      comments={comments}
+      // handleReply={handleReply}
+      // handleReplyOnReply={handleReplyOnReply}
+      handleClickingOnReply={() => {}}
+      setIsReply={() => {}}
+      setReplyCommentId={() => {}}
+      setReplyOnReplyCommentId={() => {}}
+    />
+  },
+]}
+/>
         </div>
         <div className="Mk-CourseSingleCard">
           <Card className="Mk-CardStyling">
@@ -1245,8 +892,53 @@ const CourseSingleDetail = () => {
           </Card>
         </div>
       </div>
+      <div className="SHaaban-form-area Mk-FormArea">
+        <h4 className="SHaaban-form-area-title">Leave A Comment</h4>
+        <p className="SHaaban-form-area-paragraph">
+          Your email address will not be published. Required fields are marked *
+        </p>
+        <form id="SHaaban-form-body Mk-FormBody">
+          <div className="SHaaban-styling-form-inputs Mk-formInputs">
+            <input
+            className="Mk-FormInput1"
+              type="text"
+              placeholder="Name*"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+            <input
+            className="Mk-FormInput2"
+              type="email"
+              placeholder="Email*"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+          <textarea
+            className="SHaaban-styling-text-area"
+            placeholder="Comment"
+            value={commentText}
+            onChange={(e) => setCommentText(e.target.value)}
+          ></textarea>
+          <div className="Mk-CheckBoxandP">
+          <input className="Mk-CheckBoxReview" type="checkbox" />
+          <label htmlFor="SHaaban-checkbox" id="SHaaban-adding-style-for-label">
+            Save my name, email in this browser for the next time I comment
+          </label>
+          </div>
+          
+        </form>
+        <div className="SHaaban-btn-area">
+          <button onClick={handleSubmit} id="SHaaban-adding-style-for-button">
+            {isReply ? 'Post Reply' : 'Post Comment'}
+          </button>
+        </div>
+      </div>
     </>
   );
 };
 
 export default CourseSingleDetail;
+
+
+

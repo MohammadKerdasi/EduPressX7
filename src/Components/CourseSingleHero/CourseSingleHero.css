@@ -13,7 +13,6 @@
     padding: 8px 12px;
     background-color: var(--dark-grey);
     border-radius: 8px;
-    width: 81.10625px;
     font-size: 11.383333px ;
 }
 .Mk-by
@@ -29,7 +28,7 @@
 }
 .Mk-Photography-by-Determined-Poitras
 {
-    width: 250.14895833px;
+    width: 262.14895833px;
 }
 .Mk-hero-heading
 {
@@ -38,7 +37,7 @@
 .Mk-hero-heading h1
 {
     color: var(--white);
-    font-size: 27.6125px ;
+    font-size: 25px ;
 }
 .Mk-ul
 {
@@ -62,22 +61,26 @@
     font-size: 16px ;
     margin-left: 5.33px;
 }
-@media (max-width: 1390px)
+ @media (max-width: 1300px)
 {
+   .Mk-Photography-by-Determined-Poitras
+   {
+    width: 252px;
+   }
+   
+} 
+@media (max-width: 850px){
     .Mk-hero-heading
     {
         width: 100%;
     }
-   
-}
-@media (max-width: 850px){
     .Mk-hero-heading h1
     {
         font-size: 25px;
     }
     .Mk-ul
     {
-        width: 400px;
+        width: 350px;
         
     }
     .Mk-list-item
@@ -91,11 +94,12 @@
     .Mk-hero-heading h1
     {
         font-size: 20px;
+        
+        padding: 20px 0px;
     }
     .Mk-ul
     {
-        width: 300px;
-        justify-content: space-between; 
+        justify-content: flex-start; 
     }
     .Mk-list-item
     {
@@ -103,9 +107,10 @@
     }
     .Mk-Photography-by-Determined-Poitras
     {
-        flex-direction: column;
         width: 100%;
-        align-items: flex-start !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        gap: 20px;
     }
     .Mk-by 
     {
@@ -134,7 +139,7 @@
 @media (max-width: 300px){
     .Mk-ul
     {
-        width: 200px;
+        width: 210px;
         justify-content: stretch; 
     }
     .Mk-list-item
