@@ -2,7 +2,6 @@ import { useState } from "react";
 
 // for css
 import "./FeaturedCoursesCards.css";
-
 // for components
 import Title from "../Title/Title";
 // for images
@@ -104,7 +103,7 @@ export default function FeaturedCoursesCards(props) {
   // ]);
 // const FeaturedCards = props.FeaturedCards;
   return (
-      <section className="NA-featuredCards-Section Project-Container">
+      <section className="NA-featuredCards-Section ">  {/* Project-Container */}
         <Title
         header="featured courses"
         desc="Explore our Popular courses"
@@ -147,8 +146,8 @@ export default function FeaturedCoursesCards(props) {
                       <span> &#36;{item.price}</span>
                       {item.id == 2 ? <p className="discount"> &#36;49.0</p> : <p className="free">Free</p>}
                     </div>
-                    {/* <a href="#">{item.viewMore}</a> */}
-                    <Link to="/">{item.viewMore}</Link>
+                   
+                    <Link to="/CourseSingle">{item.viewMore}</Link>
                   </div>
                 </div>
               </div>
