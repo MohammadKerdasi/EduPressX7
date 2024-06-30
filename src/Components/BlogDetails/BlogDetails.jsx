@@ -17,6 +17,7 @@ import {
   faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
 import FilterBar from "../FilterBar/FilterBar";
+import ShowFilter from "./ShowFilter/ShowFilter";
 
 export default function BlogDtails() {
   // مصفوفة مسارات الصور للتبديل بين الصور عند النقر على المقالة السابقة واللاحقة
@@ -328,7 +329,7 @@ export default function BlogDtails() {
   return (
     <>
       <div>
-        <BreadCrumbs />
+        <ShowFilter />
       </div>
       <div className="SHaaban-LISTING">
         <div className="SHaaban-detail">
@@ -475,21 +476,25 @@ export default function BlogDtails() {
                         <p className="SHaaban-comment-date">October 03, 2022</p>
                       </div>
                       <p className="SHaaban-comment-content">{comment.text}</p>
-                      <div
-                        onClick={() => {
-                          handleClickingOnReplay();
-                          setIsReply(true);
-                          setReplyCommentId(comment.id);
-                        }}
-                        className="SHaaban-adding-margin-bottom SHaaban-adding-style-with-hover"
-                      >
-                        <img
-                          src="../../public/assetsProject/imageFromHaidar/Vector.svg"
-                          alt=""
-                        />
-                        <span className="SHaaban-adding-style-for-replay">
-                          Replay
-                        </span>
+                      <div className="SHaaban-adding-margin-bottom">
+                        <div className="SHaaban-replay-area">
+                          <div
+                            onClick={() => {
+                              handleClickingOnReplay();
+                              setIsReply(true);
+                              setReplyCommentId(comment.id);
+                            }}
+                            className=" SHaaban-adding-style-with-hover"
+                          >
+                            <img
+                              src="../../public/assetsProject/imageFromHaidar/Vector.svg"
+                              alt=""
+                            />
+                            <span className="SHaaban-adding-style-for-replay">
+                              Replay
+                            </span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -558,6 +563,7 @@ export default function BlogDtails() {
             <form id="SHaaban-form-body" action="">
               <div className="SHaaban-styling-form-inputs">
                 <input
+                  className="SHaaban-styling-inputs"
                   type="text"
                   name=""
                   id=""
@@ -566,6 +572,7 @@ export default function BlogDtails() {
                   onChange={(e) => setName(e.target.value)}
                 />
                 <input
+                  className="SHaaban-styling-inputs"
                   type="email"
                   name=""
                   id=""
@@ -614,23 +621,6 @@ export default function BlogDtails() {
         <div className="SHaaban-sideBar-blog-listing">
           <FilterBar />
         </div>
-        {/* <div
-          style={{
-            position: "absolute",
-            minHeightheight: "calc( 100vh - 130.6px )",
-            zIndex: "10",
-            background: "white",
-            right: "0",
-            top: "130.6px",
-            // top: "0",
-            border: " solid 1px #eaeaea",
-            padding: "25px",
-            width: "fit-content",
-          }}
-          className="SHaaban-sideBar-blog-listing"
-        >
-          <FilterBar />
-        </div> */}
       </div>
     </>
   );
