@@ -318,6 +318,12 @@
   display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.2s ease-in-out;
+}
+.Mk-PaginationPageNumber:hover
+{
+  background-color: #000;
+  color: #fff;
 }
 
 .Mk-ActivePage {
