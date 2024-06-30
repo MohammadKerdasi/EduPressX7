@@ -3,7 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Breadcrumb } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
 import "./BreadCrumbs.css";
-import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "@fortawesome/fontawesome-free/css/all.min.css"; // استيراد FontAwesome CSS
@@ -24,7 +23,6 @@ function BreadCrumbs() {
         </Breadcrumb.Item>
         {pathnames.map((value, index) => {
           const to = `/${pathnames.slice(0, index + 1).join("/")}`;
-
           return index + 1 === pathnames.length ? (
             <Breadcrumb.Item active key={to}>
               {value}

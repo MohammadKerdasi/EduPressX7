@@ -30,8 +30,7 @@ import {
 import SingleCourseFAQs from "../SinglePageFAQs/SinglePageFAQs.jsx";
 import filled_star from "./../../../public/assetsProject/imges/filled-star.png";
 import not_filled_star from "./../../../public/assetsProject/imges/not-filled-star.png";
-// import Pagination from "../Pagination/Pagination.jsx";
-import './../PagenationReviews/PagenationRevies.css'
+
 
 
 
@@ -656,7 +655,6 @@ const Reviews = ({ comments,   }) => {
           <p>based on 146,951 ratings</p>
         </div>
       </div>
-      {/* Rating Bar */}
       {[90, 5, 2, 2, 1].map((percentage, index) => (
         <div className="Mk-Rating" key={index}>
           <span className="Mk-Stars-2">
@@ -664,7 +662,7 @@ const Reviews = ({ comments,   }) => {
               <img
                 key={i}
                 className="Mk-Starswidth"
-                src={i < percentage / 20 ? filled_star : not_filled_star}
+                src={i < percentage / 1.5 ? filled_star : not_filled_star}
                 alt="star"
               />
             ))}
@@ -675,7 +673,7 @@ const Reviews = ({ comments,   }) => {
           </div>
         </div>
       ))}
-      {/* Comment Section */}
+
       <div className="SHaaban-comment-section Mk-CommentSection">
         {currentComments.map((comment) => (
           <Comment
@@ -684,7 +682,7 @@ const Reviews = ({ comments,   }) => {
           />
         ))}
       </div>
-      {/* Pagination Component */}
+
       <PaginationReviews
         commentsPerPage={commentsPerPage}
         totalComments={comments.length}
@@ -698,80 +696,32 @@ const Reviews = ({ comments,   }) => {
 };
 
 const Comment = ({
-  comment,
-  handleClickingOnReply,
-  setIsReply,
-  setReplyCommentId,
-  setReplyOnReplyCommentId,
+  comment
 }) => {
   return (
     <div className="SHaaban-comment-body">
-      <div className="SHaaban-adding-flex">
+      <div className="SHaaban-adding-flex Mk-AddingFlex">
         <img
           className="SHaaban-adding-style-for-comment-imange"
           src="./../../public/assetsProject/imges/card(12).png"
           alt="user"
         />
         <div className="SHaaban-adding-flex-grow">
-          <div className="SHaaban-adding-flex-center-spaceBetween">
+          <div className="SHaaban-adding-flex-center-spaceBetween Mk-DateAndUserName">
             <p className="SHaaban-comment-userName Mk-CommentUsername">Laura Hipster</p>
             <p className="SHaaban-comment-date Mk-CommentDate">October 03, 2022</p>
           </div>
           <p className="SHaaban-comment-content Mk-CommentContent">{comment.text}</p>
-          <div
-            onClick={() => {
-              handleClickingOnReply(comment.id);
-              setIsReply(true);
-              setReplyCommentId(comment.id);
-            }}
-            className="SHaaban-adding-margin-bottom SHaaban-adding-style-with-hover"
-          >
+          <div className="Mk-ReplayIconMargin">
             <img
               src="../../public/assetsProject/imageFromHaidar/Vector.svg"
               alt="reply"
             />
-            <span className="SHaaban-adding-style-for-replay">Reply</span>
+            <span className="SHaaban-adding-style-for-replay ">Reply</span>
           </div>
         </div>
       </div>
-      <div className="SHaaban-reply-comment-body">
-        {comment.replys.map((reply) => (
-          <div
-            className="SHaaban-comment-body SHaaban-adding-flex SHaaban-adding-width"
-            key={reply.id}
-          >
-            <img
-              className="SHaaban-adding-style-for-comment-imange"
-              src="./../../public/assetsProject/imges/card(12).png"
-              alt="user"
-            />
-            <div className="SHaaban-adding-flex-grow">
-              <div className="SHaaban-adding-flex-center-spaceBetween">
-                <p className="SHaaban-comment-userName">Laura Hipster</p>
-                <p className="SHaaban-comment-date">
-                  October 03, 2022
-                </p>
-              </div>
-              <p className="SHaaban-comment-content ">
-                {reply.replayText}
-              </p>
-              <div
-                onClick={() => {
-                  handleClickingOnReply(comment.id);
-                  setReplyOnReplyCommentId(reply.id);
-                }}
-                className="SHaaban-adding-margin-bottom SHaaban-adding-style-with-hover"
-              >
-                <img
-                  src="../../public/assetsProject/imageFromHaidar/Vector.svg"
-                  alt="reply"
-                />
-                <span className="SHaaban-adding-style-for-replay">Reply</span>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+      
     </div>
   );
 };
@@ -864,12 +814,9 @@ config={[
   { header: "FAQs", component: <FAQs /> },
   { header: "Reviews", component: <Reviews
       comments={comments}
-      // handleReply={handleReply}
-      // handleReplyOnReply={handleReplyOnReply}
       handleClickingOnReply={() => {}}
       setIsReply={() => {}}
-      setReplyCommentId={() => {}}
-      setReplyOnReplyCommentId={() => {}}
+
     />
   },
 ]}

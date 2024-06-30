@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 import FeaturedCoursesCards from './../FeaturedCoursesCards/FeaturedCorsesCards';
 import './CoursePagination.css';
 import './../../index.css';

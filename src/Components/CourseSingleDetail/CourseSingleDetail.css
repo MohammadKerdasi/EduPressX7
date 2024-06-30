@@ -67,7 +67,8 @@
   .Mk-CardStyling
   {
     position: absolute;
-    top: -280px;
+    width: 100%;
+    top: -300px;
     border-radius: 20px;
     border: 1px solid var(--light-gray);
   }
@@ -256,6 +257,10 @@
 {
   width: 100% !important;
 }
+.Mk-ReplayIconMargin
+{
+  margin: 10px 0px !important;
+}
 .Mk-Inputs
 {
   width: 100% !important;
@@ -304,7 +309,7 @@
 
 .Mk-PaginationPageNumber {
   padding: 5px 10px;
-  margin: 0 5px;
+  margin: 5px 5px;
   border: 1px solid var(--light-gray);
   cursor: pointer;
   width: 48px;
@@ -325,9 +330,26 @@
   line-height: 20px !important;
 }
 
+@media (max-width:1521px){
+  .Mk-CardBody
+  {
+    padding: 30px;
+  }
+  .Mk-FormInput1
+  {
+    margin-top: 20px !important;
+    height: 48px !important;
 
+  }
+  .Mk-FormInput2
+  {
+    margin-top: 20px !important;  
+    height: 48px !important;
 
-@media (max-width: 1300px){
+  }
+}
+
+@media (max-width: 1344px){
   .Mk-CourseSingleTabsAndCard
   {
     flex-direction: column-reverse;
@@ -415,6 +437,14 @@
     {
       flex-direction: column;
     }
+    .Mk-DateAndUserName
+    {
+      margin: 5px 0px;
+    }
+    .Mk-DateAndUserName p
+    {
+      font-size: 13px;
+    }
     .Mk-NumOfRate
     {
       width: 60px;
@@ -423,7 +453,9 @@
     {
       flex-wrap: nowrap;
       font-size: 10px;
+      padding: 10px 5px;
     }
+ 
     
   }
   
@@ -463,14 +495,22 @@
     }
     .Mk-PaginationButton
     {
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
     }
     .Mk-PaginationPageNumber
     {
-      width: 40px;
-      height: 40px
+      width: 30px;
+      height: 30px
     }
+    .Mk-AddingFlex{
+      flex-direction: column;
+    }
+    .Mk-CommentContent
+    {
+      margin: 10px 0px;
+    }
+  
   }
   @media (max-width:440px){
     .Mk-CheckBoxandP
@@ -480,9 +520,8 @@
       justify-content: center;
     }
     .Mk-PaginationButton
-    
-    
   }
+  
   @media (max-width:434px){
     .Mk-CheckBoxReview
     {
@@ -500,9 +539,9 @@
       flex-wrap: nowrap;
       font-size: 8px;
     }
-    .Mk-CommentContent, .Mk-CommentUsername , .Mk-CommentDate
+    /* .Mk-CommentContent, .Mk-CommentUsername , .Mk-CommentDate
     {
       font-size: 10px !important;
-    }
+    } */
 
   }

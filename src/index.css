@@ -24,44 +24,11 @@
 
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Exo", sans-serif;
-  font-weight: 600 !important;
-}
-
-p,
-a {
-  font-family: "Jost", sans-serif;
-  font-weight: 400;
-}
 
 .Project-Container {
   padding: 60px 16.4063% 90px 16.4063%;
 }
 
-.Project-Container-FAQs {
-
-  --main-color : #FF782D; 
-  --orange : #F6B40A;
-  --green : #55BE24;
-  --red : #F51A1A;
-  --blue : #2580D5;
-  --light-gray : #EAEAEA;
-  --white-grey: #F5F5F5;
-  --grey : #9D9D9D;
-  --dark-grey : #555555;
-  --white : white;
-
-  /* fonts */
-  --Title : Exo;
-  --paragarph : Jost; 
-
-}
 h1,h2,h3,h4,h5,h6 {
   font-family: "Exo", sans-serif;
   font-weight: 600 !important;
@@ -81,43 +48,19 @@ p,a {
 }
 
 
-@media (max-width:670px) {
 
-  .Project-Container {
-    padding: 60px 10%;
-  }
-
-  .Project-Container {
-    padding: 60px 12%;
-  }
-=======
-@media (max-width:670px)
+@media (min-width:481px) and (max-width:768px)
 {
 
-  .Project-Container {
-    padding: 60px 10%;
-  }
 
   .Project-Container{
     padding: 60px 12%;
   }
 }
 
-@media (max-width:580px)
+@media (max-width:480px)
 {
   .Project-Container{
     padding: 60px 7%;
   }
-  
-
-
-}
-
-
-@media (max-width:580px) {
-  .Project-Container {
-    padding: 60px 7%;
-  }
-
-
 }

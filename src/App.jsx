@@ -4,21 +4,15 @@ import NavBarCom from './Components/NavBar/NavBarCom';
 import Footer from './Components/Footer/Footer';
 import "./App.css";
 
-// import CourseSingle from './Pages/CourseSingle';
+import CourseSingle from './Pages/CourseSingle';
 // import BlogSingle from './Pages/BlogSingle';
-
-//  import CourseSingle from './Pages/CourseSingle';
-// import BlogSingle from './Pages/BlogSingle';
-
 function App() {
   return (
     <>
       <section className="app">
         <NavBarCom />
-
          <Outlet/> 
-         {/* <BlogSingle/>
-          <CourseSingle/>  */}
+         <CourseSingle/>
         <Footer />
       </section>
     </>

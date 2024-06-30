@@ -1,7 +1,4 @@
-h1{
-    margin: 0;
-    padding-bottom: 60px;
-}
+
 .Mk-faq-container {
     margin-top: 60px;
     display: flex;
@@ -12,18 +9,13 @@ h1{
   }
   .Mk-faq 
   {
-    background-color: var(--light-gray);
+    background-color: var(--white-grey);
     width: 100%; 
     margin-bottom: 30px; 
     border-radius: 8px; 
   }
   .Mk-faq-set {
     width: 48.5%; 
-  }
-
-  .Mk-faq {
-    background-color: var(--light-gray);    
-    
   }
   .Mk-faq:last-child {
     margin-bottom: 0; 

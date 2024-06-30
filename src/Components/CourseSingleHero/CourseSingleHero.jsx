@@ -18,7 +18,7 @@ const CourseSingleHero = () => {
         <div className='Mk-hero-heading'>
             <h1>The Ultimate Guide to the best WordPress LMS Plugin</h1>
         </div>
-        <div>
+        <div className='w-100'>
             <ul className='Mk-ul'>
                 <li className='Mk-list-item'><FontAwesomeIcon icon={faClock} style={{color: "var(--main-color)",}} /> <span> 2 Weeks </span> </li>
                 <li className='Mk-list-item'><FontAwesomeIcon icon={faGraduationCap} style={{color: "var(--main-color)",}} /><span> 156 Students </span> </li>

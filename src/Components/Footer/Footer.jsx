@@ -1,7 +1,7 @@
 import './Footer.css'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+ import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { faXTwitter, faPinterest, faInstagram, faFacebookF, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import "./../../index.css"
 import { Link } from 'react-router-dom';
 
@@ -54,7 +54,7 @@ const Footer = () => {
         </div>
       </div>
       </div>
-      <button onClick={scrollToTop} className="rb-scroll-to-top-button"><FontAwesomeIcon icon={faArrowUp} /></button>
+       <button onClick={scrollToTop} className="rb-scroll-to-top-button"><FontAwesomeIcon icon={faArrowUp} /></button> 
       <hr className='rb-footer-hr'/>
       <p className='rb-Copyright'>Copyright © 2024 LearnPress LMS | Powered by ThimPress</p>
     </footer>

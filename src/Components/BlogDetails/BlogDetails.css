@@ -330,8 +330,6 @@
 
  @media (max-width:1366px) and (min-width:1355px) {
 
-     p,
-     span,
      label,
      .SHaaban-styling-form-inputs input::placeholder,
      .SHaaban-styling-text-area::placeholder,
@@ -392,8 +390,7 @@
 
  @media (max-width:1355px) and (min-width:1343px) {
 
-     p,
-     span,
+
      label,
      .SHaaban-styling-form-inputs input::placeholder,
      .SHaaban-styling-text-area::placeholder,
@@ -474,8 +471,7 @@
 
  @media (max-width:1343px) and (min-width:1331px) {
 
-     p,
-     span,
+
      label,
      .SHaaban-styling-form-inputs input::placeholder,
      .SHaaban-styling-text-area::placeholder,
@@ -566,8 +562,7 @@
 
  @media (max-width:1331px) and (min-width:1318px) {
 
-     p,
-     span,
+
      label,
      .SHaaban-styling-form-inputs input::placeholder,
      .SHaaban-styling-text-area::placeholder,
@@ -660,8 +655,7 @@
 
  @media (max-width:1318px) and (min-width:1303px) {
 
-     p,
-     span,
+
      label,
      .SHaaban-styling-form-inputs input::placeholder,
      .SHaaban-styling-text-area::placeholder,
@@ -754,8 +748,7 @@
 
  @media (max-width:1303px) and (min-width:1288px) {
 
-     p,
-     span,
+
      label,
      .SHaaban-styling-form-inputs input::placeholder,
      .SHaaban-styling-text-area::placeholder,
@@ -850,8 +843,7 @@
  /* and (min-width:1288px) */
      {
 
-     p,
-     span,
+
      label,
      .SHaaban-styling-form-inputs input::placeholder,
      .SHaaban-styling-text-area::placeholder,
