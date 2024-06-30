@@ -196,6 +196,7 @@ export default function BlogDtails() {
 
   // قسم الدوال
   // تابع يتعامل مع مصفوفة مسارات الصور (الرجوع الى الخلف)
+  
   function handleDecIndex() {
     if (index > 0) {
       setIndex(index - 1);
@@ -554,7 +555,7 @@ export default function BlogDtails() {
             handlePaginationWithArrowINC={handlePaginationWithArrowINC}
             handlePaginationWithArrowDEC={handlePaginationWithArrowDEC}
           />
-          <div className="SHaaban-form-area">
+          <div className="SHaaban-form-area ">
             <h4 className="SHaaban-form-area-title">Leave A Comment</h4>
             <p className="SHaaban-form-area-paragraph">
               Your email address will not be published. Required fields are
@@ -563,7 +564,7 @@ export default function BlogDtails() {
             <form id="SHaaban-form-body" action="">
               <div className="SHaaban-styling-form-inputs">
                 <input
-                  className="SHaaban-styling-inputs"
+                  className="Mk-FormInput1"
                   type="text"
                   name=""
                   id=""
@@ -572,7 +573,7 @@ export default function BlogDtails() {
                   onChange={(e) => setName(e.target.value)}
                 />
                 <input
-                  className="SHaaban-styling-inputs"
+                  className="Mk-FormInput2"
                   type="email"
                   name=""
                   id=""

@@ -844,7 +844,7 @@ config={[
         <p className="SHaaban-form-area-paragraph">
           Your email address will not be published. Required fields are marked *
         </p>
-        <form id="SHaaban-form-body Mk-FormBody">
+        <form id="SHaaban-form-body">
           <div className="SHaaban-styling-form-inputs Mk-formInputs">
             <input
             className="Mk-FormInput1"

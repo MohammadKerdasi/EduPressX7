@@ -9,24 +9,6 @@ import "./../index.css";
 import BreadCrumbs from "../Components/BreadCrumbs/BreadCrumbs";
 
 export default function Blog() {
-  /*لاتعدلي ----------------------------------------- */
-const [searchBox, setSearchBox] = useState("");
-
-const handleSearchChange = (value) => {
-  setSearchBox(value);
-};
-/*-------------------------------------------------------------------- */
-
-
-// عدلي حسب الفلاتر يلي بال saidbar______________________________________________________________________________________________
-const filteredRecords =Service1.filter((val) => {   /* من هاد السطر
- */    if (searchBox === "") {
-      return val;
-    } else if (val.title.toLowerCase().includes(searchBox.toLowerCase())) {
-      return val;
-    }
-    return null;
-  });   /* لهاد لا تعدلي */
 
   return (
     <div>

@@ -265,6 +265,32 @@
 {
   width: 100% !important;
 }
+.Mk-formInputs
+{
+  margin-top: 30px!important;
+}
+.Mk-FormInput1
+{
+  width: 48%;
+  height: 48px;
+  border: 1px solid var(--dark-grey);
+  border-radius: 8px;
+}
+.Mk-FormInput1::placeholder
+{
+  padding: 10.5px 16px ;
+}
+.Mk-FormInput2
+{
+  width: 48%;
+  height: 48px;
+  border: 1px solid var(--dark-grey);
+  border-radius: 8px;
+}
+.Mk-FormInput2::placeholder
+{
+  padding: 10.5px 16px ;
+}
 .Mk-FormArea
 {
   margin-top: 40px;
@@ -340,18 +366,6 @@
   .Mk-CardBody
   {
     padding: 30px;
-  }
-  .Mk-FormInput1
-  {
-    margin-top: 20px !important;
-    height: 48px !important;
-
-  }
-  .Mk-FormInput2
-  {
-    margin-top: 20px !important;  
-    height: 48px !important;
-
   }
 }
 
@@ -434,6 +448,7 @@
 
 }
   @media (max-width: 768px) {
+
     .Mk-tab-header {
       flex: 100%;
       border-right: none;
@@ -466,6 +481,12 @@
   }
   
   @media (max-width: 480px) {
+    .Mk-CheckBoxandP
+    {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     .Mk-tab-header {
       padding: 10px 5px;
     }
