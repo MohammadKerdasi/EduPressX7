@@ -50,14 +50,70 @@
     color: var(--dark-grey);
 }
 
-@media (max-width:1366px) {
-
+@media (max-width:1710px) {
     .SHaaban-adding-style-for-recent-posts-img {
-        width: 64.0313px;
-        height: 64.0313px;
+        width: 80.1563px;
+        height: 80.1563px;
+    }
+}
+
+@media (max-width:1640px) and (min-width:1520px) {
+
+    .SHaaban-category-area-title,
+    .SHaaban-category-name,
+    .SHaaban-recent-posts-area-title,
+    .SHaaban-adding-style-for-recent-posts-paragraph {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:1520px) and (min-width:1445px) {
+
+    .SHaaban-category-area-title,
+    .SHaaban-category-name,
+    .SHaaban-recent-posts-area-title,
+    .SHaaban-adding-style-for-recent-posts-paragraph {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:1445px) and (min-width:1350px) {
+    .SHaaban-adding-style-for-recent-posts-paragraph {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:1350px) and (min-width:1265px) {
+    .SHaaban-adding-style-for-recent-posts-paragraph {
+        font-size: 12px;
     }
 
+    .SHaaban-adding-style-for-recent-posts-img {
+        width: 61.6406px;
+        height: 61.6406px;
+    }
+}
+
+@media (max-width:1265px) and (min-width:1150px) {
+
     .SHaaban-adding-style-for-recent-posts-paragraph {
-        font-size: 12px !important;
+        font-size: 11px;
+    }
+
+    .SHaaban-adding-style-for-recent-posts-img {
+        width: 61.6406px;
+        height: 61.6406px;
+    }
+}
+
+@media (max-width:1150px) and (min-width:1110px) {
+
+    .SHaaban-adding-style-for-recent-posts-paragraph {
+        font-size: 10px;
+    }
+
+    .SHaaban-adding-style-for-recent-posts-img {
+        width: 61.6406px;
+        height: 61.6406px;
     }
 }

@@ -6,7 +6,7 @@ import "./BreadCrumbs.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "@fortawesome/fontawesome-free/css/all.min.css"; // استيراد FontAwesome CSS
-
+import "./../../index.css"
 
 
 

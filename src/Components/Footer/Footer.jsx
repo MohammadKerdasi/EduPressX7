@@ -7,16 +7,13 @@ import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
-
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    };
-
-  
   return (
     <footer className="rb-footer">
     <div className="rb-footer-columns">

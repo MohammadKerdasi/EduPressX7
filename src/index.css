@@ -33,16 +33,18 @@ h1,h2,h3,h4,h5,h6 {
   font-family: "Exo", sans-serif;
   font-weight: 600 !important;
 }
-p,a {
-  font-family: "Jost",sans-serif;
+
+p,
+a {
+  font-family: "Jost", sans-serif;
   font-weight: 400;
 }
 
-.Project-Container{
-  padding: 60px 16.4063% 90px 16.4063%  ;
+.Project-Container {
+  padding: 60px 16.4063% 90px 16.4063%;
 }
 
-.Project-Container-FAQs{
+.Project-Container-FAQs {
 
   padding: 0px 16.4063%;
 }

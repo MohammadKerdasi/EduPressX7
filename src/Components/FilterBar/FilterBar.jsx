@@ -3,6 +3,7 @@ import "./FilterBar.css";
 import TagsH from "./../TagsH/Tags";
 
 export default function FilterBar() {
+  // مصفوفة الفئات
   const Category = [
     { id: 1, catName: "Commercial", catNum: 15 },
     { id: 2, catName: "Office", catNum: 15 },
@@ -12,6 +13,7 @@ export default function FilterBar() {
     { id: 6, catName: "Single family home", catNum: 15 },
   ];
 
+  // مصفوفة المنشورات الحالية
   const RecentPosts = [
     {
       id: 1,
@@ -38,7 +40,9 @@ export default function FilterBar() {
         {Category.map((cat) => {
           return (
             <div className="SHaaban-category-body" key={cat.id}>
-              <p className="SHaaban-remove-margin">{cat.catName}</p>
+              <p className="SHaaban-remove-margin SHaaban-category-name">
+                {cat.catName}
+              </p>
               <p className="SHaaban-remove-margin">{cat.catNum}</p>
             </div>
           );

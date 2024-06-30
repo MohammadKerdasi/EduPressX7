@@ -18,3 +18,21 @@
 .SHaaban-remove-margin {
     margin: 0 !important;
 }
+
+@media (max-width:1640px) and (min-width:1520px) {
+    .SHaaban-tag-styling {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:1520px) and(max-width:1445px) {
+    .SHaaban-tag-styling {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:1445px) {
+    .SHaaban-tag-styling {
+        font-size: 13px;
+    }
+}
