@@ -109,6 +109,7 @@ const filteredRecords =Service1.filter((val) => {   /* من هاد السطر
           searchBox={searchBox}
           onSearchChange={handleSearchChange}
           items={filteredRecords}
+           titel="All Courses"
         />
        </div>
     </div>

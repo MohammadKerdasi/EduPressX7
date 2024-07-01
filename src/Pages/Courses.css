@@ -1,7 +1,17 @@
 .Courses{
+
     position: relative;
     display: flex;
     gap: 30px;
-
     justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+@media only screen and (max-width: 1580px) {
+    .Courses {
+        flex-wrap: wrap;
+        /* flex-direction: column-reverse; */
+
+    }
 }

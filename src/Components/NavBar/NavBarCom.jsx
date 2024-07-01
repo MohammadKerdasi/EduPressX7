@@ -26,8 +26,8 @@ export default function NavBarCom() {
     }, []);
 
     return (
-        <>
-            <Navbar expand="lg" className={`bg-white ra-nav-comp ${isSticky ? 'rb-navbar-fixed' :'rb-navbar-sticky'}`  }>
+
+            <Navbar expand="lg" className={`bg-white  ra-nav-comp ${isSticky ? 'rb-navbar-fixed' :'rb-navbar-sticky'}`  }>
                 <Container fluid className='flex'>
                     <Navbar.Brand className="rb-logo-nav" href="#"><img className='rb-logo' src='./../../../public/assetsProject/imges/LOGO.png' alt="Logo" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
@@ -62,6 +62,6 @@ export default function NavBarCom() {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </>
+
     );
 }

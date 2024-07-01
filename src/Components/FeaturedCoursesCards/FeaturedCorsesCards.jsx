@@ -121,7 +121,7 @@ export default function FeaturedCoursesCards(props) {
                 <div className="NA-feature-card-content">
                   <div>
                     <p className="NA-card-desc">by <span>{item.detail}</span></p>
-                    <h3 className="NA-card-title">{item.title}</h3>
+                    <h4 className="NA-card-title">{item.title}</h4>
                     <div className="NA-feature-card-deatails NA-flex">
                       <div>
                       <img src={clock} className="NA-icon" alt="clock-icon" />
