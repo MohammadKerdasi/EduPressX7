@@ -834,7 +834,7 @@ config={[
                 <span>$59.0</span>
                 <h4>$49.0</h4>
               </Card.Text>
-              <Button className="Mk-CardBtn">Start now</Button>
+              <Button className="Mk-CardBtn NA-btn NA-btn-effect">Start now</Button>
             </Card.Body>
           </Card>
         </div>
@@ -875,8 +875,8 @@ config={[
           </div>
           
         </form>
-        <div className="SHaaban-btn-area">
-          <button onClick={handleSubmit} id="SHaaban-adding-style-for-button">
+        <div className="SHaaban-btn-area ">
+          <button onClick={handleSubmit} className="NA-btn NA-btn-effect" id="SHaaban-adding-style-for-button">
             {isReply ? 'Post Reply' : 'Post Comment'}
           </button>
         </div>

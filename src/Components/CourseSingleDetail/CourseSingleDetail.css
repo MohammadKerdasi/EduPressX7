@@ -105,7 +105,8 @@
   } 
   .Mk-CardBtn
   {
-    width: 120px;
+    width: 127px !important;
+    height: 48;
     border-radius: 24px;
     background-color: var(--main-color);
     padding: 10px 24px;

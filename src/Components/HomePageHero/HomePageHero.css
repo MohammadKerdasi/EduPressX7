@@ -44,7 +44,6 @@
   border: none;
   background-color: var(--main-color);
   color: white;
-  text-transform: capitalize;
   cursor: pointer;
 }
 .NA-header-img {
