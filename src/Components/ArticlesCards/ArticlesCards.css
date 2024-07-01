@@ -47,3 +47,45 @@
 .NA-article-card:hover h3 {
   color: var(--main-color);
 }
+
+/* large screen */
+@media (min-width: 993px) and (max-width: 1566px) {
+  .NA-article-card {
+    width: 310px;
+  }
+  .NA-article-card-content h3 {
+    font-size: 18px;
+  }
+  .NA-article-card-content p {
+    font-size: 14px;
+  }
+}
+
+/* medium screen && small screen  */
+@media (min-width: 577px) and (max-width: 992px) {
+  .NA-article-card {
+    width: 250px;
+  }
+  .NA-article-card-content h3 {
+    font-size: 16px;
+  }
+  .NA-article-card-content p {
+    font-size: 12px;
+  }
+}
+
+/* mobile screen */
+@media (min-width: 200px) and (max-width: 576px) {
+  .NA-articlesCards {
+    justify-content: center;
+  } 
+  .NA-article-card {
+    width: 340px;
+  }
+  .NA-article-card-content h3 {
+    font-size: 16px;
+  }
+  .NA-article-card-content p {
+    font-size: 12px;
+  }
+}
