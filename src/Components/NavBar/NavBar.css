@@ -1,5 +1,4 @@
-
-/* تعيين أنماط عامة */
+/* تعيين أنماط عامة*/
 *{
     margin: 0;
     padding: 0;
@@ -51,8 +50,8 @@
     font-family: "Exo", sans-serif;
     font-weight: 600;
     font-size: 16px;
-  /*   padding: 0 20px 0 20px; */
-    color: black;
+/*   padding: 0 20px 0 20px; */
+color: black;
 }
 .ra-nav-comp #navbarScrollingDropdown .rb-NavDropdown .rb-nav-link {
     color: black;
@@ -65,9 +64,9 @@
     font-weight: 600;
     font-size: 16px;
     font-size: 16px;
-    color: black;
-    /* padding: 17px 2px 9px 2px; */
-    padding: 26.5px 20px 26.5px 20px;
+    color: black; 
+/* padding: 17px 2px 9px 2px; */
+padding: 26.5px 20px 26.5px 20px;
 }
 
 .ra-nav-comp .navbar-collapse {
@@ -106,10 +105,10 @@
 }
 
 .ra-nav-comp .d-flex a{
-    /* font-family: "Jost", sans-serif; */
-    /* font-weight: 400; */
-    /* font-size: 18px; */
-    width: max-content;
+/* font-family: "Jost", sans-serif; */
+/* font-weight: 400; */
+/* font-size: 18px; */
+width: max-content;
     text-decoration: none;
     color: black;
 }
@@ -124,10 +123,10 @@
     font-size: 18px;
 }
 .ra-nav-comp .d-flex {
-    /* font-family: "Jost", sans-serif; */
-    /* font-weight: 400; */
-    /* font-size: 18px; */
-    gap: 15px;
+/* font-family: "Jost", sans-serif; */
+/* font-weight: 400; */
+/* font-size: 18px; */
+gap: 15px;
     align-items: center;
     padding: 12px 0;
 }
@@ -179,8 +178,8 @@
     .ra-nav-comp h5 {
         font-size: 14px;
         width: max-content;
-        /* padding: 0 0px 0 14px; */
-    }
+/* padding: 0 0px 0 14px; */
+}
 
     .ra-nav-comp .d-flex {
         font-size: 15px;
@@ -226,8 +225,8 @@
 
     .ra-nav-comp h5 {
         font-size: 12px;
-        /* padding: 0px 0px 0 11px; */
-    }
+/* padding: 0px 0px 0 11px; */
+}
 
     .ra-nav-comp #navbarScrollingDropdown {
         font-size: 12px;
@@ -238,3 +237,4 @@
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
 }
+

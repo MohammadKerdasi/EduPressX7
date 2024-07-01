@@ -40,7 +40,7 @@ export default function StudentsFeedback() {
   ]);
 
   return (
-    <section className="NA-feedbacks-Section Project-Container">
+    <section className="NA-feedbacks-Section NA-Project-Container">
       <Title
         header="students feedbacks"
         desc="what students say about us"
@@ -49,7 +49,7 @@ export default function StudentsFeedback() {
       <div className="NA-feedbackCards NA-flex">
         {StudentFeedback.map((item) => {
           return (
-            <div className="NA-feeback-card">
+            <div key={item.id} className="NA-feeback-card">
               <div>
                 <img
                   className="feedback-qoute"
