@@ -41,11 +41,18 @@
     color: white;
 }
 
-@media (max-width:1366px) {
+@media (max-width:1366px) and (min-width:950px) {
+    .SHaaban-pagination-container li {
+        width: 38.15px;
+        height: 38.15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:950px) and (min-width:440px) {
     .SHaaban-pagination-container li {
         width: 34.15px;
         height: 34.15px;
-        font-size: 11px;
+        font-size: 13px;
     }
-
 }
