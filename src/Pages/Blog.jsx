@@ -8,12 +8,11 @@ export default function Blog() {
     <div>
       <BreadCrumbs />
       <div className='Courses Project-Container'>
-        <CoursePagination
+        {/* <CoursePagination
           searchBox={searchBox}
           onSearchChange={handleSearchChange}
           items={filteredRecords}
-           titel="All Courses"
-        />
+        /> */}
        </div>
     </div>
   );

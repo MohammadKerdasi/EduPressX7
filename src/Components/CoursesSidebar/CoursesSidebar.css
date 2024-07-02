@@ -2,7 +2,6 @@
     width: 28.931%;
 }
 .CoursesSidebar .rb-flex-check{
-   width: 270px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,7 +15,6 @@
     margin-right: 2px;
 }
 .CoursesSidebar .rb-tit-sidebar{
-    width: max-content;
     font-size: 20px;
     margin-bottom: 20px;
     /* padding-right: 82.529px; */
@@ -25,136 +23,8 @@
     color: black;
   }
   .CoursesSidebar .rb-flex-check label{
-
-font-family: var(--paragarph);
-font-weight: 400;
-font-size: 18px;
+margin: 0 4px;
   }
-  .CoursesSidebar p{
-    font-size: 18px;
+p{
     margin-bottom: 0;
 }
-.CoursesSidebar input{
-    width: 16px;
-    height: 16px;
-}
-.rb-flex-label{
-    gap: 4px;
-    display: flex;
-    align-items: center;
-}
-.CoursesSidebar .padding-top{
-    padding-top: 30px;
-}
-.rb-filter-sidebar{
-    display: none;
-}
- /* p{ */
-    /* margin-bottom: 0 ; */
-/* } */
-
-/* mediaQuery------------------------------------------------------------ */
-/*  (min-width: 1201px) and */
-@media only screen and (max-width: 1580px) {
-   .CoursesSidebar-courses .CoursesSidebar p{
-        margin-bottom: 0 ;
-    }
-    .CoursesSidebar{
-        opacity: 1;
-        /* transition: opacity 3s ease, transform 3s ease-in; */
-        display: flex;
-        margin-top: 17px;
-
-}
-.CoursesSidebar.hidden {
-    opacity: 0;
-    /*transform: translateX(-100%);
-    */transition: opacity 5s ease;
-    margin-left: 100px;
-    -webkit-transition: opacity 3s ease;
-    -moz-transition: opacity 3s ease;
-    -ms-transition: opacity 3s ease;
-    -o-transition: opacity 3s ease;
-}
-  
-  .CoursesSidebar.visible {
-    opacity: 1;
-    /*transform: translateX(0);
-    */transition: opacity 3s ease;
-    margin-left: 100px;
-    -webkit-transition: opacity 3s ease;
-    -moz-transition: opacity 3s ease;
-    -ms-transition: opacity 3s ease;
-    -o-transition: opacity 3s ease;
-}
-    .CoursesSidebar p{
-        display: none;
-    }
-    .CoursesSidebar .rb-flex-check {
-        width: 180px;}
-
-    .CoursesSidebar .rb-tit-sidebar {
-
-            font-size: 18px;
-            margin-bottom: 12px;
-            padding-right: 0px;
-        }
-        .rb-filter-sidebar {
-        display: block;
-        padding: 11px 14px;
-        border-radius: 17px;
-        display: flex;
-        gap: 10px;
-        font-size: 21px;
-        color: var(--main-color);
-        height: 43px;
-        width: 100%;
-        border: 1px solid var(--main-color);
-        background-color: white;
-        box-shadow: 0px 0px 5px 0px #e9e5e5ee;
-        justify-content: center;
-        transition: width 5s ease;
-        -webkit-transition: width 5s ease;
-        -moz-transition: width 5s ease;
-        -ms-transition: width 5s ease;
-        -o-transition: width 5s ease;
-}
-        .rb-filter-sidebar:hover,
-        .rb-filter-sidebar:focus-visible{
-            box-shadow: 0px 0px 5px 0px #fdbf00;
-        }
-        .rb-filter-sidebar p{
-            font-size: 18px !important;
-        }
-        .CoursesSidebar .padding-top {
-            width: 132px;
-            padding-top: 0px;
-        }
-}
-@media only screen and (max-width: 1200px){
-    /* .CoursesSidebar{ */
-
-        /* flex-wrap: wrap;} */
-
-        .CoursesSidebar.visible {
-            width: 399px;
-            flex-wrap: wrap;
-            opacity: 1;
-            /* transform: translateX(0); */
-            transition: opacity 3s ease;
-            margin-left: 16px;
-            -webkit-transition: opacity 3s ease;
-            -moz-transition: opacity 3s ease;
-            -ms-transition: opacity 3s ease;
-            -o-transition: opacity 3s ease;
-        }
-
-}
-@media only screen and  (max-width: 462px){
-    .CoursesSidebar.visible {
-        width: 233px;
-
-
-    }
-}
-/* @media (max-width: 767px){} */

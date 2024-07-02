@@ -3,11 +3,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 450px;;
+  gap: 170.75px;
   margin-bottom: 40px;
-}
-.rb-CoursePagination  .rb-view-icon{
-  font-size: 20px;
 }
 .rb-CoursePagination .rb-CoursePagination-head button:hover,.rb-CoursePagination .rb-CoursePagination-head .rb-view-active{
   color: var(--main-color);
@@ -15,17 +12,11 @@
   .rb-CoursePagination .rb-CoursePagination-head h1{
     font-size: 36px;
     padding-bottom: 0;
-    width: max-content;
   }
   .rb-CoursePagination .rb-CoursePagination-head .search-view .rb-search-with-icone .rb-searchbox {
     border: none;
     border-bottom: 1px solid var(--dark-grey);
-    width: 270px;
-}
-.rb-CoursePagination .rb-CoursePagination-head .search-view .rb-search-with-icone .rb-searchbox:hover ,
-.rb-CoursePagination .rb-CoursePagination-head .search-view .rb-search-with-icone .rb-searchbox:focus-visible{
-  outline: none;
-  border-bottom: 2px solid var(--main-color);
+    width: 192.03px;
 }
   .rb-CoursePagination .rb-CoursePagination-head .search-view{
     display: flex;
@@ -39,8 +30,6 @@
   .rb-CoursePagination .rb-CoursePagination-head .search-view .rb-search-with-icone .rb-search-pag{
     position: absolute;
     right: 0;
-    bottom:6.67px;
-    font-size: 20px;
   }
   .rb-search-with-icone{
     position: relative;
@@ -56,34 +45,27 @@
     gap: 12px;
     margin-top: 30px ;
   }
-  .rb-CoursePagination .rb-ul-pagination .rb-PageActive
-  {
-    transition: margin-bottom 0.3s ease , color 0.3s ease  ,background-color 0.3s ease;
+  .rb-CoursePagination .rb-ul-pagination .rb-PageActive{
     background-color: black;
     color: var(--white);
-    width: 48px;
-    height: 48px;
-    margin-bottom:10px;
-    padding-top: 10px;
+    width: 35px;
+    height: 35px;
+    padding-top: 5px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     text-align: center;
-    -webkit-transition: margin-bottom 0.3s ease , color 0.3s ease  ,background-color 0.3s ease;
-    -moz-transition: margin-bottom 0.3s ease , color 0.3s ease  ,background-color 0.3s ease;
-    -ms-transition: margin-bottom 0.3s ease , color 0.3s ease  ,background-color 0.3s ease;
-    -o-transition: margin-bottom 0.3s ease , color 0.3s ease  ,background-color 0.3s ease;
-}
+  }
   
   .rb-CoursePagination .rb-ul-pagination li
   {
     cursor: pointer;
-    width: 48px;
-    height: 48px;
-    border: 1px solid var(--light-gray);
-    padding-top: 10px;
+    width: 35px;
+    height: 35px;
+   border: 1px solid var(--light-gray);
+    padding-top: 5px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -95,132 +77,3 @@
     font-size: 10px;
     padding-bottom: 1px;
   }
-
-/*mediaQuery-------------------------------------------------------------------------------------  */
-
-@media (min-width: 1201px) and (max-width: 1491px){
-  .rb-CoursePagination .rb-CoursePagination-head h1 {
-    font-size: 27px;}
-    .rb-CoursePagination .rb-CoursePagination-head .search-view .rb-search-with-icone .rb-searchbox {
-
-      width: 230px;
-  }
-  .rb-CoursePagination .rb-CoursePagination-head {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 355px;
-    margin-bottom: 40px;
-}
-.rb-listing {
-  width: 840px;
-  height: 207px;
- 
-}
-.rb-listing .NA-feature-card-img img {
-  width: 330px;
-  height: 205px;
-}
-.rb-listing .NA-feature-card-deatails {
-  padding-bottom: 35px;
-}
-.rb-listing .NA-card-price a {
-  width: max-content;
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
-  text-transform: capitalize;
-  font-weight: 500;
-}
-.rb-listing .NA-card-price {
-  gap: 317px;
-}
-}
-/*  -------------------------------------------------------------------------------------*/
-@media (min-width: 992px) and (max-width: 1200px){
-  .rb-CoursePagination .rb-CoursePagination-head h1 {
-    font-size: 27px;}
-
-    .rb-CoursePagination .rb-CoursePagination-head .search-view .rb-search-with-icone .rb-searchbox {
-
-      width: 187px;
-  }
-
-  .rb-CoursePagination .rb-CoursePagination-head {
-    justify-content: flex-start;
-    gap: 240px;
-}
-.rb-CoursePagination .rb-view-icon {
-  font-size: 18px;
-}
-.rb-listing .NA-feature-card-img img {
-  height: 189px;
-  width: 286px;
-}
-.rb-listing {
-  width: 658px;
-  height: 190px;
-}
-.rb-listing .NA-feature-card-content {
-  padding: 13px;
-}
-.NA-feature-card-content > div .NA-card-title {
-  font-size: 17px;
-  margin-bottom: 14px;}
-  .rb-listing .NA-feature-card-deatails {
-    padding-bottom: 12px;
-}
-.rb-listing .NA-card-price {
-
-  padding-top: 16px;
-  justify-content: flex-start;
-  width: 342px;
-}
-.NA-card-price a {
-  font-size: 15px;
-}
-.NA-icon-desc {
-  font-size: 10px !important;
-  width: max-content;
-}
-.NA-feature-card-deatails .NA-icon {
-
-  margin-right: 3px;
-
-}
-}
-@media only screen and  (max-width: 991px){
-.listing-button{
-  display: none;
-}
-.rb-CoursePagination .rb-CoursePagination-head h1 {
-  font-size: 26px;
-
-}
-.rb-CoursePagination .rb-CoursePagination-head .search-view .rb-search-with-icone .rb-searchbox {
-  width: 159px;
-}
-.rb-CoursePagination .rb-CoursePagination-head {
-
-  justify-content: flex-start;
-  gap: 182px;
-  margin-bottom: 40px;
-}
-}
-@media (max-width: 767px){
-  .rb-CoursePagination .rb-CoursePagination-head h1 {
-    font-size: 22px;
-}
-.rb-CoursePagination .rb-CoursePagination-head .search-view .rb-search-with-icone .rb-searchbox {
-
-  width: 129px;
-}
-.rb-CoursePagination .rb-CoursePagination-head {
-  display: flex;
-  gap: 49px;
-  margin-bottom: 40px;
-  flex-direction: column;
-  align-content: flex-start;
-  align-items: flex-start;
-}
-}
