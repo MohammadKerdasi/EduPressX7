@@ -7,9 +7,14 @@ export default function Blog() {
   return (
     <div>
       <BreadCrumbs />
-      <div className="Project-Container">
-         <h1>hi from Blog</h1> 
-      </div>
+      <div className='Courses Project-Container'>
+        <CoursePagination
+          searchBox={searchBox}
+          onSearchChange={handleSearchChange}
+          items={filteredRecords}
+           titel="All Courses"
+        />
+       </div>
     </div>
   );
 }

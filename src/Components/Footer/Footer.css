@@ -17,17 +17,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 29px
+    gap: 30px
   }
 
   .rb-footer-column {
-    max-width: 256.25px;
+    max-width: 410px;
     display: flex;
     flex-direction: column;
 }
   
   .rb-footer-column h4 {
-    font-size: 19px;
+    font-size: 20px;
     margin-bottom: 32px;
     color: black;
   }
@@ -52,9 +52,9 @@
     display: flex;
     gap: 10px;
   }
-  .rb-footer-column a{
-    width: max-content;
-  }
+  /* .rb-footer-column a{ */
+    /* width: max-content; */
+  /* } */
   .rb-social-icons a {
     text-decoration: none;
     color: inherit;
@@ -77,28 +77,10 @@
 }
 
 
-  .rb-footer .rb-footer-addr {
-    max-width: 268px;
-  }
- .rb-scroll-to-top-button{
-  background-color: black;
-  right: 4.9%;
-  bottom: 9.19%;
-  position: absolute;
-  width: 37.5px;
-  height: 37.5px;
-  border: none;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  font-size: 1px;
-} 
-.rb-scroll-to-top-button *{
-color: var(--white);
-font-size: 22px;
-}
+  /* .rb-footer .rb-footer-addr { */
+    /* max-width: 268px; */
+  /* } */
+
 
   .rb-footer-hr{
     border: solid 1px #eaeaea;
@@ -109,7 +91,6 @@ font-size: 22px;
     margin: 0;
     padding:  32px 0;
     text-align: center;
-    color: #555555;
     color: var(--dark-grey  );
 font-size: 18px;
 }
@@ -120,13 +101,20 @@ font-size: 18px;
   /* Media Queries--------------------------------------------------------------------------------------------- */
 
 /* Styles for large screens */
-@media only screen and (min-width: 992px) and (max-width: 1200px)  {
-
+@media only screen and (min-width: 992px) and (max-width: 1366px)  {
   .rb-footer .rb-footer-columns {
-  
-    gap: 7px;
+
+    justify-content: space-between; 
+    gap: 32px;
+}
+.rb-footer-column {
+  width: 181px;
 }
 
+.rb-footer-column h4 {
+
+  width: max-content;
+}
 
 }
 
@@ -145,11 +133,18 @@ font-size: 18px;
 @media only screen and (max-width: 767px) {
 
   .rb-footer .rb-footer-columns {
-
-    gap: 19px;
+    padding: 90px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 12px;
 }
 .rb-footer .rb-footer-addr {
   max-width: 219px;
+}
+.rb-footer-column {
+  margin-right: 89px;
+
 }
 
 }

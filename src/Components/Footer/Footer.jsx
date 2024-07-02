@@ -7,13 +7,10 @@ import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
 
+
+
+  
   return (
     <footer className="rb-footer">
     <div className="rb-footer-columns">
@@ -51,7 +48,7 @@ const Footer = () => {
         </div>
       </div>
       </div>
-       <button onClick={scrollToTop} className="rb-scroll-to-top-button"><FontAwesomeIcon icon={faArrowUp} /></button> 
+     
       <hr className='rb-footer-hr'/>
       <p className='rb-Copyright'>Copyright © 2024 LearnPress LMS | Powered by ThimPress</p>
     </footer>
