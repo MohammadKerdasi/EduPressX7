@@ -13,7 +13,7 @@ export default function Tags() {
 
   return (
     <>
-      <p className="SHaaban-remove-margin">Tags:</p>
+      {/* <p className="SHaaban-remove-margin">Tags:</p> */}
 
       {Tags.map((tag) => {
         return (
