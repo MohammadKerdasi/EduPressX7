@@ -391,10 +391,15 @@ export default function BlogDtails() {
               suscipit deserunt eveniet magni. Qui.
             </p>
             <div id="SHaaban-tags-area">
+              <p className="SHaaban-adding-style-for-blog-content-title">
+                Tags :
+              </p>
               <TagsH />
             </div>
             <div id="Shaaban-contact-area">
-              <p className="SHaaban-remove-margin">Share:</p>
+              <p className="SHaaban-adding-style-for-blog-content-title">
+                Share:
+              </p>
               <ul className="SHaaban-contact-list">
                 <li>
                   <a href="#">
@@ -451,7 +456,7 @@ export default function BlogDtails() {
             </div>
           </div>
           <div className="SHaaban-comment-section">
-            <h2>Comments</h2>
+            <h4>Comments</h4>
             <p id="SHaaban-comment-info">
               {comments.length +
                 comments.reduce((total, comment) => {
@@ -558,7 +563,7 @@ export default function BlogDtails() {
             <h4 className="SHaaban-form-area-title">Leave A Comment</h4>
             <p className="SHaaban-form-area-paragraph">
               Your email address will not be published. Required fields are
-              marked *
+              marked*
             </p>
             <form id="SHaaban-form-body" action="">
               <div className="SHaaban-styling-form-inputs">
@@ -591,13 +596,15 @@ export default function BlogDtails() {
                 ref={textAreaRef}
                 autoFocus={autoFocus}
               ></textarea>
-              <input type="checkbox" name="" id="SHaaban-checkbox" value="" />
-              <label
-                id="SHaaban-adding-style-for-label"
-                htmlFor="SHaaban-checkbox"
-              >
-                Save my name, email in this brower for the next time I comment
-              </label>
+              <div className="SHaaban-adding-flex-align-center">
+                <input type="checkbox" name="" id="SHaaban-checkbox" value="" />
+                <label
+                  id="SHaaban-adding-style-for-label"
+                  htmlFor="SHaaban-checkbox"
+                >
+                  Save my name, email in this brower for the next time I comment
+                </label>
+              </div>
             </form>
             <div className="SHaaban-btn-area">
               <button

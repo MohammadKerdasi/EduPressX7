@@ -17,17 +17,19 @@
  }
 
  .SHaaban-title-and-meta h1 {
+     /*===Modified===*/
      font-size: 36px !important;
      padding: 0 !important;
      font-weight: 600 !important;
-     margin-bottom: 35px !important;
+     margin-bottom: 20px !important;
  }
 
  .SHaaban-title-and-meta-info-container {
+     /*===Modified===*/
      display: flex;
      gap: 25px;
      justify-content: flex-start;
-     margin-bottom: 35px !important;
+     margin-bottom: 40px !important;
  }
 
  .SHaaban-title-and-meta-info {
@@ -46,26 +48,30 @@
  }
 
  #SHaaban-adding-style-for-main-image {
-     margin-bottom: 35px;
+     /*===Modified===*/
+     margin-bottom: 30px;
      width: 100%;
      height: 603px;
  }
 
  #SHaaban-blog-content {
-     margin-bottom: 35px !important;
+     /*===Modified===*/
+     margin-bottom: 60px !important;
  }
 
  #SHaaban-blog-content p {
-     margin-bottom: 35px;
+     /*===Modified===*/
+     margin-bottom: 40px;
      color: var(--dark-grey);
  }
 
  #SHaaban-tags-area {
+     /*===Modified===*/
      display: flex;
      flex-wrap: wrap;
      gap: 8px;
      align-items: center;
-     margin-bottom: 35px;
+     margin-bottom: 40px;
  }
 
  .SHaaban-remove-margin {
@@ -135,8 +141,10 @@
  }
 
  .SHaaban-slider-content-title {
+     /*===Modified===*/
      color: var(--dark-grey);
      font-size: 18px;
+     margin-bottom: 12px !important;
  }
 
  .SHaaban-slider-content-mainText {
@@ -148,6 +156,12 @@
 
  .SHaaban-comment-section {
      width: 100%;
+ }
+
+ .SHaaban-comment-section h4 {
+     /* ===New Added=== */
+     font-size: 20px;
+     margin-bottom: 12px;
  }
 
  .SHaaban-text-end {
@@ -168,20 +182,27 @@
      color: var(--dark-grey);
  }
 
- #SHaaban-comment-info {
+ #SHaaban-comment-info,
+ #SHaaban-comment-info span {
+     /* ===Modified=== */
+     font-size: 18px !important;
      margin-bottom: 30px;
  }
 
  .SHaaban-comment-userName {
+     /* ===Modified=== */
      font-weight: 600;
      font-size: 16px;
+     margin-bottom: 8px !important;
  }
 
  .SHaaban-comment-content {
+     /* ===Modified=== */
      font-weight: 400;
      font-size: 18px;
      line-height: 27px;
      color: var(--dark-grey);
+     margin-bottom: 8px !important;
  }
 
  .SHaaban-adding-margin-left {
@@ -302,14 +323,17 @@
  }
 
  .SHaaban-form-area-title {
+     /* ===Modified=== */
      font-size: 20px;
-     font-weight: 600;
+     font-weight: 600 !important;
+     margin-bottom: 12px;
  }
 
  .SHaaban-form-area-paragraph {
+     /* ===Modified=== */
      color: #555555;
-     font-weight: 400;
-     line-height: 27px;
+     font-weight: 400 !important;
+     margin-bottom: 30px;
  }
 
  .SHaaban-sideBar-blog-listing {
@@ -339,6 +363,19 @@
 
  .sHaaban-remove-arrow-in-large-screen {
      visibility: hidden;
+ }
+
+ .SHaaban-adding-flex-align-center {
+     /* ===New Added=== */
+     display: flex;
+     align-items: center;
+ }
+
+ .SHaaban-adding-style-for-blog-content-title {
+     /* ===New Added=== */
+     font-size: 18px;
+     font-weight: 400 !important;
+     margin-bottom: 0 !important;
  }
 
  @media (max-width:1919px) {
@@ -483,6 +520,7 @@
      }
 
      .SHaaban-slider-content-mainText,
+     #SHaaban-adding-style-for-label,
      .SHaaban-title-and-meta-info p,
      .SHaaban-title-and-meta-info span,
      #SHaaban-blog-content p,
@@ -531,6 +569,7 @@
      }
 
      .SHaaban-slider-content-mainText,
+     #SHaaban-adding-style-for-label,
      .SHaaban-title-and-meta-info p,
      .SHaaban-title-and-meta-info span,
      #SHaaban-blog-content p,
@@ -595,6 +634,7 @@
      }
 
      .SHaaban-slider-content-mainText,
+     #SHaaban-adding-style-for-label,
      .SHaaban-title-and-meta-info p,
      .SHaaban-title-and-meta-info span,
      #SHaaban-blog-content p,
@@ -659,6 +699,7 @@
      }
 
      .SHaaban-slider-content-mainText,
+     #SHaaban-adding-style-for-label,
      .SHaaban-title-and-meta-info p,
      .SHaaban-title-and-meta-info span,
      #SHaaban-blog-content p,
@@ -728,6 +769,7 @@
      }
 
      .SHaaban-slider-content-mainText,
+     #SHaaban-adding-style-for-label,
      .SHaaban-title-and-meta-info p,
      .SHaaban-title-and-meta-info span,
      #SHaaban-blog-content p,
@@ -785,7 +827,7 @@
      }
  }
 
- @media (max-width:760px) and (min-width:550px) {
+ @media (max-width:760px) and (min-width:701px) {
 
      .SHaaban-title-and-meta h1,
      .SHaaban-comment-section {
@@ -796,6 +838,8 @@
          height: 270px !important;
      }
 
+     .SHaaban-slider-content-mainText,
+     #SHaaban-adding-style-for-label,
      .SHaaban-title-and-meta-info p,
      .SHaaban-title-and-meta-info span,
      #SHaaban-blog-content p,
@@ -862,17 +906,19 @@
      }
  }
 
- @media (max-width:550px) and (min-width:502px) {
+ @media (max-width:701px) and (min-width:550px) {
 
      .SHaaban-title-and-meta h1,
      .SHaaban-comment-section {
-         font-size: 17px !important;
+         font-size: 16px !important;
      }
 
      #SHaaban-adding-style-for-main-image {
          height: 270px !important;
      }
 
+     .SHaaban-slider-content-mainText,
+     #SHaaban-adding-style-for-label,
      .SHaaban-title-and-meta-info p,
      .SHaaban-title-and-meta-info span,
      #SHaaban-blog-content p,
@@ -901,6 +947,7 @@
 
      .SHaaban-styling-text-area {
          height: 90.1771px;
+         margin: 5px 0;
      }
 
      .SHaaban-LISTING {
@@ -940,12 +987,12 @@
 
      .SHaaban-styling-inputs {
          width: 100% !important;
-         margin: 10px 0;
+         margin: 5px 0;
          height: 28.75px !important;
      }
  }
 
- @media (max-width:502px) and (min-width:495px) {
+ @media (max-width:550px) and (min-width:502px) {
 
      .SHaaban-title-and-meta h1,
      .SHaaban-comment-section {
@@ -956,6 +1003,8 @@
          height: 235px !important;
      }
 
+     .SHaaban-slider-content-mainText,
+     #SHaaban-adding-style-for-label,
      .SHaaban-title-and-meta-info p,
      .SHaaban-title-and-meta-info span,
      #SHaaban-blog-content p,
@@ -988,6 +1037,7 @@
 
      .SHaaban-styling-text-area {
          height: 90.1771px;
+         margin: 5px 0;
      }
 
      .SHaaban-LISTING {
@@ -1020,11 +1070,20 @@
          left: 0;
          background: #faf6f6;
      }
+
+     .SHaaban-styling-inputs {
+         width: 100% !important;
+         margin: 5px 0;
+         height: 28.75px !important;
+     }
+
+     .SHaaban-title-and-meta-info-container {
+         gap: 5px;
+         flex-direction: column;
+     }
  }
 
- @media (max-width:495px)
- /* and (min-width:495px) */
-     {
+ @media (max-width:502px) and (min-width:350px) {
 
      .SHaaban-title-and-meta h1,
      .SHaaban-comment-section {
@@ -1035,6 +1094,10 @@
          height: 235px !important;
      }
 
+     .SHaaban-slider-content-mainText,
+     #SHaaban-adding-style-for-label,
+     .SHaaban-title-and-meta-info p,
+     .SHaaban-title-and-meta-info span,
      #SHaaban-blog-content p,
      #SHaaban-comment-info,
      #SHaaban-comment-info span,
@@ -1070,6 +1133,7 @@
 
      .SHaaban-styling-text-area {
          height: 90.1771px;
+         margin: 5px 0;
      }
 
      .SHaaban-LISTING {
@@ -1079,8 +1143,6 @@
      .SHaaban-detail {
          width: 100% !important;
      }
-
-
 
      .SHaaban-sideBar-blog-listing {
          display: none;
@@ -1103,5 +1165,16 @@
      .SHaaban-replay-comment-body {
          left: 0;
          background: #faf6f6;
+     }
+
+     .SHaaban-styling-inputs {
+         width: 100% !important;
+         margin: 5px 0;
+         height: 28.75px !important;
+     }
+
+     .SHaaban-title-and-meta-info-container {
+         gap: 5px;
+         flex-direction: column;
      }
  }
