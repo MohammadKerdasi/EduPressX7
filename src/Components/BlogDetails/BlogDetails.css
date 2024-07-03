@@ -17,7 +17,6 @@
  }
 
  .SHaaban-title-and-meta h1 {
-     /*===Modified===*/
      font-size: 36px !important;
      padding: 0 !important;
      font-weight: 600 !important;
@@ -25,7 +24,6 @@
  }
 
  .SHaaban-title-and-meta-info-container {
-     /*===Modified===*/
      display: flex;
      gap: 25px;
      justify-content: flex-start;
@@ -48,25 +46,21 @@
  }
 
  #SHaaban-adding-style-for-main-image {
-     /*===Modified===*/
      margin-bottom: 30px;
      width: 100%;
      height: 603px;
  }
 
  #SHaaban-blog-content {
-     /*===Modified===*/
      margin-bottom: 60px !important;
  }
 
  #SHaaban-blog-content p {
-     /*===Modified===*/
      margin-bottom: 40px;
      color: var(--dark-grey);
  }
 
  #SHaaban-tags-area {
-     /*===Modified===*/
      display: flex;
      flex-wrap: wrap;
      gap: 8px;
@@ -141,7 +135,6 @@
  }
 
  .SHaaban-slider-content-title {
-     /*===Modified===*/
      color: var(--dark-grey);
      font-size: 18px;
      margin-bottom: 12px !important;
@@ -159,7 +152,6 @@
  }
 
  .SHaaban-comment-section h4 {
-     /* ===New Added=== */
      font-size: 20px;
      margin-bottom: 12px;
  }
@@ -184,20 +176,17 @@
 
  #SHaaban-comment-info,
  #SHaaban-comment-info span {
-     /* ===Modified=== */
      font-size: 18px !important;
      margin-bottom: 30px;
  }
 
  .SHaaban-comment-userName {
-     /* ===Modified=== */
      font-weight: 600;
      font-size: 16px;
      margin-bottom: 8px !important;
  }
 
  .SHaaban-comment-content {
-     /* ===Modified=== */
      font-weight: 400;
      font-size: 18px;
      line-height: 27px;
@@ -260,15 +249,6 @@
      margin-top: 30px;
  }
 
- .SHaaban-styling-form-inputs .SHaaban-styling-inputs {
-     width: 485px;
-     height: 48px;
-     outline: none;
-     border: 1px solid var(--grey);
-     border-radius: 8px;
-     padding-left: 16px;
- }
-
  .SHaaban-styling-form-inputs input::placeholder,
  .SHaaban-styling-text-area::placeholder {
      color: var(--grey);
@@ -296,41 +276,13 @@
      margin-left: 6px;
  }
 
- #SHaaban-adding-style-for-button,
- #SHaaban-adding-style-for-replay-button {
-     margin: 20px 0;
-     height: 48px;
-     border: none;
-     border-radius: 24px;
-     color: white;
-     background-color: #FF782D;
-     font-size: 18px;
-     font-weight: 500;
-     transition: all .2s;
- }
-
- #SHaaban-adding-style-for-button:hover,
- #SHaaban-adding-style-for-replay-button:hover {
-     background-color: #E56D29;
- }
-
- #SHaaban-adding-style-for-replay-button {
-     width: 230px;
- }
-
- #SHaaban-adding-style-for-button {
-     width: 170px;
- }
-
  .SHaaban-form-area-title {
-     /* ===Modified=== */
      font-size: 20px;
      font-weight: 600 !important;
      margin-bottom: 12px;
  }
 
  .SHaaban-form-area-paragraph {
-     /* ===Modified=== */
      color: #555555;
      font-weight: 400 !important;
      margin-bottom: 30px;
@@ -348,6 +300,11 @@
  .SHaaban-btn-area {
      display: flex;
      gap: 20px;
+     margin: 20px 0;
+ }
+
+ .SHaaban-styling-width {
+     min-width: max-content;
  }
 
  .d-none {
@@ -389,10 +346,6 @@
 
      .SHaaban-sideBar-blog-listing {
          width: 20.93% !important;
-     }
-
-     .SHaaban-styling-form-inputs .SHaaban-styling-inputs {
-         width: 49%;
      }
 
      .SHaaban-slider-arrow {
@@ -538,15 +491,6 @@
          margin-bottom: 7px !important;
      }
 
-     #SHaaban-adding-style-for-button,
-     #SHaaban-adding-style-for-replay-button {
-         font-size: 17px;
-     }
-
-     .SHaaban-styling-form-inputs .SHaaban-styling-inputs {
-         height: 38.75px;
-     }
-
      .SHaaban-styling-text-area {
          height: 90.1771px;
      }
@@ -585,15 +529,6 @@
 
      .SHaaban-slider-content-title {
          margin-bottom: 6px !important;
-     }
-
-     #SHaaban-adding-style-for-button,
-     #SHaaban-adding-style-for-replay-button {
-         font-size: 16px;
-     }
-
-     .SHaaban-styling-form-inputs .SHaaban-styling-inputs {
-         height: 38.75px;
      }
 
      .SHaaban-styling-text-area {
@@ -652,15 +587,6 @@
          margin-bottom: 6px !important;
      }
 
-     #SHaaban-adding-style-for-button,
-     #SHaaban-adding-style-for-replay-button {
-         font-size: 16px;
-     }
-
-     .SHaaban-styling-form-inputs .SHaaban-styling-inputs {
-         height: 38.75px;
-     }
-
      .SHaaban-styling-text-area {
          height: 90.1771px;
      }
@@ -715,15 +641,6 @@
 
      .SHaaban-slider-content-title {
          margin-bottom: 6px !important;
-     }
-
-     #SHaaban-adding-style-for-button,
-     #SHaaban-adding-style-for-replay-button {
-         font-size: 15px;
-     }
-
-     .SHaaban-styling-form-inputs .SHaaban-styling-inputs {
-         height: 38.75px;
      }
 
      .SHaaban-styling-text-area {
@@ -787,15 +704,6 @@
          margin-bottom: 6px !important;
      }
 
-     #SHaaban-adding-style-for-button,
-     #SHaaban-adding-style-for-replay-button {
-         font-size: 15px;
-     }
-
-     .SHaaban-styling-form-inputs .SHaaban-styling-inputs {
-         height: 38.75px;
-     }
-
      .SHaaban-styling-text-area {
          height: 90.1771px;
      }
@@ -857,17 +765,21 @@
          font-size: 12px;
      }
 
+     /* 
+     .SHaaban-slider {
+         width: 30% !important;
+         border-radius: 15px;
+     }
+
+     .SHaaban-slider-arrow {
+         flex-grow: 0;
+         width: 40px !important;
+         height: 40px !important;
+         margin: 10px;
+     } */
+
      .SHaaban-slider-content-title {
          margin-bottom: 6px !important;
-     }
-
-     #SHaaban-adding-style-for-button,
-     #SHaaban-adding-style-for-replay-button {
-         font-size: 15px;
-     }
-
-     .SHaaban-styling-form-inputs .SHaaban-styling-inputs {
-         height: 38.75px;
      }
 
      .SHaaban-styling-text-area {
@@ -906,7 +818,7 @@
      }
  }
 
- @media (max-width:701px) and (min-width:550px) {
+ @media (max-width:701px) and (min-width:577px) {
 
      .SHaaban-title-and-meta h1,
      .SHaaban-comment-section {
@@ -933,21 +845,30 @@
      }
 
      .SHaaban-slider-content-mainText {
-         font-size: 12px;
+         /* font-size: 12px; */
+         display: none;
+     }
+
+     .SHaaban-slider {
+         width: 35% !important;
+         border-radius: 15px;
+     }
+
+     .SHaaban-slider-arrow {
+         flex-grow: 0;
+         width: 40px !important;
+         height: 40px !important;
+         margin: 10px;
      }
 
      .SHaaban-slider-content-title {
          margin-bottom: 6px !important;
-     }
-
-     #SHaaban-adding-style-for-button,
-     #SHaaban-adding-style-for-replay-button {
          font-size: 14px;
      }
 
      .SHaaban-styling-text-area {
          height: 90.1771px;
-         margin: 5px 0;
+         margin: 20px 0;
      }
 
      .SHaaban-LISTING {
@@ -981,18 +902,12 @@
          background: #faf6f6;
      }
 
-     .SHaaban-styling-form-inputs {
+     /* .SHaaban-styling-form-inputs {
          flex-direction: column;
-     }
-
-     .SHaaban-styling-inputs {
-         width: 100% !important;
-         margin: 5px 0;
-         height: 28.75px !important;
-     }
+     } */
  }
 
- @media (max-width:550px) and (min-width:502px) {
+ @media (max-width:577px) and (min-width:502px) {
 
      .SHaaban-title-and-meta h1,
      .SHaaban-comment-section {
@@ -1019,25 +934,30 @@
      }
 
      .SHaaban-slider-content-mainText {
-         font-size: 12px;
+         /* font-size: 12px; */
+         display: none;
+     }
+
+     .SHaaban-slider {
+         width: 35% !important;
+         border-radius: 15px;
+     }
+
+     .SHaaban-slider-arrow {
+         flex-grow: 0;
+         width: 28px !important;
+         height: 28px !important;
+         margin: 10px;
      }
 
      .SHaaban-slider-content-title {
          margin-bottom: 6px !important;
-     }
-
-     #SHaaban-adding-style-for-button,
-     #SHaaban-adding-style-for-replay-button {
-         font-size: 14px;
-     }
-
-     .SHaaban-styling-form-inputs .SHaaban-styling-inputs {
-         height: 38.75px;
+         font-size: 12px;
      }
 
      .SHaaban-styling-text-area {
          height: 90.1771px;
-         margin: 5px 0;
+         margin: 20px 0;
      }
 
      .SHaaban-LISTING {
@@ -1069,12 +989,6 @@
      .SHaaban-replay-comment-body {
          left: 0;
          background: #faf6f6;
-     }
-
-     .SHaaban-styling-inputs {
-         width: 100% !important;
-         margin: 5px 0;
-         height: 28.75px !important;
      }
 
      .SHaaban-title-and-meta-info-container {
@@ -1115,25 +1029,30 @@
      }
 
      .SHaaban-slider-content-mainText {
-         font-size: 12px;
+         /* font-size: 12px; */
+         display: none;
+     }
+
+     .SHaaban-slider {
+         width: 40% !important;
+         border-radius: 15px;
+     }
+
+     .SHaaban-slider-arrow {
+         flex-grow: 0;
+         width: 25px !important;
+         height: 25px !important;
+         margin: 10px;
      }
 
      .SHaaban-slider-content-title {
          margin-bottom: 6px !important;
-     }
-
-     #SHaaban-adding-style-for-button,
-     #SHaaban-adding-style-for-replay-button {
-         font-size: 14px;
-     }
-
-     .SHaaban-styling-form-inputs .SHaaban-styling-inputs {
-         height: 38.75px;
+         font-size: 11px;
      }
 
      .SHaaban-styling-text-area {
          height: 90.1771px;
-         margin: 5px 0;
+         margin: 20px 0;
      }
 
      .SHaaban-LISTING {
@@ -1167,14 +1086,121 @@
          background: #faf6f6;
      }
 
-     .SHaaban-styling-inputs {
+     .SHaaban-title-and-meta-info-container {
+         gap: 5px;
+         flex-direction: column;
+     }
+
+     .SHaaban-styling-width {
+         min-width: 100% !important;
+     }
+
+     .SHaaban-btn-area {
+         flex-direction: column;
+         gap: 15px;
+     }
+ }
+
+ @media (max-width:350px) {
+
+     .SHaaban-title-and-meta h1,
+     .SHaaban-comment-section {
+         font-size: 13px !important;
+     }
+
+     #SHaaban-adding-style-for-main-image {
+         height: 200px !important;
+     }
+
+     .SHaaban-slider-content-mainText,
+     #SHaaban-adding-style-for-label,
+     .SHaaban-title-and-meta-info p,
+     .SHaaban-title-and-meta-info span,
+     #SHaaban-blog-content p,
+     #SHaaban-comment-info,
+     #SHaaban-comment-info span,
+     .SHaaban-comment-userName,
+     .SHaaban-comment-date,
+     .SHaaban-comment-content,
+     .SHaaban-adding-style-for-replay,
+     .SHaaban-form-area-paragraph {
+         font-size: 11px !important;
+     }
+
+     .SHaaban-title-and-meta-info p,
+     .SHaaban-title-and-meta-info span {
+         font-size: 9px;
+     }
+
+     .SHaaban-slider-content-mainText {
+         /* font-size: 12px; */
+         display: none;
+     }
+
+     .SHaaban-slider {
+         width: 44% !important;
+         border-radius: 15px;
+     }
+
+     .SHaaban-slider-arrow {
+         flex-grow: 0;
+         width: 20px !important;
+         height: 20px !important;
+         margin: 10px;
+     }
+
+     .SHaaban-slider-content-title {
+         margin-bottom: 6px !important;
+         font-size: 10px;
+     }
+
+     .SHaaban-styling-text-area {
+         height: 90.1771px;
+         margin: 20px 0;
+     }
+
+     .SHaaban-LISTING {
+         flex-flow: column wrap;
+     }
+
+     .SHaaban-detail {
          width: 100% !important;
-         margin: 5px 0;
-         height: 28.75px !important;
+     }
+
+     .SHaaban-sideBar-blog-listing {
+         display: none;
+     }
+
+     .SHaaban-adding-style-for-comment-imange {
+         width: 31.5625px;
+         height: 31.5625px;
+     }
+
+     .SHaaban-title-and-meta-info img {
+         width: 12px;
+         height: 12px;
+     }
+
+     .SHaaban-adding-width {
+         width: 100% !important;
+     }
+
+     .SHaaban-replay-comment-body {
+         left: 0;
+         background: #faf6f6;
      }
 
      .SHaaban-title-and-meta-info-container {
          gap: 5px;
          flex-direction: column;
+     }
+
+     .SHaaban-styling-width {
+         min-width: 100% !important;
+     }
+
+     .SHaaban-btn-area {
+         flex-direction: column;
+         gap: 15px;
      }
  }

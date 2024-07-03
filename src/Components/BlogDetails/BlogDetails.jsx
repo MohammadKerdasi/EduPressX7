@@ -195,11 +195,21 @@ export default function BlogDtails() {
   });
 
   // قسم الدوال
+
+  // تابع ينتقل بالصفحة الي الاعلى
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 100,
+      behavior: "smooth",
+    });
+  };
+
   // تابع يتعامل مع مصفوفة مسارات الصور (الرجوع الى الخلف)
-  
+
   function handleDecIndex() {
     if (index > 0) {
       setIndex(index - 1);
+      scrollToTop();
     }
   }
 
@@ -207,6 +217,7 @@ export default function BlogDtails() {
   function handleIncIndex() {
     if (index < MainImages.length - 1) {
       setIndex(index + 1);
+      scrollToTop();
     }
   }
 
@@ -437,9 +448,9 @@ export default function BlogDtails() {
               </div>
               <div className="SHaaban-slider-content-first-child">
                 <p className="SHaaban-slider-content-title">Prev Articles</p>
-                <p className="SHaaban-slider-content-mainText">
+                <h4 className="SHaaban-slider-content-mainText">
                   Best LearnPress WordPress Theme Collection for 2023
-                </p>
+                </h4>
               </div>
             </div>
             <div className="SHaaban-slider">
@@ -447,9 +458,9 @@ export default function BlogDtails() {
                 <p className="SHaaban-slider-content-title SHaaban-text-end">
                   Next Articles
                 </p>
-                <p className="SHaaban-slider-content-mainText SHaaban-text-end">
+                <h4 className="SHaaban-slider-content-mainText SHaaban-text-end">
                   Best LearnPress WordPress Theme Collection for 2023
-                </p>
+                </h4>
               </div>
               <div onClick={handleIncIndex} className="SHaaban-slider-arrow">
                 <FontAwesomeIcon icon={faChevronRight} />
@@ -610,7 +621,8 @@ export default function BlogDtails() {
             <div className="SHaaban-btn-area">
               <button
                 onClick={handleSubmit}
-                id="SHaaban-adding-style-for-button"
+                // id="SHaaban-adding-style-for-button"
+                className="NA-btn NA-btn-effect SHaaban-styling-width"
               >
                 Posts Comment
               </button>
@@ -618,8 +630,12 @@ export default function BlogDtails() {
                 onClick={() => {
                   handlePostsReplayComment();
                 }}
-                id="SHaaban-adding-style-for-replay-button"
-                className={displayNone ? "d-none" : ""}
+                // id="SHaaban-adding-style-for-replay-button"
+                className={
+                  displayNone
+                    ? "d-none"
+                    : "NA-btn NA-btn-effect SHaaban-styling-width"
+                }
               >
                 Posts Replay Comment
               </button>
