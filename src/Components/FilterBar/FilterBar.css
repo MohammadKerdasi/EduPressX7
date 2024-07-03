@@ -8,13 +8,11 @@
 }
 
 .SHaaban-category-name {
-    /* ===New Added=== */
     font-size: 18px;
     font-weight: 400 !important;
 }
 
 .SHaaban-adding-style-for-recent-posts-paragraph {
-    /* ===New Added=== */
     font-weight: 500 !important;
 }
 
@@ -33,7 +31,6 @@
 .SHaaban-category-area-title,
 .SHaaban-recent-posts-area-title,
 .SHaaban-tags-area-title {
-    /* ===Modified=== */
     font-size: 20px;
     font-weight: 600 !important;
 }
