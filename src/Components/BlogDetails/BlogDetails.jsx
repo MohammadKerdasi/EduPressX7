@@ -448,9 +448,9 @@ export default function BlogDtails() {
               </div>
               <div className="SHaaban-slider-content-first-child">
                 <p className="SHaaban-slider-content-title">Prev Articles</p>
-                <p className="SHaaban-slider-content-mainText">
+                <h4 className="SHaaban-slider-content-mainText">
                   Best LearnPress WordPress Theme Collection for 2023
-                </p>
+                </h4>
               </div>
             </div>
             <div className="SHaaban-slider">
@@ -458,9 +458,9 @@ export default function BlogDtails() {
                 <p className="SHaaban-slider-content-title SHaaban-text-end">
                   Next Articles
                 </p>
-                <p className="SHaaban-slider-content-mainText SHaaban-text-end">
+                <h4 className="SHaaban-slider-content-mainText SHaaban-text-end">
                   Best LearnPress WordPress Theme Collection for 2023
-                </p>
+                </h4>
               </div>
               <div onClick={handleIncIndex} className="SHaaban-slider-arrow">
                 <FontAwesomeIcon icon={faChevronRight} />
