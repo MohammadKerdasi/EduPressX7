@@ -14,55 +14,54 @@
   transition: all 0.5s;
 }
 /* -------------------------------------------------------------------------------- */
-.rb-listing{
-  width: 704.343px;
-  height: 179.864px;
-    margin: 15px 0;
-    display: flex;
-    border-radius: 20px;
-    border: 1px solid var(--light-gray);
-    transition: all .5s;
-}
+.rb-listing{ 
+  width: 990px; 
+  height: 250px; 
+  margin: 15px 0; 
+  display: flex; 
+  border-radius: 20px; 
+  border: 1px solid var(--light-gray); 
+  transition: all .5s; 
+  -webkit-transition: all .5s; 
+  -moz-transition: all .5s; 
+  -ms-transition: all .5s; 
+  -o-transition: all .5s; 
 
-.rb-listing .NA-feature-card-img img {
-  width: 291.69px;
-  height: 178px;
-}
-.rb-listing .NA-feature-card-content {
-  padding: 13px;
-}
-.rb-listing .NA-feature-card-content > div .NA-card-desc {
-  margin-bottom: 8.53px;
-  color: var(--dark-grey);
-}
-.rb-listing .NA-feature-card-content > div .NA-card-title {
-  font-size: 19px;
-  margin-bottom: 11.38px;
-  font-weight: 600;
-  text-transform: capitalize;
-  transition: .3s;
-}
-.rb-listing .NA-card-price a {
-  text-decoration: none;
-  color: black;
-  font-size: 17px;
-  text-transform: capitalize;
-  font-weight: 500;
-}
-.rb-listing .NA-feature-card-content > div:nth-child(1) {
-  padding-bottom: 32px;
+} 
+.rb-listing .NA-feature-card-content { 
+padding: 20px; 
+} 
+.rb-listing  .NA-feature-card-img { 
+position: relative; 
+width: max-content; 
+} 
 
-}
-.rb-listing .NA-card-note {
-  position: absolute;
-  width: 86px;
-  height: 28px;
-  padding: 8px 12px 8px 12px;
-  border-radius: 8px;
-  background-color: black;
-  color: white;
-  top: 16px;
-  left: 11px;
+.rb-listing  .NA-feature-card-img img{ 
+height: 249px; 
+border-radius: 14px 0 0 14px; 
+} 
+.Courses .NA-featuredCards { 
+justify-content: space-between; 
+align-items: center; 
+flex-wrap: wrap; 
+} 
+.Courses .NA-feature-card { 
+width: 480px;} 
+
+.rb-listing .NA-feature-card-content > div:nth-child(1) { 
+padding-bottom: 0; 
+height: max-content; 
+} 
+
+
+.rb-listing .NA-card-price { 
+border-top: 1px solid #EAEAEA;  
+padding-top: 16px; 
+justify-content: space-between; 
+gap: 363px; 
+} 
+.rb-listing .NA-feature-card-deatails{ 
+padding-bottom: 67px; 
 }
 /* ---------------------------------------------------------------------------- */
 .NA-feature-card:hover .NA-card-title {

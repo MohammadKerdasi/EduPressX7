@@ -1,14 +1,11 @@
-import { useState, useEffect } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import "./NavBar.css";
-import "./../../index.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faMagnifyingGlass,
-} from "@fortawesome/free-solid-svg-icons"; // استيراد الأيقونة المطلوبة
-
+import  { useState, useEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Nav, NavDropdown, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import './NavBar.css'
+import "./../../index.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'; // استيراد الأيقونة المطلوبة
 
 export default function NavBarCom() {
     const [isSticky, setIsSticky] = useState(false);
@@ -29,8 +26,8 @@ export default function NavBarCom() {
     }, []);
 
     return (
-        <>
-            <Navbar expand="lg" className={`bg-white ra-nav-comp ${isSticky ? 'rb-navbar-fixed' :'rb-navbar-sticky'}`  }>
+
+            <Navbar expand="lg" className={`bg-white  ra-nav-comp ${isSticky ? 'rb-navbar-fixed' :'rb-navbar-sticky'}`  }>
                 <Container fluid className='flex'>
                     <Navbar.Brand className="rb-logo-nav" href="#"><img className='rb-logo' src='./../../../public/assetsProject/imges/LOGO.png' alt="Logo" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
@@ -53,7 +50,7 @@ export default function NavBarCom() {
                             </NavDropdown></h5>
                             <Link className='rb-nav-link' to={'#'}><h5>LearnPress Add-On</h5></Link>
                             <Link className='rb-nav-link' to={'#'}><h5>Premium Theme</h5></Link>
-
+                         
                         </Nav>
                         <div className="d-flex">
                             <Link className='rb-log-reg' to={'/LoginRegister'}>Login/Register</Link>
@@ -61,10 +58,10 @@ export default function NavBarCom() {
                                 <FontAwesomeIcon className='rb-search-icon' icon={faMagnifyingGlass} />
                             </button>
                         </div>
-
+                       
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </>
+
     );
 }

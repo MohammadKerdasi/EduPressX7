@@ -4,9 +4,6 @@
 
 .CoursesSidebar .rb-flex-check {
     width: 270px;
-
-.CoursesSidebar .rb-flex-check{
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,12 +18,8 @@
     margin-right: 2px;
 }
 
-
 .CoursesSidebar .rb-tit-sidebar {
     width: max-content;
-
-.CoursesSidebar .rb-tit-sidebar{
-
     font-size: 20px;
     margin-bottom: 20px;
     /* padding-right: 82.529px; */
@@ -34,7 +27,6 @@
 
 .CoursesSidebar .rb-flex-check input:checked label {
     color: black;
-
 }
 
 .CoursesSidebar .rb-flex-check label {
@@ -60,7 +52,7 @@
     align-items: center;
 }
 
-.CoursesSidebar .padding-top {
+.CoursesSidebar .rb-padding-top {
     padding-top: 30px;
 }
 
@@ -180,7 +172,7 @@
         font-size: 18px !important;
     }
 
-    .CoursesSidebar .padding-top {
+    .CoursesSidebar .rb-padding-top {
         width: 132px;
         padding-top: 0px;
     }
@@ -241,11 +233,4 @@
         -ms-transition: all 1s ease;
         -o-transition: all 1s ease;
     }
-  }
-  .CoursesSidebar .rb-flex-check label{
-margin: 0 4px;
-  }
-p{
-    margin-bottom: 0;
-
 }

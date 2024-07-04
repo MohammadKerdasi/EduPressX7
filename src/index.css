@@ -67,7 +67,7 @@ a {
   }
 }
 
-@media (max-width:670px)
+/* @media (max-width:670px)
 {
 
   .Project-Container {
@@ -77,7 +77,7 @@ a {
   .Project-Container{
     padding: 60px 12%;
   }
-}
+} */
 
 
 /* medium screen */
