@@ -274,7 +274,7 @@
 {
   width: 48%;
   height: 48px;
-  border: 1px solid var(--dark-grey);
+  border: 1px solid var(--grey);
   border-radius: 8px;
 }
 .Mk-FormInput1::placeholder
@@ -285,7 +285,7 @@
 {
   width: 48%;
   height: 48px;
-  border: 1px solid var(--dark-grey);
+  border: 1px solid var(--grey);
   border-radius: 8px;
 }
 .Mk-FormInput2::placeholder
