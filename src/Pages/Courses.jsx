@@ -9,7 +9,7 @@ import './Courses.css'
 const Service1 = [
   {
   id: 1,
-      img: './../../public/assetsProject/imges/card(1).png',
+      img: './../../public/assetsProject/imges/card-rb(1).png',
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -28,7 +28,7 @@ const Service1 = [
   },
   {
   id: 2,
-      img: './../../public/assetsProject/imges/card(2).png',
+      img: './../../public/assetsProject/imges/card-rb(2).png',
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -47,7 +47,7 @@ const Service1 = [
   },
   {
   id: 3,
-      img: './../../public/assetsProject/imges/card(3).png',
+      img: './../../public/assetsProject/imges/card-rb(3).png',
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -66,7 +66,7 @@ const Service1 = [
   },
   {
   id: 4,
-      img: './../../public/assetsProject/imges/card(4).png',
+      img: './../../public/assetsProject/imges/card-rb(4).png',
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -85,7 +85,7 @@ const Service1 = [
   },
   {
   id: 5,
-      img: './../../public/assetsProject/imges/card(5).png',
+      img: './../../public/assetsProject/imges/card-rb(5).png',
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -104,7 +104,7 @@ const Service1 = [
   },
   {
   id: 6,
-      img: './../../public/assetsProject/imges/card(6).png',
+      img: './../../public/assetsProject/imges/card-rb(6).png',
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -123,7 +123,7 @@ const Service1 = [
   },
   {
   id: 7,
-      img: './../../public/assetsProject/imges/card(7).png',
+      img: './../../public/assetsProject/imges/card-rb(7).png',
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -142,7 +142,7 @@ const Service1 = [
   },
   {
   id: 8,
-      img: './../../public/assetsProject/imges/card(8).png',
+      img: './../../public/assetsProject/imges/card-rb(8).png',
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -161,7 +161,7 @@ const Service1 = [
   },
   {
   id: 9,
-      img: './../../public/assetsProject/imges/card(9).png',
+      img: './../../public/assetsProject/imges/card-rb(9).png',
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -180,7 +180,7 @@ const Service1 = [
   },
   {
   id: 10,
-      img: './../../public/assetsProject/imges/card(1).png',
+      img: './../../public/assetsProject/imges/card-rb(1).png',
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -199,7 +199,7 @@ const Service1 = [
   },
   {
   id: 11,
-      img: './../../public/assetsProject/imges/card(2).png',
+      img: './../../public/assetsProject/imges/card-rb(2).png',
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -218,7 +218,7 @@ const Service1 = [
   },
   {
   id: 12,
-      img: './../../public/assetsProject/imges/card(3).png',
+      img: './../../public/assetsProject/imges/card-rb(3).png',
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -237,7 +237,7 @@ const Service1 = [
   },
   {
   id: 13,
-      img: './../../public/assetsProject/imges/card(4).png',
+      img: './../../public/assetsProject/imges/card-rb(4).png',
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -256,7 +256,7 @@ const Service1 = [
   },
   {
   id: 14,
-      img: './../../public/assetsProject/imges/card(5).png',
+      img: './../../public/assetsProject/imges/card-rb(5).png',
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -275,7 +275,7 @@ const Service1 = [
   },
   {
   id: 15,
-      img: './../../public/assetsProject/imges/card(6).png',
+      img: './../../public/assetsProject/imges/card-rb(6).png',
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -294,7 +294,7 @@ const Service1 = [
   },
   {
   id: 16,
-      img: './../../public/assetsProject/imges/card(7).png',
+      img: './../../public/assetsProject/imges/card-rb(7).png',
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -313,7 +313,7 @@ const Service1 = [
   },
   {
   id: 17,
-      img: './../../public/assetsProject/imges/card(8).png',
+      img: './../../public/assetsProject/imges/card-rb(8).png',
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -332,7 +332,7 @@ const Service1 = [
   },
   {
   id: 18,
-      img: './../../public/assetsProject/imges/card(9).png',
+      img: './../../public/assetsProject/imges/card-rb(9).png',
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -401,6 +401,7 @@ const [selectedFilters, setSelectedFilters] = useState({
           onSearchChange={handleSearchChange}
           items={filteredRecords}
           titel="All Courses"
+          x="True"
         />
         <CoursesSidebar
           filters={selectedFilters}

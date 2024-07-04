@@ -1,7 +1,7 @@
 
 .rb-CoursePagination .rb-CoursePagination-head {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
   gap: 450px;;
   margin-bottom: 40px;
@@ -39,8 +39,8 @@
   .rb-CoursePagination .rb-CoursePagination-head .search-view .rb-search-with-icone .rb-search-pag{
     position: absolute;
     right: 0;
-    bottom:6.67px;
-    font-size: 20px;
+    bottom: 4.67px;
+    font-size: 19px;
   }
   .rb-search-with-icone{
     position: relative;
@@ -110,12 +110,12 @@
     align-items: center;
     justify-content: flex-start;
     gap: 355px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .rb-listing {
-  width: 840px;
+  width: 807px;
   height: 207px;
- 
+  margin: 8px 0;
 }
 .rb-listing .NA-feature-card-img img {
   width: 330px;
@@ -133,7 +133,7 @@
   font-weight: 500;
 }
 .rb-listing .NA-card-price {
-  gap: 317px;
+  gap: 280px;
 }
 }
 /*  -------------------------------------------------------------------------------------*/
@@ -147,7 +147,7 @@
   }
 
   .rb-CoursePagination .rb-CoursePagination-head {
-    justify-content: flex-start;
+    justify-content: space-between;
     gap: 240px;
 }
 .rb-CoursePagination .rb-view-icon {
@@ -158,23 +158,23 @@
   width: 286px;
 }
 .rb-listing {
-  width: 658px;
+  width: 666px;
   height: 190px;
 }
 .rb-listing .NA-feature-card-content {
-  padding: 13px;
+  padding: 11px;
 }
 .NA-feature-card-content > div .NA-card-title {
   font-size: 17px;
   margin-bottom: 14px;}
   .rb-listing .NA-feature-card-deatails {
-    padding-bottom: 12px;
+    padding-bottom: 46px;
 }
 .rb-listing .NA-card-price {
-
-  padding-top: 16px;
+  padding-top: 11px;
   justify-content: flex-start;
-  width: 342px;
+  width: 348px;
+  gap: 202px;
 }
 .NA-card-price a {
   font-size: 15px;
@@ -183,44 +183,158 @@
   font-size: 10px !important;
   width: max-content;
 }
-.NA-feature-card-deatails .NA-icon {
+.rb-CoursePagination .NA-feature-card-deatails .NA-icon {
 
   margin-right: 3px;
 
 }
+.rb-CoursePagination .rb-ul-pagination li {
+  cursor: pointer;
+  width: 41px;
+  height: 41px;
+  padding-top: 6px;
+
 }
-@media only screen and  (max-width: 991px){
-.listing-button{
-  display: none;
+.rb-CoursePagination .rb-ul-pagination .rb-PageActive {
+  width: 41px;
+  height: 41px;
+  padding-top: 6px;
+}
+.rb-CoursePagination .rb-ul-pagination {
+  gap: 7px;
+}}
+/* =============================================================================================== */
+@media only screen and (min-width: 768px) and  (max-width: 991px){
+
+  .rb-CoursePagination .rb-listing {
+    width: 511px;
+    height: 134px;
+    margin: 4px 0;
+    display: flex;
+    border-radius: 20px;
+    border: 1px solid var(--light-gray);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+.rb-listing .NA-feature-card-img {
+    position: relative;
+    width: max-content;
+}
+.rb-listing .NA-feature-card-img img {
+    height: 132px;
+}
+
+.rb-listing .NA-feature-card-content {
+    padding: 8px;
+}
+.NA-feature-card-content > div .NA-card-desc {
+    margin-bottom: 5px;
+    color: var(--dark-grey);
+}
+.rb-listing .NA-feature-card-deatails {
+    padding-bottom: 24px;
+}
+.rb-CoursePagination .NA-feature-card-deatails .NA-icon {
+
+    height: 12px;
+}
+.rb-CoursePagination .NA-icon-desc {
+    width: max-content;
+    font-size: 8px !important;
+    height: 11px;
+    text-transform: capitalize;
+    color: var(--dark-grey);
+}
+.rb-listing .NA-card-price {
+    border-top: 1px solid #EAEAEA;
+    padding-top: 8px;
+    justify-content: flex-start;
+    gap: 133px;
+}
+.rb-CoursePagination .NA-card-price a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.rb-CoursePagination .NA-feature-card-content > div .NA-card-title {
+  font-size: 13px;
+  margin-bottom: 9px;
 }
 .rb-CoursePagination .rb-CoursePagination-head h1 {
   font-size: 26px;
-
 }
 .rb-CoursePagination .rb-CoursePagination-head .search-view .rb-search-with-icone .rb-searchbox {
-  width: 159px;
+  width: 142px;
+}
+.rb-CoursePagination .rb-CoursePagination-head .search-view .rb-search-with-icone .rb-search-pag,
+.rb-CoursePagination .rb-view-icon {
+  font-size: 18px;
+}
+.rb-CoursePagination .rb-CoursePagination-head .search-view {
+  gap: 15px;
 }
 .rb-CoursePagination .rb-CoursePagination-head {
-
-  justify-content: flex-start;
-  gap: 182px;
-  margin-bottom: 40px;
+  gap: 156px;
+  margin-bottom: 27px;
 }
+.rb-CoursePagination .rb-ul-pagination li,.rb-CoursePagination .rb-ul-pagination .rb-PageActive {
+  width: 39px;
+  height: 39px;
+  padding-top: 6px;
 }
-@media (max-width: 767px){
-  .rb-CoursePagination .rb-CoursePagination-head h1 {
-    font-size: 22px;
+.rb-CoursePagination .rb-ul-pagination {
+  gap: 5px;
+  margin-top: 14px;
 }
-.rb-CoursePagination .rb-CoursePagination-head .search-view .rb-search-with-icone .rb-searchbox {
-
-  width: 129px;
-}
-.rb-CoursePagination .rb-CoursePagination-head {
+.rb-listing .NA-feature-card-deatails div {
+  margin-right: 8px;
   display: flex;
-  gap: 49px;
-  margin-bottom: 40px;
-  flex-direction: column;
-  align-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
 }
+}
+/* ============================================================================================== */
+@media (max-width: 767px){
+  .listing-button{
+    display: none;
+  }
+  .rb-CoursePagination .rb-CoursePagination-head h1 {
+    font-size: 21px;
+}
+.rb-CoursePagination .rb-CoursePagination-head .search-view .rb-search-with-icone .rb-searchbox {
+  width: 98px;
+}
+.rb-CoursePagination .rb-CoursePagination-head .search-view .rb-search-with-icone .rb-search-pag {
+  font-size: 17px;
+}
+/* .rb-CoursePagination .rb-CoursePagination-head { */
+  /* display: flex; */
+  /* gap: 49px; */
+  /* margin-bottom: 40px; */
+  /* flex-direction: column; */
+  /* align-content: flex-start; */
+  /* align-items: flex-start; */
+/* } */
+.rb-CoursePagination .rb-CoursePagination-head {
+
+  gap: 0px;
+  margin-bottom: 40px;
+  justify-content: space-between;
+  /* width: 251px; */
+}
+.rb-CoursePagination .rb-ul-pagination li,.rb-CoursePagination .rb-ul-pagination .rb-PageActive {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  padding-top: 5px;}
+
+  .rb-CoursePagination .rb-ul-pagination {
+    gap: 4px;
+    margin-top: 6px;
+}
+
 }

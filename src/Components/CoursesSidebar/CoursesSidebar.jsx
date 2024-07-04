@@ -1,12 +1,36 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import './CoursesSidebar.css'
 import './../../index.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar, faFilter } from '@fortawesome/free-solid-svg-icons';
+import { faStar, faFilter,faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const CoursesSidebar = ({ filters, onFilterChange }) => {
-  const [showSidebar, setShowSidebar] = useState(false);
 
+  const [isSidebarVisible, setIsSidebarVisible] = useState(true);
+  const [isButtonVisible, setIsButtonVisible] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarVisible(!isSidebarVisible);
+  };
+
+  const handleResize = () => {
+    if (window.innerWidth <= 1200) {
+      setIsSidebarVisible(false);
+      setIsButtonVisible(true);
+    } else {
+      setIsSidebarVisible(true);
+      setIsButtonVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    handleResize(); // Initial check
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   const handleCheckboxChange = (e) => {
     const { name, checked } = e.target;
     if (name === "All") {
@@ -34,12 +58,20 @@ const CoursesSidebar = ({ filters, onFilterChange }) => {
 
   return (
     <section className="CoursesSidebar-courses">
-      <button className='rb-filter-sidebar' onClick={() => setShowSidebar(!showSidebar)}>
-        <FontAwesomeIcon icon={faFilter} />
-        <p>Filter</p>
-      </button>
-      {showSidebar && (
-        <div className={`CoursesSidebar ${showSidebar ? 'visible' : 'hidden'}`}>
+          {isButtonVisible && (
+            <button
+          className={`rb-filter-sidebar ${isSidebarVisible ? 'rb-filter-visible' : 'rb-filter-hidden'}`}
+          onClick={toggleSidebar}
+        >
+        {
+          (isSidebarVisible ? <FontAwesomeIcon className='rb-filter-icon' icon={faArrowRight} /> : <FontAwesomeIcon className='rb-filter-icon' icon={faFilter} />)
+        }
+          
+        </button>
+      )}
+
+
+      {isSidebarVisible && ( <div className={`CoursesSidebar `}>
           <div>
             <h4 className="rb-tit-sidebar">Course category</h4>
             {['Commercial', 'Office', 'Shop', 'Educate', 'Academy', 'family', 'Studio', 'University'].map((category) => (
@@ -211,6 +243,7 @@ const CoursesSidebar = ({ filters, onFilterChange }) => {
             ))}
           </div>
         </div>
+        
       )}
     </section>
   );

@@ -103,13 +103,13 @@ export default function FeaturedCoursesCards(props) {
   // ]);
 // const FeaturedCards = props.FeaturedCards;
   return (
-      <section className="NA-featuredCards-Section ">  {/* Project-Container */}
-        <Title
+      <section className="NA-featuredCards-Section "> 
+  {/*       <Title
         header="featured courses"
         desc="Explore our Popular courses"
         btn=" all courses "
         showBtn={true}
-      />
+      /> */}
         <div className="NA-featuredCards NA-flex">
           {props.FeaturedCards.map((item) => {
             return (
