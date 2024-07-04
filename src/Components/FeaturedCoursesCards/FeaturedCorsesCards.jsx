@@ -12,6 +12,24 @@ import { Link } from "react-router-dom";
 
 export default function FeaturedCoursesCards(props) {
   return (
+
+      <section className="NA-featuredCards-Section "> 
+  {/*       <Title
+        header="featured courses"
+        desc="Explore our Popular courses"
+        btn=" all courses "
+        showBtn={true}
+      /> */}
+        <div className="NA-featuredCards NA-flex">
+          {props.FeaturedCards.map((item) => {
+            return (
+              <div key={item.id} className={props.view || "NA-feature-card"}>
+                <div className="NA-feature-card-img">
+                  <img src={item.img} alt="features-img" />
+                  <p className="NA-card-note">{item.note}</p>
+                </div>
+                <div className="NA-feature-card-content">
+=======
     <div className="NA-featuredCards NA-flex">
       {props.FeaturedCards.map((item) => {
         return (
@@ -25,8 +43,9 @@ export default function FeaturedCoursesCards(props) {
                 <p className="NA-card-desc">
                   by <span>{item.detail}</span>
                 </p>
-                <h3 className="NA-card-title">{item.title}</h3>
+                <h4 className="NA-card-title">{item.title}</h4>
                 <div className="NA-feature-card-deatails NA-flex">
+
                   <div>
                     <img src={clock} className="NA-icon" alt="clock-icon" />
                     <span className="NA-icon-desc">{item.time}</span>

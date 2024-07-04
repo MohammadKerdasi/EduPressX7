@@ -1,16 +1,39 @@
-import React from 'react';
+import React, { useState,useEffect } from 'react';
 import './CoursesSidebar.css'
 import './../../index.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faStar} from '@fortawesome/free-solid-svg-icons';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
-
+import { faStar, faFilter,faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const CoursesSidebar = ({ filters, onFilterChange }) => {
+
+  const [isSidebarVisible, setIsSidebarVisible] = useState(true);
+  const [isButtonVisible, setIsButtonVisible] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarVisible(!isSidebarVisible);
+  };
+
+  const handleResize = () => {
+    if (window.innerWidth <= 1200) {
+      setIsSidebarVisible(false);
+      setIsButtonVisible(true);
+    } else {
+      setIsSidebarVisible(true);
+      setIsButtonVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    handleResize(); // Initial check
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   const handleCheckboxChange = (e) => {
     const { name, checked } = e.target;
     if (name === "All") {
-      // تحديث جميع المربعات عند تحديد أو إلغاء تحديد "All"
       onFilterChange((prevFilters) => ({
         ...prevFilters,
         All: checked,
@@ -18,7 +41,6 @@ const CoursesSidebar = ({ filters, onFilterChange }) => {
         Paid: checked
       }));
     } else if (name === "All levels") {
-      // تحديث جميع المربعات عند تحديد أو إلغاء تحديد "All levels"
       onFilterChange((prevFilters) => ({
         ...prevFilters,
         "All levels": checked,
@@ -35,85 +57,93 @@ const CoursesSidebar = ({ filters, onFilterChange }) => {
   };
 
   return (
-    <div className="CoursesSidebar">
-      {/* ___________________________Course category___________________________________________________________________ */}
-      <div >
-        <h4 className='rb-tit-sidebar'>Course category</h4>
-        {['Commercial', 'Office', 'Shop', 'Educate', 'Academy', 'family', 'Studio', 'University'].map(category => (
-          <div key={category} className='rb-flex-check'>
-          <div>
-            <input
-              type="checkbox"
-              name={category}
-              id={category}
-              checked={filters[category]}
-              onChange={handleCheckboxChange}
-            />
-            <label htmlFor={category}>{category}</label>
-            </div>
-            <p>15</p>
-          </div>
-        ))}
-      </div>
+    <section className="CoursesSidebar-courses">
+          {isButtonVisible && (
+            <button
+          className={`rb-filter-sidebar ${isSidebarVisible ? 'rb-filter-visible' : 'rb-filter-hidden'}`}
+          onClick={toggleSidebar}
+        >
+        {
+          (isSidebarVisible ? <FontAwesomeIcon className='rb-filter-icon' icon={faArrowRight} /> : <FontAwesomeIcon className='rb-filter-icon' icon={faFilter} />)
+        }
+          
+        </button>
+      )}
 
-      {/* _____________________________Instructors_____________________________________________________________________ */}
-      <div>
-        <h4 className='rb-tit-sidebar'>Instructors</h4>
-        {['KennyWhite', 'JohnDoe'].map(instructor => (
-          <div key={instructor} className='rb-flex-check'>
-          <div>
-            <input
-              type="checkbox"
-              name={instructor}
-              id={instructor}
-              checked={filters[instructor]}
-              onChange={handleCheckboxChange}
-            />
-            <label htmlFor={instructor}>{instructor}</label>
-            </div>
-            <p>15</p>
-          </div>
-        ))}
-      </div>
 
-      {/* _________________________________Price_________________________________________________________________ */}
-      <div>
-        <h4 className='rb-tit-sidebar'>Price</h4>
-        <div className='rb-flex-check'>
-        <div>
-          <input
-            type="checkbox"
-            name="All"
-            id="All"
-            checked={filters.All}
-            onChange={handleCheckboxChange}
-          />
-          <label htmlFor="All">All</label>
-          </div>
-          <p>15</p>
-        </div>
-        {['Free', 'Paid'].map(priceType => (
-          <div key={priceType} className='rb-flex-check'>
+      {isSidebarVisible && ( <div className={`CoursesSidebar `}>
           <div>
-            <input
-              type="checkbox"
-              name={priceType}
-              id={priceType}
-              checked={filters[priceType]}
-              onChange={handleCheckboxChange}
-            />
-            <label htmlFor={priceType}>{priceType}</label>
-            </div>
-            <p>15</p>
+            <h4 className="rb-tit-sidebar">Course category</h4>
+            {['Commercial', 'Office', 'Shop', 'Educate', 'Academy', 'family', 'Studio', 'University'].map((category) => (
+              <div key={category} className="rb-flex-check">
+                <div className="rb-flex-label">
+                  <input
+                    type="checkbox"
+                    name={category}
+                    id={category}
+                    checked={filters[category]}
+                    onChange={handleCheckboxChange}
+                  />
+                  <label htmlFor={category}>{category}</label>
+                </div>
+                <p>15</p>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-
-      {/* _______________Review___________________________________________ */}
-      <div>
+          <div className="rb-padding-top">
+            <h4 className="rb-tit-sidebar">Instructors</h4>
+            {['KennyWhite', 'JohnDoe'].map((instructor) => (
+              <div key={instructor} className="rb-flex-check">
+                <div className="rb-flex-label">
+                  <input
+                    type="checkbox"
+                    name={instructor}
+                    id={instructor}
+                    checked={filters[instructor]}
+                    onChange={handleCheckboxChange}
+                  />
+                  <label htmlFor={instructor}>{instructor}</label>
+                </div>
+                <p>15</p>
+              </div>
+            ))}
+          </div>
+          <div className="padding-top">
+            <h4 className="rb-tit-sidebar">Price</h4>
+            <div className="rb-flex-check">
+              <div className="rb-flex-label">
+                <input
+                  type="checkbox"
+                  name="All"
+                  id="All"
+                  checked={filters.All}
+                  onChange={handleCheckboxChange}
+                />
+                <label htmlFor="All">All</label>
+              </div>
+              <p>15</p>
+            </div>
+            {['Free', 'Paid'].map((priceType) => (
+              <div key={priceType} className="rb-flex-check">
+                <div className="rb-flex-label">
+                  <input
+                    type="checkbox"
+                    name={priceType}
+                    id={priceType}
+                    checked={filters[priceType]}
+                    onChange={handleCheckboxChange}
+                  />
+                  <label htmlFor={priceType}>{priceType}</label>
+                </div>
+                <p>15</p>
+              </div>
+            ))}
+          </div>
+            {/* _______________Review___________________________________________ */}
+      <div className='padding-top'>
         <h4 className='rb-tit-sidebar'>Review</h4>
         <div className='rb-flex-check' >
-        <div>
+        <div className='rb-flex-label'>
           <input
             type="checkbox"
             name='five'
@@ -127,7 +157,7 @@ const CoursesSidebar = ({ filters, onFilterChange }) => {
         </div>
 
         <div className='rb-flex-check'>
-        <div>
+        <div className='rb-flex-label'>
           <input
             type="checkbox"
             name='four'
@@ -140,7 +170,7 @@ const CoursesSidebar = ({ filters, onFilterChange }) => {
           <p>(1,025)</p>
         </div>
         <div className='rb-flex-check' >
-        <div>
+        <div className='rb-flex-label'>
           <input
             type="checkbox"
             name='three'
@@ -153,7 +183,7 @@ const CoursesSidebar = ({ filters, onFilterChange }) => {
           <p>(1,025)</p>
         </div>
         <div className='rb-flex-check'>
-        <div>
+        <div className='rb-flex-label'>
           <input
             type="checkbox"
             name='two'
@@ -166,7 +196,7 @@ const CoursesSidebar = ({ filters, onFilterChange }) => {
           <p>(1,025)</p>
         </div>
         <div className='rb-flex-check'>
-        <div>
+        <div className='rb-flex-label'>
           <input
             type="checkbox"
             name='one'
@@ -180,40 +210,44 @@ const CoursesSidebar = ({ filters, onFilterChange }) => {
         </div>
       </div>
 
-      {/* _______________________________________Level____________________________________________________ */}
-      <div>
-        <h4 className='rb-tit-sidebar'>Level</h4>
-        <div className='rb-flex-check'>
-        <div>
-          <input
-            type="checkbox"
-            name="All levels"
-            id="All levels"
-            checked={filters["All levels"]}
-            onChange={handleCheckboxChange}
-          />
-          <label htmlFor="All levels">All levels</label>
-          </div>
-          <p>15</p>
-        </div>
-        {['Beginner', 'Intermediate', 'Expert'].map(level => (
-          <div key={level} className='rb-flex-check'>
-          <div>
-            <input
-              type="checkbox"
-              name={level}
-              id={level}
-              checked={filters[level]}
-              onChange={handleCheckboxChange}
-            />
-            <label htmlFor={level}>{level}</label>
+    
+          <div className="padding-top">
+            <h4 className="rb-tit-sidebar">Level</h4>
+            <div className="rb-flex-check">
+              <div className="rb-flex-label">
+                <input
+                  type="checkbox"
+                  name="All levels"
+                  id="All levels"
+                  checked={filters['All levels']}
+                  onChange={handleCheckboxChange}
+                />
+                <label htmlFor="All levels">All levels</label>
+              </div>
+              <p>15</p>
             </div>
-            <p>15</p>
+            {['Beginner', 'Intermediate', 'Expert'].map((level) => (
+              <div key={level} className="rb-flex-check">
+                <div className="rb-flex-label">
+                  <input
+                    type="checkbox"
+                    name={level}
+                    id={level}
+                    checked={filters[level]}
+                    onChange={handleCheckboxChange}
+                  />
+                  <label htmlFor={level}>{level}</label>
+                </div>
+                <p>15</p>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-    </div>
+        </div>
+        
+      )}
+    </section>
   );
 };
 
 export default CoursesSidebar;
+
