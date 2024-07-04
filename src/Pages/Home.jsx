@@ -102,7 +102,7 @@ export default function Home() {
     {
       id: 6,
       img: featuredcard5,
-      note: "Photography",
+      // note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
       time: "2Weeks",
@@ -148,7 +148,7 @@ export default function Home() {
           desc="Explore our Popular courses"
           btn=" all courses "
           showBtn={true}
-          link="/"
+          link="/Courses"
         />
         <FeaturedCoursesCards FeaturedCards={FeaturedCards} />
         <Link className="NA-header-btn NA-btn-effect NA-hidden-btn" to="/">
@@ -169,8 +169,12 @@ export default function Home() {
           desc="Explore our Free Acticles"
           btn=" all articles "
           showBtn="true"
+          link="/Blog"
         />
         <ArticlesCards ArticleCards={ArticleCards}/>
+        {/* <FeaturedCoursesCards FeaturedCards={FeaturedCards} articleContent='true' /> */}
+
+        
         <Link className="NA-header-btn NA-btn-effect NA-hidden-btn" to="/">
           all articles
         </Link>

@@ -9,9 +9,9 @@ import ArticlesCards from '../ArticlesCards/ArticlesCards';
 const CoursePagination = ({
   searchBox,
   onSearchChange,
-  items
-  ,titel
-  ,x
+  items, 
+  title,
+  x
 }) => {
   const [view, setView] = useState('NA-feature-card');
   const [currentPage, setCurrentPage] = useState(1);
@@ -32,7 +32,7 @@ const CoursePagination = ({
   return (
     <div className='rb-CoursePagination'>
       <div className='rb-CoursePagination-head'>
-        <h1 >{titel}</h1>
+        <h1 >{title}</h1>
         <div className='search-view'>
           <div className='rb-search-with-icone'>
             <input
@@ -59,8 +59,8 @@ const CoursePagination = ({
           </button>
         </div>
       </div>
-      {x ?  <FeaturedCoursesCards FeaturedCards={paginatedItems} view={view} /> :  <ArticlesCards ArticleCards={paginatedItems} view={view}/>}
-      {/* <FeaturedCoursesCards FeaturedCards={paginatedItems} view={view} /> */}
+      
+     {x ?  <FeaturedCoursesCards FeaturedCards={paginatedItems} view={view} /> :  <ArticlesCards ArticleCards={paginatedItems} view={view}/>}
       <ul className='rb-ul-pagination'>
         <li>
           <a onClick={() => handlePageChange(currentPage === 1 ? totalPages : currentPage - 1)}>
