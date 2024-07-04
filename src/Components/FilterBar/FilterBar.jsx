@@ -32,7 +32,7 @@ export default function FilterBar() {
     },
   ];
   return (
-    <>
+    <div>
       <div className="SHaaban-category-area">
         <h4 className="SHaaban-adding-margin-bottom SHaaban-category-area-title">
           Category
@@ -70,6 +70,6 @@ export default function FilterBar() {
       <div className="SHaaban-adding-style-for-tags-area">
         <TagsH />
       </div>
-    </>
+    </div>
   );
 }

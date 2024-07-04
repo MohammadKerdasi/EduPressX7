@@ -117,7 +117,12 @@
   text-transform: capitalize;
   font-weight: 500;
 }
-
+.NA-feature-card .NA-card-price a:hover, .NA-feature-card .NA-card-price a:focus {
+  text-decoration: underline !important;
+}
+.NA-article-card-content .NA-card-note {
+  display: none;
+}
 /* large screen */
 @media (min-width: 993px) and (max-width: 1566px) {
   .NA-feature-card {

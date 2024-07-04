@@ -13,9 +13,9 @@ import { Link } from "react-router-dom";
 export default function FeaturedCoursesCards(props) {
   return (
         <div className="NA-featuredCards NA-flex">
-          {props.FeaturedCards.map((item) => {
-            return (
-              <div key={item.id} className={props.view || "NA-feature-card"}>
+          {props.FeaturedCards.map((item) => (
+            <>
+           <div key={item.id} className={props.view || "NA-feature-card"}>
                 <div className="NA-feature-card-img">
                   <img src={item.img} alt="features-img" />
                   <p className="NA-card-note">{item.note}</p>
@@ -48,12 +48,12 @@ export default function FeaturedCoursesCards(props) {
                       <span> &#36;{item.price}</span>
                       {item.id == 2 ? <p className="discount"> &#36;49.0</p> : <p className="free">Free</p>}
                     </div>
-                    <Link to="/">{item.viewMore}</Link>
+                    <Link to="/CourseSingle">{item.viewMore}</Link>
                   </div>
                 </div>
               </div>
-            );
-          })}
+            </>
+          ))}
         </div>
   );
 }

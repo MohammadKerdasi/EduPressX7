@@ -4,11 +4,13 @@ import './CoursePagination.css';
 import './../../index.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight, faMagnifyingGlass, faList, faBorderAll } from '@fortawesome/free-solid-svg-icons';
+import ArticlesCards from '../ArticlesCards/ArticlesCards';
 
 const CoursePagination = ({
   searchBox,
   onSearchChange,
-  items
+  items, 
+  x
 }) => {
   const [view, setView] = useState('NA-feature-card');
   const [currentPage, setCurrentPage] = useState(1);
@@ -55,7 +57,8 @@ const CoursePagination = ({
           </button>
         </div>
       </div>
-      <FeaturedCoursesCards FeaturedCards={paginatedItems} view={view} />
+      
+     {x ?  <FeaturedCoursesCards FeaturedCards={paginatedItems} view={view} /> :  <ArticlesCards ArticleCards={paginatedItems} view={view}/>}
       <ul className='rb-ul-pagination'>
         <li>
           <a onClick={() => handlePageChange(currentPage === 1 ? totalPages : currentPage - 1)}>
