@@ -62,6 +62,7 @@ export default function Pagination({
             >
               {number}
             </li>
+            
           );
         })}
         <li
@@ -70,6 +71,7 @@ export default function Pagination({
             handleActivePageWithArrowINC();
           }}
         >
+          
           <FontAwesomeIcon icon={faChevronRight} />
         </li>
       </ul>

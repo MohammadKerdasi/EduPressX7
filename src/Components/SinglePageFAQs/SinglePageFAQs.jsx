@@ -51,6 +51,7 @@ const SingleCourseFAQs = () => {
               ref={Mk => contentRefs.current[index] = Mk}
               style={{
                 maxHeight: activeIndexSet1 === index ? `${contentRefs.current[index]?.scrollHeight}px` : '0',
+                
                 transition: 'max-height 0.3s ease-out',
                 overflow: 'hidden'
               }}

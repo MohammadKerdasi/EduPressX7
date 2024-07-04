@@ -9,10 +9,7 @@
  .SHaaban-LISTING {
      display: flex;
      flex-flow: row wrap;
-     /* gap: 30px; */
      justify-content: space-between;
-     /* margin: 60px 16.45% !important; */
-     margin: 60px 315.84px !important;
  }
 
  .SHaaban-detail {
@@ -21,20 +18,22 @@
 
  .SHaaban-title-and-meta h1 {
      font-size: 36px !important;
+     padding: 0 !important;
      font-weight: 600 !important;
-     margin-bottom: 35px !important;
+     margin-bottom: 20px !important;
  }
 
  .SHaaban-title-and-meta-info-container {
      display: flex;
      gap: 25px;
      justify-content: flex-start;
-     margin-bottom: 35px !important;
+     margin-bottom: 40px !important;
  }
 
  .SHaaban-title-and-meta-info {
      display: flex;
      gap: 10px;
+     align-items: center;
  }
 
  .SHaaban-title-and-meta-info img {
@@ -43,20 +42,21 @@
 
  .SHaaban-title-and-meta-info p {
      color: var(--dark-grey);
+     margin: 0;
  }
 
  #SHaaban-adding-style-for-main-image {
-     margin-bottom: 35px;
+     margin-bottom: 30px;
      width: 100%;
      height: 603px;
  }
 
  #SHaaban-blog-content {
-     margin-bottom: 35px !important;
+     margin-bottom: 60px !important;
  }
 
  #SHaaban-blog-content p {
-     margin-bottom: 35px;
+     margin-bottom: 40px;
      color: var(--dark-grey);
  }
 
@@ -65,7 +65,7 @@
      flex-wrap: wrap;
      gap: 8px;
      align-items: center;
-     margin-bottom: 35px;
+     margin-bottom: 40px;
  }
 
  .SHaaban-remove-margin {
@@ -108,23 +108,24 @@
      display: flex;
      justify-content: center;
      align-items: center;
-     /* width: 48%; */
      border: 1px solid var(--light-gray);
      border-radius: 30px;
      width: 480px;
+     /* width: 48.209%; */
  }
 
  .SHaaban-slider-arrow {
      flex-grow: 10;
      background: var(--light-gray);
-     width: 80px;
-     height: 48px;
+     /* العرض 60 بيكسل لان المارجين عم يضغط عليه وقت عم يكون 48 بيكسل ويضرب الشكل */
+     width: 60px !important;
+     height: 48px !important;
      border-radius: 5px;
      display: flex;
      justify-content: center;
      align-items: center;
      color: var(--dark-grey);
-     margin: 28px;
+     margin: 49.5px 30px;
  }
 
  .SHaaban-slider-arrow:hover {
@@ -133,13 +134,10 @@
      cursor: pointer;
  }
 
- .SHaaban-slider-content-first-child {
-     margin: 28px 28px 28px 0;
- }
-
  .SHaaban-slider-content-title {
      color: var(--dark-grey);
      font-size: 18px;
+     margin-bottom: 12px !important;
  }
 
  .SHaaban-slider-content-mainText {
@@ -153,12 +151,22 @@
      width: 100%;
  }
 
+ .SHaaban-comment-section h4 {
+     font-size: 20px;
+     margin-bottom: 12px;
+ }
+
  .SHaaban-text-end {
      text-align: end;
  }
 
+
+ .SHaaban-slider-content-first-child {
+     margin: 2.17% 2.17% 2.17% 0;
+ }
+
  .SHaaban-slider-content-second-child {
-     margin: 28px 0 28px 28px;
+     margin: 2.17% 0 2.17% 2.17%;
  }
 
  #SHaaban-comment-info,
@@ -166,13 +174,16 @@
      color: var(--dark-grey);
  }
 
- #SHaaban-comment-info {
+ #SHaaban-comment-info,
+ #SHaaban-comment-info span {
+     font-size: 18px !important;
      margin-bottom: 30px;
  }
 
  .SHaaban-comment-userName {
      font-weight: 600;
      font-size: 16px;
+     margin-bottom: 8px !important;
  }
 
  .SHaaban-comment-content {
@@ -180,6 +191,7 @@
      font-size: 18px;
      line-height: 27px;
      color: var(--dark-grey);
+     margin-bottom: 8px !important;
  }
 
  .SHaaban-adding-margin-left {
@@ -213,7 +225,6 @@
 
  .SHaaban-adding-margin-bottom {
      margin-bottom: 20px;
-     display: inline-block;
  }
 
  .SHaaban-adding-style-for-replay {
@@ -236,15 +247,6 @@
 
  #SHaaban-form-body {
      margin-top: 30px;
- }
-
- .SHaaban-styling-form-inputs input {
-     width: 48%;
-     height: 48px;
-     outline: none;
-     border: 1px solid var(--grey);
-     border-radius: 8px;
-     padding-left: 16px;
  }
 
  .SHaaban-styling-form-inputs input::placeholder,
@@ -274,45 +276,21 @@
      margin-left: 6px;
  }
 
- #SHaaban-adding-style-for-button,
- #SHaaban-adding-style-for-replay-button {
-     margin: 20px 0;
-     height: 48px;
-     border: none;
-     border-radius: 24px;
-     color: white;
-     background-color: #FF782D;
-     font-size: 18px;
-     font-weight: 500;
-     transition: all .2s;
- }
-
- #SHaaban-adding-style-for-button:hover,
- #SHaaban-adding-style-for-replay-button:hover {
-     background-color: #E56D29;
- }
-
- #SHaaban-adding-style-for-replay-button {
-     width: 230px;
- }
-
- #SHaaban-adding-style-for-button {
-     width: 170px;
- }
-
  .SHaaban-form-area-title {
      font-size: 20px;
-     font-weight: 600;
+     font-weight: 600 !important;
+     margin-bottom: 12px;
  }
 
  .SHaaban-form-area-paragraph {
      color: #555555;
-     font-weight: 400;
-     line-height: 27px;
+     font-weight: 400 !important;
+     margin-bottom: 30px;
  }
 
  .SHaaban-sideBar-blog-listing {
-     width: 270px !important
+     width: 270px !important;
+     /* width: 20.93% !important; */
  }
 
  .SHaaban-styling-text-area:focus {
@@ -322,593 +300,907 @@
  .SHaaban-btn-area {
      display: flex;
      gap: 20px;
+     margin: 20px 0;
+ }
+
+ .SHaaban-styling-width {
+     min-width: max-content;
  }
 
  .d-none {
      display: none;
  }
 
- @media (max-width:1366px) and (min-width:1355px) {
-
-     p,
-     span,
-     label,
-     .SHaaban-styling-form-inputs input::placeholder,
-     .SHaaban-styling-text-area::placeholder,
-     .SHaaban-slider-content-title,
-     .SHaaban-slider-content-mainText {
-         font-size: 15px !important;
-     }
-
-     .SHaaban-LISTING {
-         margin: 47.275px 224.707px !important;
-     }
-
-     .SHaaban-detail {
-         width: 704.344px !important;
-     }
-
-     .SHaaban-sideBar-blog-listing {
-         width: 192.094px !important;
-     }
-
-     .SHaaban-title-and-meta h1,
-     h2 {
-         font-size: 25px !important;
-     }
-
-     #SHaaban-adding-style-for-main-image {
-         height: 429.009px;
-     }
-
-     .SHaaban-title-and-meta-info img {
-         height: 14px;
-     }
-
-     .SHaaban-styling-text-area {
-         height: 78.2604px;
-     }
-
-     .SHaaban-styling-form-inputs input {
-         width: 345.057px;
-         height: 34.15px;
-     }
-
-     #SHaaban-adding-style-for-button,
-     #SHaaban-adding-style-for-replay-button {
-         font-size: 14px;
-         height: 34.15px;
-     }
-
-     #SHaaban-adding-style-for-replay-button {
-         width: 163.63px;
-     }
-
-     #SHaaban-adding-style-for-button {
-         width: 120.948px;
-     }
-
+ .SHaaban-replay-area {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
  }
 
- @media (max-width:1355px) and (min-width:1343px) {
+ .sHaaban-remove-arrow-in-large-screen {
+     visibility: hidden;
+ }
 
-     p,
-     span,
-     label,
-     .SHaaban-styling-form-inputs input::placeholder,
-     .SHaaban-styling-text-area::placeholder,
-     .SHaaban-slider-content-title,
-     .SHaaban-slider-content-mainText {
-         font-size: 14px !important;
-     }
+ .SHaaban-adding-flex-align-center {
+     /* ===New Added=== */
+     display: flex;
+     align-items: center;
+ }
 
-     .SHaaban-LISTING {
-         margin: 42.3125px 222.733px !important;
-     }
+ .SHaaban-adding-style-for-blog-content-title {
+     /* ===New Added=== */
+     font-size: 18px;
+     font-weight: 400 !important;
+     margin-bottom: 0 !important;
+ }
 
+ @media (max-width:1919px) {
      .SHaaban-detail {
-         width: 698.156px !important;
-     }
-
-     .SHaaban-sideBar-blog-listing {
-         width: 190.406px !important;
-     }
-
-     .SHaaban-title-and-meta h1,
-     h2 {
-         font-size: 25px !important;
-     }
-
-     #SHaaban-adding-style-for-main-image {
-         height: 425.241px;
-     }
-
-     .SHaaban-title-and-meta-info img {
-         height: 14px;
-     }
-
-     .SHaaban-styling-text-area {
-         height: 77.5729px;
-     }
-
-     .SHaaban-styling-form-inputs input {
-         width: 342.026px;
-         height: 33.85px;
-     }
-
-     #SHaaban-adding-style-for-button,
-     #SHaaban-adding-style-for-replay-button {
-         font-size: 14px;
-         height: 33.85px;
-         border-radius: 16.925px;
-     }
-
-     #SHaaban-adding-style-for-replay-button {
-         width: 162.198px;
-     }
-
-     #SHaaban-adding-style-for-button {
-         width: 119.885px;
+         width: 76.744% !important;
      }
 
      .SHaaban-slider {
-         border-radius: 21.1563px;
-         width: 338.5px;
+         width: 48.209%;
+     }
+
+     .SHaaban-sideBar-blog-listing {
+         width: 20.93% !important;
      }
 
      .SHaaban-slider-arrow {
-         width: 56.4167px;
-         height: 33.85px;
-         border-radius: 3.52604px;
-         margin: 19.7458px;
-     }
-
-     .SHaaban-slider-content-first-child {
-         margin: 19.7458px 19.7458px 19.7458px 0;
-     }
-
-     .SHaaban-slider-content-second-child {
-         margin: 19.7458px 0 19.7458px 19.7458px;
+         margin: 9.8372% 6.325%;
      }
  }
 
- @media (max-width:1343px) and (min-width:1331px) {
-
-     p,
-     span,
-     label,
-     .SHaaban-styling-form-inputs input::placeholder,
-     .SHaaban-styling-text-area::placeholder,
-     .SHaaban-slider-content-title,
-     .SHaaban-slider-content-mainText {
-         font-size: 13px !important;
-     }
-
-
-     .SHaaban-LISTING {
-         margin: 41.968px 220.924px !important;
-     }
-
-
-     .SHaaban-detail {
-         width: 692.484px !important;
-     }
-
-     .SHaaban-sideBar-blog-listing {
-         width: 188.859px !important;
+ @media (max-width:1800px) and (min-width:1630px) {
+     #SHaaban-adding-style-for-main-image {
+         height: 551.494px;
      }
 
      .SHaaban-title-and-meta h1,
-     h2 {
-         font-size: 23px !important;
-     }
-
-     #SHaaban-adding-style-for-main-image {
-         height: 421.786px;
-     }
-
-     .SHaaban-title-and-meta-info img {
-         height: 14px;
-     }
-
-     .SHaaban-styling-text-area {
-         height: 76.9427px;
-     }
-
-     .SHaaban-styling-form-inputs input {
-         width: 339.247px;
-         height: 33.575px;
-     }
-
-     #SHaaban-adding-style-for-button,
-     #SHaaban-adding-style-for-replay-button {
-         font-size: 13px;
-         height: 33.85px;
-         border-radius: 16.925px;
-     }
-
-     #SHaaban-adding-style-for-replay-button {
-         width: 160.88px;
-     }
-
-     #SHaaban-adding-style-for-button {
-         width: 118.911px;
+     .SHaaban-comment-section {
+         font-size: 33px !important;
      }
 
      .SHaaban-adding-style-for-comment-imange {
-         width: 41.9688px;
-         height: 41.9688px;
-         margin-right: 13.9896px;
-     }
-
-     .SHaaban-slider-content-first-child {
-         margin: 19.5854px 19.5854px 19.5854px 0;
-     }
-
-     .SHaaban-slider-content-second-child {
-         margin: 19.5854px 0 19.5854px 19.5854px;
-     }
-
-     .SHaaban-title-and-meta h1,
-     .SHaaban-title-and-meta-info-container,
-     .SHaaban-title-and-meta-info-container,
-     #SHaaban-blog-content p,
-     #SHaaban-tags-area,
-     #SHaaban-blog-content {
-         margin-bottom: 24.481px !important;
-     }
-
-     .SHaaban-slider-container,
-     .SHaaban-adding-flex-center {
-         margin-bottom: 41.968px;
+         width: 56.25px;
+         height: 56.25px;
      }
  }
 
- @media (max-width:1331px) and (min-width:1318px) {
-
-     p,
-     span,
-     label,
-     .SHaaban-styling-form-inputs input::placeholder,
-     .SHaaban-styling-text-area::placeholder,
-     .SHaaban-slider-content-title,
-     .SHaaban-slider-content-mainText {
-         font-size: 13px !important;
-     }
-
-     .SHaaban-LISTING {
-         margin: 41.5938px 218.949px !important;
-     }
-
-     .SHaaban-detail {
-         width: 686.297px !important;
-     }
-
-     .SHaaban-sideBar-blog-listing {
-         width: 187.172px !important;
-     }
+ @media (max-width:1630px) and (min-width:1505px) {
 
      .SHaaban-title-and-meta h1,
-     h2 {
+     .SHaaban-comment-section {
+         font-size: 30px !important;
+     }
+
+     #SHaaban-adding-style-for-main-image {
+         height: 471.094px;
+     }
+
+     .SHaaban-adding-style-for-comment-imange {
+         width: 50.9375px;
+         height: 50.9375px;
+     }
+ }
+
+ @media (max-width:1505px) and (min-width:1395px) {
+
+     .SHaaban-title-and-meta h1,
+     .SHaaban-comment-section {
+         font-size: 28px !important;
+     }
+
+     #SHaaban-adding-style-for-main-image {
+         height: 438.117px;
+     }
+
+     .SHaaban-slider-content-mainText {
+         font-size: 16px;
+     }
+
+     .SHaaban-slider-content-title {
+         margin-bottom: 7px !important;
+     }
+
+     .SHaaban-adding-style-for-comment-imange {
+         width: 47.031px;
+         height: 47.031px;
+     }
+ }
+
+ @media (max-width:1395px) and (min-width:1230px) {
+
+     .SHaaban-title-and-meta h1,
+     .SHaaban-comment-section {
+         font-size: 25px !important;
+     }
+
+     #SHaaban-adding-style-for-main-image {
+         height: 386.297px;
+     }
+
+     .SHaaban-slider-content-mainText {
+         font-size: 16px;
+     }
+
+     .SHaaban-slider-content-title {
+         margin-bottom: 7px !important;
+     }
+
+     .SHaaban-adding-style-for-comment-imange {
+         width: 43.5938px;
+         height: 43.5938px;
+     }
+ }
+
+ @media (max-width:1230px) and (min-width:1190px) {
+
+     .SHaaban-title-and-meta h1,
+     .SHaaban-comment-section {
+         font-size: 24px !important;
+     }
+
+     #SHaaban-adding-style-for-main-image {
+         height: 380.016px;
+     }
+
+     .SHaaban-slider-content-mainText {
+         font-size: 15px;
+     }
+
+     .SHaaban-slider-content-title {
+         margin-bottom: 7px !important;
+     }
+
+     .SHaaban-adding-style-for-comment-imange {
+         width: 38.4375px;
+         height: 38.4375px;
+     }
+ }
+
+ @media (max-width:1190px) and (min-width:1110px) {
+
+     .SHaaban-title-and-meta h1,
+     .SHaaban-comment-section {
          font-size: 22px !important;
      }
 
      #SHaaban-adding-style-for-main-image {
-         height: 418.017px;
+         height: 373.73px;
      }
 
-     .SHaaban-title-and-meta-info img {
-         height: 13px;
+     .SHaaban-slider-content-mainText,
+     #SHaaban-adding-style-for-label,
+     .SHaaban-title-and-meta-info p,
+     .SHaaban-title-and-meta-info span,
+     #SHaaban-blog-content p,
+     #SHaaban-comment-info,
+     #SHaaban-comment-info span,
+     .SHaaban-comment-userName,
+     .SHaaban-comment-date,
+     .SHaaban-comment-content,
+     .SHaaban-adding-style-for-replay,
+     .SHaaban-form-area-paragraph {
+         font-size: 15px !important;
+     }
+
+     .SHaaban-slider-content-title {
+         margin-bottom: 7px !important;
      }
 
      .SHaaban-styling-text-area {
-         height: 76.2552px;
-     }
-
-     .SHaaban-styling-form-inputs input {
-         width: 336.216px;
-         height: 33.275px;
-     }
-
-     #SHaaban-adding-style-for-button,
-     #SHaaban-adding-style-for-replay-button {
-         font-size: 13px;
-         height: 33.85px;
-         border-radius: 16.925px;
-     }
-
-     #SHaaban-adding-style-for-replay-button {
-         width: 160.88px;
-     }
-
-     #SHaaban-adding-style-for-button {
-         width: 118.911px;
+         height: 90.1771px;
      }
 
      .SHaaban-adding-style-for-comment-imange {
-         width: 41.9688px;
-         height: 41.9688px;
-         margin-right: 13.9896px;
-     }
-
-     .SHaaban-slider-content-first-child {
-         margin: 19.41px 19.41px 19.41px 0;
-     }
-
-     .SHaaban-slider-content-second-child {
-         margin: 19.41px 0 19.41px 19.41px;
-     }
-
-     .SHaaban-slider-arrow {
-         margin: 19.41px;
-     }
-
-     .SHaaban-title-and-meta h1,
-     .SHaaban-title-and-meta-info-container,
-     .SHaaban-title-and-meta-info-container,
-     #SHaaban-blog-content p,
-     #SHaaban-tags-area,
-     #SHaaban-blog-content {
-         margin-bottom: 24.481px !important;
-     }
-
-     .SHaaban-slider-container,
-     .SHaaban-adding-flex-center {
-         margin-bottom: 41.968px;
+         width: 37.1875px;
+         height: 37.1875px;
      }
  }
 
- @media (max-width:1318px) and (min-width:1303px) {
-
-     p,
-     span,
-     label,
-     .SHaaban-styling-form-inputs input::placeholder,
-     .SHaaban-styling-text-area::placeholder,
-     .SHaaban-slider-content-title,
-     .SHaaban-slider-content-mainText {
-         font-size: 13px !important;
-     }
-
-     .SHaaban-LISTING {
-         margin: 41.1875px 216.811px !important;
-     }
-
-     .SHaaban-detail {
-         width: 679.594px !important;
-     }
-
-     .SHaaban-sideBar-blog-listing {
-         width: 185.344px !important;
-     }
+ @media (max-width:1110px) and (min-width:1010px) {
 
      .SHaaban-title-and-meta h1,
-     h2 {
-         font-size: 22px !important;
+     .SHaaban-comment-section {
+         font-size: 26px !important;
      }
 
      #SHaaban-adding-style-for-main-image {
-         height: 413.934px;
+         height: 420px !important;
      }
 
-     .SHaaban-title-and-meta-info img {
-         height: 13px;
+     .SHaaban-slider-content-mainText,
+     #SHaaban-adding-style-for-label,
+     .SHaaban-title-and-meta-info p,
+     .SHaaban-title-and-meta-info span,
+     #SHaaban-blog-content p,
+     #SHaaban-comment-info,
+     #SHaaban-comment-info span,
+     .SHaaban-comment-userName,
+     .SHaaban-comment-date,
+     .SHaaban-comment-content,
+     .SHaaban-adding-style-for-replay,
+     .SHaaban-form-area-paragraph {
+         font-size: 15px !important;
+     }
+
+     .SHaaban-slider-content-title {
+         margin-bottom: 6px !important;
      }
 
      .SHaaban-styling-text-area {
-         height: 76.2552px;
-     }
-
-     .SHaaban-styling-form-inputs input {
-         width: 331.216px;
-         height: 33.275px;
-     }
-
-     #SHaaban-adding-style-for-button,
-     #SHaaban-adding-style-for-replay-button {
-         font-size: 13px;
-         height: 33.85px;
-         border-radius: 16.925px;
-     }
-
-     #SHaaban-adding-style-for-replay-button {
-         width: 160.88px;
-     }
-
-     #SHaaban-adding-style-for-button {
-         width: 118.911px;
-     }
-
-     .SHaaban-adding-style-for-comment-imange {
-         width: 41.9688px;
-         height: 41.9688px;
-         margin-right: 13.9896px;
-     }
-
-     .SHaaban-slider-content-first-child {
-         margin: 19.41px 19.41px 19.41px 0;
-     }
-
-     .SHaaban-slider-content-second-child {
-         margin: 19.41px 0 19.41px 19.41px;
-     }
-
-     .SHaaban-slider-arrow {
-         margin: 19.41px;
-     }
-
-     .SHaaban-title-and-meta h1,
-     .SHaaban-title-and-meta-info-container,
-     .SHaaban-title-and-meta-info-container,
-     #SHaaban-blog-content p,
-     #SHaaban-tags-area,
-     #SHaaban-blog-content {
-         margin-bottom: 24.481px !important;
-     }
-
-     .SHaaban-slider-container,
-     .SHaaban-adding-flex-center {
-         margin-bottom: 41.968px;
-     }
- }
-
- @media (max-width:1303px) and (min-width:1288px) {
-
-     p,
-     span,
-     label,
-     .SHaaban-styling-form-inputs input::placeholder,
-     .SHaaban-styling-text-area::placeholder,
-     .SHaaban-slider-content-title,
-     .SHaaban-slider-content-mainText {
-         font-size: 13px !important;
+         height: 90.1771px;
      }
 
      .SHaaban-LISTING {
-         margin: 40.718px 214.343px !important;
-     }
-
-     .SHaaban-detail {
-         width: 671.859px !important;
-     }
-
-     .SHaaban-sideBar-blog-listing {
-         width: 183.234px !important;
-     }
-
-     .SHaaban-title-and-meta h1,
-     h2 {
-         font-size: 21px !important;
-     }
-
-     #SHaaban-adding-style-for-main-image {
-         height: 413.934px;
-     }
-
-     .SHaaban-title-and-meta-info img {
-         height: 13px;
-     }
-
-     .SHaaban-styling-text-area {
-         height: 76.2552px;
-     }
-
-     .SHaaban-styling-form-inputs input {
-         width: 328.216px;
-         height: 33.275px;
-     }
-
-     #SHaaban-adding-style-for-button,
-     #SHaaban-adding-style-for-replay-button {
-         font-size: 13px;
-         height: 33.85px;
-         border-radius: 16.925px;
-     }
-
-     #SHaaban-adding-style-for-replay-button {
-         width: 160.88px;
-     }
-
-     #SHaaban-adding-style-for-button {
-         width: 118.911px;
-     }
-
-     .SHaaban-adding-style-for-comment-imange {
-         width: 41.9688px;
-         height: 41.9688px;
-         margin-right: 13.9896px;
-     }
-
-     .SHaaban-slider-content-first-child {
-         margin: 19.41px 19.41px 19.41px 0;
-     }
-
-     .SHaaban-slider-content-second-child {
-         margin: 19.41px 0 19.41px 19.41px;
-     }
-
-     .SHaaban-slider-arrow {
-         margin: 19.41px;
-     }
-
-     .SHaaban-title-and-meta h1,
-     .SHaaban-title-and-meta-info-container,
-     .SHaaban-title-and-meta-info-container,
-     #SHaaban-blog-content p,
-     #SHaaban-tags-area,
-     #SHaaban-blog-content {
-         margin-bottom: 24.481px !important;
-     }
-
-     .SHaaban-slider-container,
-     .SHaaban-adding-flex-center {
-         margin-bottom: 41.968px;
-     }
- }
-
- @media (max-width:1288px)
- /* and (min-width:1288px) */
-     {
-
-     p,
-     span,
-     label,
-     .SHaaban-styling-form-inputs input::placeholder,
-     .SHaaban-styling-text-area::placeholder,
-     .SHaaban-slider-content-title,
-     .SHaaban-slider-content-mainText {
-         font-size: 13px !important;
-     }
-
-     .SHaaban-LISTING {
-         margin: 40.718px 214.343px !important;
-         flex-direction: column;
+         flex-flow: column wrap;
      }
 
      .SHaaban-detail {
          width: 100% !important;
      }
 
+     .SHaaban-sideBar-blog-listing {
+         display: none;
+     }
+
+     .SHaaban-adding-style-for-comment-imange {
+         width: 34.6875px;
+         height: 34.6875px;
+     }
+
+     .SHaaban-adding-width {
+         width: 89%;
+     }
+ }
+
+ @media (max-width:1010px) and (min-width:915px) {
+
      .SHaaban-title-and-meta h1,
-     h2 {
-         font-size: 21px !important;
+     .SHaaban-comment-section {
+         font-size: 24px !important;
      }
 
      #SHaaban-adding-style-for-main-image {
-         height: 413.934px;
+         height: 420px !important;
      }
 
-     .SHaaban-title-and-meta-info img {
-         height: 13px;
+     .SHaaban-slider-content-mainText,
+     #SHaaban-adding-style-for-label,
+     .SHaaban-title-and-meta-info p,
+     .SHaaban-title-and-meta-info span,
+     #SHaaban-blog-content p,
+     #SHaaban-comment-info,
+     #SHaaban-comment-info span,
+     .SHaaban-comment-userName,
+     .SHaaban-comment-date,
+     .SHaaban-comment-content,
+     .SHaaban-adding-style-for-replay,
+     .SHaaban-form-area-paragraph {
+         font-size: 15px !important;
+     }
+
+     .SHaaban-slider-content-title {
+         margin-bottom: 6px !important;
      }
 
      .SHaaban-styling-text-area {
-         height: 76.2552px;
+         height: 90.1771px;
      }
 
-     .SHaaban-styling-form-inputs input {
-         width: 328.216px;
-         height: 33.275px;
+     .SHaaban-LISTING {
+         flex-flow: column wrap;
      }
 
-     #SHaaban-adding-style-for-button,
-     #SHaaban-adding-style-for-replay-button {
-         font-size: 13px;
-         height: 33.85px;
-         border-radius: 16.925px;
+     .SHaaban-detail {
+         width: 100% !important;
      }
+
+     .SHaaban-sideBar-blog-listing {
+         display: none;
+     }
+
+     .SHaaban-adding-style-for-comment-imange {
+         width: 31.5625px;
+         height: 31.5625px;
+     }
+
+     .SHaaban-adding-width {
+         width: 89%;
+     }
+ }
+
+ @media (max-width:915px) and (min-width:850px) {
 
      .SHaaban-title-and-meta h1,
-     .SHaaban-title-and-meta-info-container,
-     .SHaaban-title-and-meta-info-container,
-     #SHaaban-blog-content p,
-     #SHaaban-tags-area,
-     #SHaaban-blog-content {
-         margin-bottom: 24.481px !important;
+     .SHaaban-comment-section {
+         font-size: 22px !important;
      }
 
-     .SHaaban-slider-container,
-     .SHaaban-adding-flex-center {
-         margin-bottom: 41.968px;
+     #SHaaban-adding-style-for-main-image {
+         height: 350px !important;
+     }
+
+     .SHaaban-slider-content-mainText,
+     #SHaaban-adding-style-for-label,
+     .SHaaban-title-and-meta-info p,
+     .SHaaban-title-and-meta-info span,
+     #SHaaban-blog-content p,
+     #SHaaban-comment-info,
+     #SHaaban-comment-info span,
+     .SHaaban-comment-userName,
+     .SHaaban-comment-date,
+     .SHaaban-comment-content,
+     .SHaaban-adding-style-for-replay,
+     .SHaaban-form-area-paragraph {
+         font-size: 14px !important;
+     }
+
+     .SHaaban-slider-content-title {
+         margin-bottom: 6px !important;
+     }
+
+     .SHaaban-styling-text-area {
+         height: 90.1771px;
+     }
+
+     .SHaaban-LISTING {
+         flex-flow: column wrap;
+     }
+
+     .SHaaban-detail {
+         width: 100% !important;
+     }
+
+     .SHaaban-sideBar-blog-listing {
+         display: none;
+     }
+
+     .SHaaban-adding-style-for-comment-imange {
+         width: 31.5625px;
+         height: 31.5625px;
+     }
+
+     .SHaaban-title-and-meta-info img {
+         width: 15px;
+         height: 15px;
+     }
+
+     .SHaaban-adding-width {
+         width: 89%;
+     }
+ }
+
+ @media (max-width:850px) and (min-width:760px) {
+
+     .SHaaban-title-and-meta h1,
+     .SHaaban-comment-section {
+         font-size: 20px !important;
+     }
+
+     #SHaaban-adding-style-for-main-image {
+         height: 300px !important;
+     }
+
+     .SHaaban-slider-content-mainText,
+     #SHaaban-adding-style-for-label,
+     .SHaaban-title-and-meta-info p,
+     .SHaaban-title-and-meta-info span,
+     #SHaaban-blog-content p,
+     #SHaaban-comment-info,
+     #SHaaban-comment-info span,
+     .SHaaban-comment-userName,
+     .SHaaban-comment-date,
+     .SHaaban-comment-content,
+     .SHaaban-adding-style-for-replay,
+     .SHaaban-form-area-paragraph {
+         font-size: 14px !important;
+     }
+
+     .SHaaban-slider-content-title {
+         margin-bottom: 6px !important;
+     }
+
+     .SHaaban-styling-text-area {
+         height: 90.1771px;
+     }
+
+     .SHaaban-LISTING {
+         flex-flow: column wrap;
+     }
+
+     .SHaaban-detail {
+         width: 100% !important;
+     }
+
+     .SHaaban-sideBar-blog-listing {
+         display: none;
+     }
+
+     .SHaaban-adding-style-for-comment-imange {
+         width: 31.5625px;
+         height: 31.5625px;
+     }
+
+     .SHaaban-title-and-meta-info img {
+         width: 15px;
+         height: 15px;
+     }
+
+     .SHaaban-adding-width {
+         width: 84%;
+     }
+ }
+
+ @media (max-width:760px) and (min-width:701px) {
+
+     .SHaaban-title-and-meta h1,
+     .SHaaban-comment-section {
+         font-size: 18px !important;
+     }
+
+     #SHaaban-adding-style-for-main-image {
+         height: 270px !important;
+     }
+
+     .SHaaban-slider-content-mainText,
+     #SHaaban-adding-style-for-label,
+     .SHaaban-title-and-meta-info p,
+     .SHaaban-title-and-meta-info span,
+     #SHaaban-blog-content p,
+     #SHaaban-comment-info,
+     #SHaaban-comment-info span,
+     .SHaaban-comment-userName,
+     .SHaaban-comment-date,
+     .SHaaban-comment-content,
+     .SHaaban-adding-style-for-replay,
+     .SHaaban-form-area-paragraph {
+         font-size: 14px !important;
+     }
+
+     .SHaaban-slider-content-mainText {
+         font-size: 12px;
+     }
+
+     /* 
+     .SHaaban-slider {
+         width: 30% !important;
+         border-radius: 15px;
+     }
+
+     .SHaaban-slider-arrow {
+         flex-grow: 0;
+         width: 40px !important;
+         height: 40px !important;
+         margin: 10px;
+     } */
+
+     .SHaaban-slider-content-title {
+         margin-bottom: 6px !important;
+     }
+
+     .SHaaban-styling-text-area {
+         height: 90.1771px;
+     }
+
+     .SHaaban-LISTING {
+         flex-flow: column wrap;
+     }
+
+     .SHaaban-detail {
+         width: 100% !important;
+     }
+
+     .SHaaban-sideBar-blog-listing {
+         display: none;
+     }
+
+     .SHaaban-adding-style-for-comment-imange {
+         width: 31.5625px;
+         height: 31.5625px;
+     }
+
+     .SHaaban-title-and-meta-info img {
+         width: 15px;
+         height: 15px;
+     }
+
+     .SHaaban-adding-width {
+         width: 100% !important;
+     }
+
+     .SHaaban-replay-comment-body {
+         left: 0;
+         background: #faf6f6;
+     }
+ }
+
+ @media (max-width:701px) and (min-width:577px) {
+
+     .SHaaban-title-and-meta h1,
+     .SHaaban-comment-section {
+         font-size: 16px !important;
+     }
+
+     #SHaaban-adding-style-for-main-image {
+         height: 270px !important;
+     }
+
+     .SHaaban-slider-content-mainText,
+     #SHaaban-adding-style-for-label,
+     .SHaaban-title-and-meta-info p,
+     .SHaaban-title-and-meta-info span,
+     #SHaaban-blog-content p,
+     #SHaaban-comment-info,
+     #SHaaban-comment-info span,
+     .SHaaban-comment-userName,
+     .SHaaban-comment-date,
+     .SHaaban-comment-content,
+     .SHaaban-adding-style-for-replay,
+     .SHaaban-form-area-paragraph {
+         font-size: 13px !important;
+     }
+
+     .SHaaban-slider-content-mainText {
+         /* font-size: 12px; */
+         display: none;
+     }
+
+     .SHaaban-slider {
+         width: 35% !important;
+         border-radius: 15px;
+     }
+
+     .SHaaban-slider-arrow {
+         flex-grow: 0;
+         width: 40px !important;
+         height: 40px !important;
+         margin: 10px;
+     }
+
+     .SHaaban-slider-content-title {
+         margin-bottom: 6px !important;
+         font-size: 14px;
+     }
+
+     .SHaaban-styling-text-area {
+         height: 90.1771px;
+         margin: 20px 0;
+     }
+
+     .SHaaban-LISTING {
+         flex-flow: column wrap;
+     }
+
+     .SHaaban-detail {
+         width: 100% !important;
+     }
+
+     .SHaaban-sideBar-blog-listing {
+         display: none;
+     }
+
+     .SHaaban-adding-style-for-comment-imange {
+         width: 31.5625px;
+         height: 31.5625px;
+     }
+
+     .SHaaban-title-and-meta-info img {
+         width: 15px;
+         height: 15px;
+     }
+
+     .SHaaban-adding-width {
+         width: 100% !important;
+     }
+
+     .SHaaban-replay-comment-body {
+         left: 0;
+         background: #faf6f6;
+     }
+
+     /* .SHaaban-styling-form-inputs {
+         flex-direction: column;
+     } */
+ }
+
+ @media (max-width:577px) and (min-width:502px) {
+
+     .SHaaban-title-and-meta h1,
+     .SHaaban-comment-section {
+         font-size: 16px !important;
+     }
+
+     #SHaaban-adding-style-for-main-image {
+         height: 235px !important;
+     }
+
+     .SHaaban-slider-content-mainText,
+     #SHaaban-adding-style-for-label,
+     .SHaaban-title-and-meta-info p,
+     .SHaaban-title-and-meta-info span,
+     #SHaaban-blog-content p,
+     #SHaaban-comment-info,
+     #SHaaban-comment-info span,
+     .SHaaban-comment-userName,
+     .SHaaban-comment-date,
+     .SHaaban-comment-content,
+     .SHaaban-adding-style-for-replay,
+     .SHaaban-form-area-paragraph {
+         font-size: 12px !important;
+     }
+
+     .SHaaban-slider-content-mainText {
+         /* font-size: 12px; */
+         display: none;
+     }
+
+     .SHaaban-slider {
+         width: 35% !important;
+         border-radius: 15px;
+     }
+
+     .SHaaban-slider-arrow {
+         flex-grow: 0;
+         width: 28px !important;
+         height: 28px !important;
+         margin: 10px;
+     }
+
+     .SHaaban-slider-content-title {
+         margin-bottom: 6px !important;
+         font-size: 12px;
+     }
+
+     .SHaaban-styling-text-area {
+         height: 90.1771px;
+         margin: 20px 0;
+     }
+
+     .SHaaban-LISTING {
+         flex-flow: column wrap;
+     }
+
+     .SHaaban-detail {
+         width: 100% !important;
+     }
+
+     .SHaaban-sideBar-blog-listing {
+         display: none;
+     }
+
+     .SHaaban-adding-style-for-comment-imange {
+         width: 31.5625px;
+         height: 31.5625px;
+     }
+
+     .SHaaban-title-and-meta-info img {
+         width: 15px;
+         height: 15px;
+     }
+
+     .SHaaban-adding-width {
+         width: 100% !important;
+     }
+
+     .SHaaban-replay-comment-body {
+         left: 0;
+         background: #faf6f6;
+     }
+
+     .SHaaban-title-and-meta-info-container {
+         gap: 5px;
+         flex-direction: column;
+     }
+ }
+
+ @media (max-width:502px) and (min-width:350px) {
+
+     .SHaaban-title-and-meta h1,
+     .SHaaban-comment-section {
+         font-size: 15px !important;
+     }
+
+     #SHaaban-adding-style-for-main-image {
+         height: 235px !important;
+     }
+
+     .SHaaban-slider-content-mainText,
+     #SHaaban-adding-style-for-label,
+     .SHaaban-title-and-meta-info p,
+     .SHaaban-title-and-meta-info span,
+     #SHaaban-blog-content p,
+     #SHaaban-comment-info,
+     #SHaaban-comment-info span,
+     .SHaaban-comment-userName,
+     .SHaaban-comment-date,
+     .SHaaban-comment-content,
+     .SHaaban-adding-style-for-replay,
+     .SHaaban-form-area-paragraph {
+         font-size: 12px !important;
+     }
+
+     .SHaaban-title-and-meta-info p,
+     .SHaaban-title-and-meta-info span {
+         font-size: 10px;
+     }
+
+     .SHaaban-slider-content-mainText {
+         /* font-size: 12px; */
+         display: none;
+     }
+
+     .SHaaban-slider {
+         width: 40% !important;
+         border-radius: 15px;
+     }
+
+     .SHaaban-slider-arrow {
+         flex-grow: 0;
+         width: 25px !important;
+         height: 25px !important;
+         margin: 10px;
+     }
+
+     .SHaaban-slider-content-title {
+         margin-bottom: 6px !important;
+         font-size: 11px;
+     }
+
+     .SHaaban-styling-text-area {
+         height: 90.1771px;
+         margin: 20px 0;
+     }
+
+     .SHaaban-LISTING {
+         flex-flow: column wrap;
+     }
+
+     .SHaaban-detail {
+         width: 100% !important;
+     }
+
+     .SHaaban-sideBar-blog-listing {
+         display: none;
+     }
+
+     .SHaaban-adding-style-for-comment-imange {
+         width: 31.5625px;
+         height: 31.5625px;
+     }
+
+     .SHaaban-title-and-meta-info img {
+         width: 12px;
+         height: 12px;
+     }
+
+     .SHaaban-adding-width {
+         width: 100% !important;
+     }
+
+     .SHaaban-replay-comment-body {
+         left: 0;
+         background: #faf6f6;
+     }
+
+     .SHaaban-title-and-meta-info-container {
+         gap: 5px;
+         flex-direction: column;
+     }
+
+     .SHaaban-styling-width {
+         min-width: 100% !important;
+     }
+
+     .SHaaban-btn-area {
+         flex-direction: column;
+         gap: 15px;
+     }
+ }
+
+ @media (max-width:350px) {
+
+     .SHaaban-title-and-meta h1,
+     .SHaaban-comment-section {
+         font-size: 13px !important;
+     }
+
+     #SHaaban-adding-style-for-main-image {
+         height: 200px !important;
+     }
+
+     .SHaaban-slider-content-mainText,
+     #SHaaban-adding-style-for-label,
+     .SHaaban-title-and-meta-info p,
+     .SHaaban-title-and-meta-info span,
+     #SHaaban-blog-content p,
+     #SHaaban-comment-info,
+     #SHaaban-comment-info span,
+     .SHaaban-comment-userName,
+     .SHaaban-comment-date,
+     .SHaaban-comment-content,
+     .SHaaban-adding-style-for-replay,
+     .SHaaban-form-area-paragraph {
+         font-size: 11px !important;
+     }
+
+     .SHaaban-title-and-meta-info p,
+     .SHaaban-title-and-meta-info span {
+         font-size: 9px;
+     }
+
+     .SHaaban-slider-content-mainText {
+         /* font-size: 12px; */
+         display: none;
+     }
+
+     .SHaaban-slider {
+         width: 44% !important;
+         border-radius: 15px;
+     }
+
+     .SHaaban-slider-arrow {
+         flex-grow: 0;
+         width: 20px !important;
+         height: 20px !important;
+         margin: 10px;
+     }
+
+     .SHaaban-slider-content-title {
+         margin-bottom: 6px !important;
+         font-size: 10px;
+     }
+
+     .SHaaban-styling-text-area {
+         height: 90.1771px;
+         margin: 20px 0;
+     }
+
+     .SHaaban-LISTING {
+         flex-flow: column wrap;
+     }
+
+     .SHaaban-detail {
+         width: 100% !important;
+     }
+
+     .SHaaban-sideBar-blog-listing {
+         display: none;
+     }
+
+     .SHaaban-adding-style-for-comment-imange {
+         width: 31.5625px;
+         height: 31.5625px;
+     }
+
+     .SHaaban-title-and-meta-info img {
+         width: 12px;
+         height: 12px;
+     }
+
+     .SHaaban-adding-width {
+         width: 100% !important;
+     }
+
+     .SHaaban-replay-comment-body {
+         left: 0;
+         background: #faf6f6;
+     }
+
+     .SHaaban-title-and-meta-info-container {
+         gap: 5px;
+         flex-direction: column;
+     }
+
+     .SHaaban-styling-width {
+         min-width: 100% !important;
+     }
+
+     .SHaaban-btn-area {
+         flex-direction: column;
+         gap: 15px;
      }
  }

@@ -90,7 +90,7 @@ const CoursesSidebar = ({ filters, onFilterChange }) => {
               </div>
             ))}
           </div>
-          <div className="padding-top">
+          <div className="rb-padding-top">
             <h4 className="rb-tit-sidebar">Instructors</h4>
             {['KennyWhite', 'JohnDoe'].map((instructor) => (
               <div key={instructor} className="rb-flex-check">
@@ -250,3 +250,4 @@ const CoursesSidebar = ({ filters, onFilterChange }) => {
 };
 
 export default CoursesSidebar;
+

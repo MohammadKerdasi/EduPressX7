@@ -4,6 +4,9 @@
 
 .CoursesSidebar .rb-flex-check {
     width: 270px;
+
+.CoursesSidebar .rb-flex-check{
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,8 +21,12 @@
     margin-right: 2px;
 }
 
+
 .CoursesSidebar .rb-tit-sidebar {
     width: max-content;
+
+.CoursesSidebar .rb-tit-sidebar{
+
     font-size: 20px;
     margin-bottom: 20px;
     /* padding-right: 82.529px; */
@@ -27,6 +34,7 @@
 
 .CoursesSidebar .rb-flex-check input:checked label {
     color: black;
+
 }
 
 .CoursesSidebar .rb-flex-check label {
@@ -233,4 +241,11 @@
         -ms-transition: all 1s ease;
         -o-transition: all 1s ease;
     }
+  }
+  .CoursesSidebar .rb-flex-check label{
+margin: 0 4px;
+  }
+p{
+    margin-bottom: 0;
+
 }

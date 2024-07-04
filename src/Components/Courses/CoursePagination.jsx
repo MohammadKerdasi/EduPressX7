@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 import FeaturedCoursesCards from './../FeaturedCoursesCards/FeaturedCorsesCards';
 import './CoursePagination.css';
 import './../../index.css';
@@ -15,7 +15,7 @@ const CoursePagination = ({
 }) => {
   const [view, setView] = useState('NA-feature-card');
   const [currentPage, setCurrentPage] = useState(1);
-  const recordsPerPage = 6;
+  const recordsPerPage = 2;
   const totalPages = Math.ceil(items.length / recordsPerPage);
 
   const handleButtonClick = (viewType) => {
@@ -32,7 +32,7 @@ const CoursePagination = ({
   return (
     <div className='rb-CoursePagination'>
       <div className='rb-CoursePagination-head'>
-        <h1 >{titel}</h1>
+        <h1 >All Courses</h1>
         <div className='search-view'>
           <div className='rb-search-with-icone'>
             <input
@@ -48,14 +48,13 @@ const CoursePagination = ({
             className={`listing-button ${view === 'NA-feature-card' ? 'rb-view-active' : ''}`}
             onClick={() => handleButtonClick(1)}
           >
-            <FontAwesomeIcon className='rb-view-icon' icon={faBorderAll}  />
+            <FontAwesomeIcon icon={faBorderAll}  />
           </button>
           <button
-            className={`listing-button ${view === 'rb-listing' ? 'rb-view-active' : ''}`}
-
+            className={view === 'rb-listing' ? 'rb-view-active' : ''}
             onClick={() => handleButtonClick(2)}
           >
-            <FontAwesomeIcon className='rb-view-icon' icon={faList} />
+            <FontAwesomeIcon icon={faList} />
           </button>
         </div>
       </div>

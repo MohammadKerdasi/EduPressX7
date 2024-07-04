@@ -3,11 +3,8 @@
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  gap: 450px;;
+  gap: 170.75px;
   margin-bottom: 40px;
-}
-.rb-CoursePagination  .rb-view-icon{
-  font-size: 20px;
 }
 .rb-CoursePagination .rb-CoursePagination-head button:hover,.rb-CoursePagination .rb-CoursePagination-head .rb-view-active{
   color: var(--main-color);
@@ -15,17 +12,11 @@
   .rb-CoursePagination .rb-CoursePagination-head h1{
     font-size: 36px;
     padding-bottom: 0;
-    width: max-content;
   }
   .rb-CoursePagination .rb-CoursePagination-head .search-view .rb-search-with-icone .rb-searchbox {
     border: none;
     border-bottom: 1px solid var(--dark-grey);
-    width: 270px;
-}
-.rb-CoursePagination .rb-CoursePagination-head .search-view .rb-search-with-icone .rb-searchbox:hover ,
-.rb-CoursePagination .rb-CoursePagination-head .search-view .rb-search-with-icone .rb-searchbox:focus-visible{
-  outline: none;
-  border-bottom: 2px solid var(--main-color);
+    width: 192.03px;
 }
   .rb-CoursePagination .rb-CoursePagination-head .search-view{
     display: flex;
@@ -56,34 +47,27 @@
     gap: 12px;
     margin-top: 30px ;
   }
-  .rb-CoursePagination .rb-ul-pagination .rb-PageActive
-  {
-    transition: margin-bottom 0.3s ease , color 0.3s ease  ,background-color 0.3s ease;
+  .rb-CoursePagination .rb-ul-pagination .rb-PageActive{
     background-color: black;
     color: var(--white);
-    width: 48px;
-    height: 48px;
-    margin-bottom:10px;
-    padding-top: 10px;
+    width: 35px;
+    height: 35px;
+    padding-top: 5px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     text-align: center;
-    -webkit-transition: margin-bottom 0.3s ease , color 0.3s ease  ,background-color 0.3s ease;
-    -moz-transition: margin-bottom 0.3s ease , color 0.3s ease  ,background-color 0.3s ease;
-    -ms-transition: margin-bottom 0.3s ease , color 0.3s ease  ,background-color 0.3s ease;
-    -o-transition: margin-bottom 0.3s ease , color 0.3s ease  ,background-color 0.3s ease;
-}
+  }
   
   .rb-CoursePagination .rb-ul-pagination li
   {
     cursor: pointer;
-    width: 48px;
-    height: 48px;
-    border: 1px solid var(--light-gray);
-    padding-top: 10px;
+    width: 35px;
+    height: 35px;
+   border: 1px solid var(--light-gray);
+    padding-top: 5px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -94,6 +78,7 @@
   .rb-CoursePagination .rb-ul-pagination li svg{
     font-size: 10px;
     padding-bottom: 1px;
+
   }
 
 /*mediaQuery-------------------------------------------------------------------------------------  */
@@ -338,3 +323,6 @@
 }
 
 }
+
+  }
+

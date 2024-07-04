@@ -7,7 +7,7 @@ export default function BlogSingle() {
     <div>
           <div>
     <BreadCrumbs />
-    <div>
+    <div className='Project-Container'>
     <BlogDtails/>
        </div>
     </div>

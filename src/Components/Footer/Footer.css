@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* scroll-behavior: smooth; */
 }
 .rb-footer {
   position: relative;
@@ -16,17 +17,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 30px
+    gap: 29px
   }
 
   .rb-footer-column {
-    max-width: 410px;
+    max-width: 256.25px;
     display: flex;
     flex-direction: column;
 }
   
   .rb-footer-column h4 {
-    font-size: 20px;
+    font-size: 19px;
     margin-bottom: 32px;
     color: black;
   }
@@ -51,9 +52,9 @@
     display: flex;
     gap: 10px;
   }
-  /* .rb-footer-column a{ */
-    /* width: max-content; */
-  /* } */
+  .rb-footer-column a{
+    width: max-content;
+  }
   .rb-social-icons a {
     text-decoration: none;
     color: inherit;
@@ -76,10 +77,28 @@
 }
 
 
-  /* .rb-footer .rb-footer-addr { */
-    /* max-width: 268px; */
-  /* } */
-
+  .rb-footer .rb-footer-addr {
+    max-width: 268px;
+  }
+.rb-scroll-to-top-button{
+  background-color: black;
+  right: 4.9%;
+  bottom: 9.19%;
+  position: absolute;
+  width: 37.5px;
+  height: 37.5px;
+  border: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  font-size: 1px;
+}
+.rb-scroll-to-top-button *{
+color: var(--white);
+font-size: 22px;
+}
 
   .rb-footer-hr{
     border: solid 1px #eaeaea;
@@ -90,6 +109,7 @@
     margin: 0;
     padding:  32px 0;
     text-align: center;
+    color: #555555;
     color: var(--dark-grey  );
 font-size: 18px;
 }
@@ -100,20 +120,13 @@ font-size: 18px;
   /* Media Queries--------------------------------------------------------------------------------------------- */
 
 /* Styles for large screens */
-@media only screen and (min-width: 992px) and (max-width: 1366px)  {
+@media only screen and (min-width: 992px) and (max-width: 1200px)  {
+
   .rb-footer .rb-footer-columns {
-
-    justify-content: space-between; 
-    gap: 32px;
-}
-.rb-footer-column {
-  width: 181px;
+  
+    gap: 7px;
 }
 
-.rb-footer-column h4 {
-
-  width: max-content;
-}
 
 }
 
@@ -132,18 +145,11 @@ font-size: 18px;
 @media only screen and (max-width: 767px) {
 
   .rb-footer .rb-footer-columns {
-    padding: 90px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 12px;
+
+    gap: 19px;
 }
 .rb-footer .rb-footer-addr {
   max-width: 219px;
-}
-.rb-footer-column {
-  margin-right: 89px;
-
 }
 
 }

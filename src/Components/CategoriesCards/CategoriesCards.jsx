@@ -13,7 +13,10 @@ import categoryMarketing from "./../../../public/assetsProject/imges/TopCategori
 import categoryContent from "./../../../public/assetsProject/imges/TopCategories-Content writing.svg";
 import categoryFinance from "./../../../public/assetsProject/imges/TopCategories-Finance.svg";
 import categoryScience from "./../../../public/assetsProject/imges/TopCategories-Science.svg";
+
+// for components
 import Title from "../Title/Title";
+import { Link } from "react-router-dom";
 
 export default function CategoriesCards() {
   const [CategoriesCards] = useState([
@@ -80,8 +83,8 @@ export default function CategoriesCards() {
   ]);
 
   return (
-    <section className="NA-categoriesCards-Section Project-Container">
-      <Title header="top categories" desc="Explore our Popular Categories" btn=" all categories " showBtn={true}/>
+    <section className="NA-categoriesCards-Section NA-Project-Container">
+      <Title header="top categories" desc="Explore our Popular Categories" btn=" all categories " showBtn={true} link="/"/>
         <div className="NA-categoriesCards NA-flex">
             {CategoriesCards.map ((item) => {
                 return (
@@ -93,6 +96,7 @@ export default function CategoriesCards() {
                 )
             })}
         </div>
+        <Link className="NA-header-btn NA-btn-effect NA-hidden-btn" to="/">All Categories</Link>
     </section>
   );
 }

@@ -53,7 +53,7 @@
   }
   .Mk-SingleCourseAnswer p
   {
-    padding: 10px 30px;
+    padding: 0px 30px 10px 30px;
     font-size: 14px;
   }
   
@@ -61,7 +61,14 @@
     color: var(--main-color);
     max-height: max-content;
     transform: rotate(360deg);
+
   }
+  .active .Mk-SingleCourseQuestion
+  {
+    border-radius: 8px 8px 0px 0px !important;
+    transition: all 0s ease-in-out;
+  }
+
   .arrow-icon {
     transition: transform 0.3s ease-out;
   }

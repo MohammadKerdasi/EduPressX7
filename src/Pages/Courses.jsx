@@ -9,6 +9,7 @@ import './Courses.css'
 const Service1 = [
   {
   id: 1,
+
       img: './../../public/assetsProject/imges/card-rb(1).png',
       note: "Photography",
       detail: " Determined-Poitras",
@@ -110,10 +111,8 @@ const Service1 = [
       title: "Create an lms website with learnPress",
       time: "2Weeks",
       number: "156 Students",
-      lessons: "20 Lessons",
-      viewMore: "view more",
-      price: "29.0",
       levels: "All Levels",
+
       category: "Educate",
       Review: "five",
       Level: "Beginner",
@@ -129,9 +128,10 @@ const Service1 = [
       title: "Create an lms website with learnPress",
       time: "2Weeks",
       number: "156 Students",
+
       lessons: "20 Lessons",
-      viewMore: "view more",
       price: "29.0",
+
       levels: "All Levels",
       category: "Shop",
       Review: "three",
@@ -149,17 +149,17 @@ const Service1 = [
       time: "2Weeks",
       number: "156 Students",
       lessons: "20 Lessons",
+
       viewMore: "view more",
-      price: "29.0",
-      levels: "All Levels",
-      category: "University",
-      Review: "one",
-      Level: "Intermediate",
-      Instructors: "KennyWhite",
-    PriceCourses: "Free",
+    category: "Educate",
+    Review: "one",
+    Level: "Expert",
+    Instructors: "KennyWhite",
+    Price: "Free",
 
   },
   {
+
   id: 9,
       img: './../../public/assetsProject/imges/card-rb(9).png',
       note: "Photography",
@@ -262,10 +262,8 @@ const Service1 = [
       title: "Create an lms website with learnPress",
       time: "2Weeks",
       number: "156 Students",
-      lessons: "20 Lessons",
-      viewMore: "view more",
-      price: "29.0",
       levels: "All Levels",
+
       category: "Studio",
       Review: "two",
       Level: "Expert",
@@ -282,8 +280,8 @@ const Service1 = [
       time: "2Weeks",
       number: "156 Students",
       lessons: "20 Lessons",
-      viewMore: "view more",
       price: "29.0",
+
       levels: "All Levels",
       category: "Office",
       Review: "five",
@@ -301,17 +299,17 @@ const Service1 = [
       time: "2Weeks",
       number: "156 Students",
       lessons: "20 Lessons",
+
       viewMore: "view more",
-      price: "29.0",
-      levels: "All Levels",
-      category: "family",
-      Review: "three",
-      Level: "Expert",
-      Instructors: "JohnDoe",
-    PriceCourses: "Paid",
+    category: "Shop",
+    Review: "three",
+    Level: "Expert",
+    Instructors: "JohnDoe",
+    Price: "Free",
 
   },
   {
+
   id: 17,
       img: './../../public/assetsProject/imges/card-rb(8).png',
       note: "Photography",
@@ -349,7 +347,6 @@ const Service1 = [
     PriceCourses: "Free",
 
   }
-  
 ];
 
 
@@ -379,9 +376,9 @@ const [selectedFilters, setSelectedFilters] = useState({
     const matchesReview = (!selectedFilters.five && !selectedFilters.four && !selectedFilters.three && !selectedFilters.two && !selectedFilters.one) || selectedFilters[val.Review.toLowerCase()];
     const matchesLevel = (!selectedFilters.Beginner && !selectedFilters.Intermediate && !selectedFilters.Expert) || selectedFilters[val.Level];
     const matchesInstructors = (!selectedFilters.KennyWhite && !selectedFilters.JohnDoe) || selectedFilters[val.Instructors];
-    const matchesPriceCourses = (!selectedFilters.Free && !selectedFilters.Paid) || selectedFilters[val.PriceCourses];
+    const matchesPrice = (!selectedFilters.Free && !selectedFilters.Paid) || selectedFilters[val.Price];
 
-    return matchesCategory && matchesInstructors && matchesPriceCourses && matchesReview && matchesLevel; 
+    return matchesCategory && matchesInstructors && matchesPrice && matchesReview && matchesLevel; 
 //_____________________________________________________________________________________________________________________________________
   }).filter((val) => {   /* من هاد السطر
  */    if (searchBox === "") {

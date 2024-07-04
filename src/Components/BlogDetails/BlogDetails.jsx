@@ -17,6 +17,7 @@ import {
   faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
 import FilterBar from "../FilterBar/FilterBar";
+import ShowFilter from "./ShowFilter/ShowFilter";
 
 export default function BlogDtails() {
   // مصفوفة مسارات الصور للتبديل بين الصور عند النقر على المقالة السابقة واللاحقة
@@ -194,10 +195,21 @@ export default function BlogDtails() {
   });
 
   // قسم الدوال
+
+  // تابع ينتقل بالصفحة الي الاعلى
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 100,
+      behavior: "smooth",
+    });
+  };
+
   // تابع يتعامل مع مصفوفة مسارات الصور (الرجوع الى الخلف)
+
   function handleDecIndex() {
     if (index > 0) {
       setIndex(index - 1);
+      scrollToTop();
     }
   }
 
@@ -205,6 +217,7 @@ export default function BlogDtails() {
   function handleIncIndex() {
     if (index < MainImages.length - 1) {
       setIndex(index + 1);
+      scrollToTop();
     }
   }
 
@@ -328,7 +341,7 @@ export default function BlogDtails() {
   return (
     <>
       <div>
-        <BreadCrumbs />
+        <ShowFilter />
       </div>
       <div className="SHaaban-LISTING">
         <div className="SHaaban-detail">
@@ -390,10 +403,15 @@ export default function BlogDtails() {
               suscipit deserunt eveniet magni. Qui.
             </p>
             <div id="SHaaban-tags-area">
+              <p className="SHaaban-adding-style-for-blog-content-title">
+                Tags :
+              </p>
               <TagsH />
             </div>
             <div id="Shaaban-contact-area">
-              <p className="SHaaban-remove-margin">Share:</p>
+              <p className="SHaaban-adding-style-for-blog-content-title">
+                Share:
+              </p>
               <ul className="SHaaban-contact-list">
                 <li>
                   <a href="#">
@@ -430,9 +448,9 @@ export default function BlogDtails() {
               </div>
               <div className="SHaaban-slider-content-first-child">
                 <p className="SHaaban-slider-content-title">Prev Articles</p>
-                <p className="SHaaban-slider-content-mainText">
+                <h4 className="SHaaban-slider-content-mainText">
                   Best LearnPress WordPress Theme Collection for 2023
-                </p>
+                </h4>
               </div>
             </div>
             <div className="SHaaban-slider">
@@ -440,9 +458,9 @@ export default function BlogDtails() {
                 <p className="SHaaban-slider-content-title SHaaban-text-end">
                   Next Articles
                 </p>
-                <p className="SHaaban-slider-content-mainText SHaaban-text-end">
+                <h4 className="SHaaban-slider-content-mainText SHaaban-text-end">
                   Best LearnPress WordPress Theme Collection for 2023
-                </p>
+                </h4>
               </div>
               <div onClick={handleIncIndex} className="SHaaban-slider-arrow">
                 <FontAwesomeIcon icon={faChevronRight} />
@@ -450,7 +468,7 @@ export default function BlogDtails() {
             </div>
           </div>
           <div className="SHaaban-comment-section">
-            <h2>Comments</h2>
+            <h4>Comments</h4>
             <p id="SHaaban-comment-info">
               {comments.length +
                 comments.reduce((total, comment) => {
@@ -475,21 +493,25 @@ export default function BlogDtails() {
                         <p className="SHaaban-comment-date">October 03, 2022</p>
                       </div>
                       <p className="SHaaban-comment-content">{comment.text}</p>
-                      <div
-                        onClick={() => {
-                          handleClickingOnReplay();
-                          setIsReply(true);
-                          setReplyCommentId(comment.id);
-                        }}
-                        className="SHaaban-adding-margin-bottom SHaaban-adding-style-with-hover"
-                      >
-                        <img
-                          src="../../public/assetsProject/imageFromHaidar/Vector.svg"
-                          alt=""
-                        />
-                        <span className="SHaaban-adding-style-for-replay">
-                          Replay
-                        </span>
+                      <div className="SHaaban-adding-margin-bottom">
+                        <div className="SHaaban-replay-area">
+                          <div
+                            onClick={() => {
+                              handleClickingOnReplay();
+                              setIsReply(true);
+                              setReplyCommentId(comment.id);
+                            }}
+                            className=" SHaaban-adding-style-with-hover"
+                          >
+                            <img
+                              src="../../public/assetsProject/imageFromHaidar/Vector.svg"
+                              alt=""
+                            />
+                            <span className="SHaaban-adding-style-for-replay">
+                              Replay
+                            </span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -549,15 +571,16 @@ export default function BlogDtails() {
             handlePaginationWithArrowINC={handlePaginationWithArrowINC}
             handlePaginationWithArrowDEC={handlePaginationWithArrowDEC}
           />
-          <div className="SHaaban-form-area">
+          <div className="SHaaban-form-area ">
             <h4 className="SHaaban-form-area-title">Leave A Comment</h4>
             <p className="SHaaban-form-area-paragraph">
               Your email address will not be published. Required fields are
-              marked *
+              marked*
             </p>
             <form id="SHaaban-form-body" action="">
               <div className="SHaaban-styling-form-inputs">
                 <input
+                  className="Mk-FormInput1"
                   type="text"
                   name=""
                   id=""
@@ -566,6 +589,7 @@ export default function BlogDtails() {
                   onChange={(e) => setName(e.target.value)}
                 />
                 <input
+                  className="Mk-FormInput2"
                   type="email"
                   name=""
                   id=""
@@ -584,18 +608,21 @@ export default function BlogDtails() {
                 ref={textAreaRef}
                 autoFocus={autoFocus}
               ></textarea>
-              <input type="checkbox" name="" id="SHaaban-checkbox" value="" />
-              <label
-                id="SHaaban-adding-style-for-label"
-                htmlFor="SHaaban-checkbox"
-              >
-                Save my name, email in this brower for the next time I comment
-              </label>
+              <div className="SHaaban-adding-flex-align-center">
+                <input type="checkbox" name="" id="SHaaban-checkbox" value="" />
+                <label
+                  id="SHaaban-adding-style-for-label"
+                  htmlFor="SHaaban-checkbox"
+                >
+                  Save my name, email in this brower for the next time I comment
+                </label>
+              </div>
             </form>
             <div className="SHaaban-btn-area">
               <button
                 onClick={handleSubmit}
-                id="SHaaban-adding-style-for-button"
+                // id="SHaaban-adding-style-for-button"
+                className="NA-btn NA-btn-effect SHaaban-styling-width"
               >
                 Posts Comment
               </button>
@@ -603,8 +630,12 @@ export default function BlogDtails() {
                 onClick={() => {
                   handlePostsReplayComment();
                 }}
-                id="SHaaban-adding-style-for-replay-button"
-                className={displayNone ? "d-none" : ""}
+                // id="SHaaban-adding-style-for-replay-button"
+                className={
+                  displayNone
+                    ? "d-none"
+                    : "NA-btn NA-btn-effect SHaaban-styling-width"
+                }
               >
                 Posts Replay Comment
               </button>
@@ -614,23 +645,6 @@ export default function BlogDtails() {
         <div className="SHaaban-sideBar-blog-listing">
           <FilterBar />
         </div>
-        {/* <div
-          style={{
-            position: "absolute",
-            minHeightheight: "calc( 100vh - 130.6px )",
-            zIndex: "10",
-            background: "white",
-            right: "0",
-            top: "130.6px",
-            // top: "0",
-            border: " solid 1px #eaeaea",
-            padding: "25px",
-            width: "fit-content",
-          }}
-          className="SHaaban-sideBar-blog-listing"
-        >
-          <FilterBar />
-        </div> */}
       </div>
     </>
   );

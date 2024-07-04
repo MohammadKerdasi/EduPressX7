@@ -67,7 +67,8 @@
   .Mk-CardStyling
   {
     position: absolute;
-    top: -280px;
+    width: 100%;
+    top: -300px;
     border-radius: 20px;
     border: 1px solid var(--light-gray);
   }
@@ -104,7 +105,8 @@
   } 
   .Mk-CardBtn
   {
-    width: 120px;
+    width: 127px !important;
+    height: 48;
     border-radius: 24px;
     background-color: var(--main-color);
     padding: 10px 24px;
@@ -254,21 +256,121 @@
 }
 .Mk-Comments
 {
-  width: 48% !important;
+  width: 100% !important;
+}
+.Mk-ReplayIconMargin
+{
+  margin: 10px 0px !important;
 }
 .Mk-Inputs
 {
   width: 100% !important;
 }
+.Mk-formInputs
+{
+  margin-top: 30px!important;
+}
+.Mk-FormInput1
+{
+  width: 48%;
+  height: 48px;
+  border: 1px solid var(--dark-grey);
+  border-radius: 8px;
+}
+.Mk-FormInput1::placeholder
+{
+  padding: 10.5px 16px ;
+}
+.Mk-FormInput2
+{
+  width: 48%;
+  height: 48px;
+  border: 1px solid var(--dark-grey);
+  border-radius: 8px;
+}
+.Mk-FormInput2::placeholder
+{
+  padding: 10.5px 16px ;
+}
 .Mk-FormArea
 {
   margin-top: 40px;
+  width: 63.5%;
+  
+}
+.Mk-InputsArea
+{
+  width: 65% !important;
 }
 .Mk-CommentSection
 {
   margin: 20px 0px;
 }
-@media (max-width: 1390px){
+.reviews-container {
+  margin: 20px 0;
+  padding: 10px;
+}
+.Mk-PaginationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.Mk-PaginationButton {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: 1px solid var(--light-gray);
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 24px ;
+  width: 48px;
+  height: 48px;
+}
+
+.Mk-PaginationButton:disabled {
+
+  cursor: not-allowed;
+}
+
+.Mk-PaginationPageNumber {
+  padding: 5px 10px;
+  margin: 5px 5px;
+  border: 1px solid var(--light-gray);
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+}
+.Mk-PaginationPageNumber:hover
+{
+  background-color: #000;
+  color: #fff;
+}
+
+.Mk-ActivePage {
+  background-color: #000;
+  color: #fff;
+}
+.Mk-CommentContent
+{
+  font-size: 12.7px !important;
+  line-height: 20px !important;
+}
+
+@media (max-width:1521px){
+  .Mk-CardBody
+  {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 1344px){
   .Mk-CourseSingleTabsAndCard
   {
     flex-direction: column-reverse;
@@ -295,7 +397,27 @@
     justify-content: space-evenly;
     padding: 20px ;
   }
-  
+  .Mk-FormArea
+  {
+    width: 100%;
+  }
+  .Mk-formInputs
+  {
+    flex-direction: column;
+  }
+  .Mk-FormInput1
+  {
+    width: 100% !important;
+    height: 48px !important;
+
+  }
+  .Mk-FormInput2
+  {
+    margin-top: 20px !important;
+    width: 100% !important;
+    height: 48px !important;
+
+  }
   
 
 
@@ -327,6 +449,7 @@
 
 }
   @media (max-width: 768px) {
+
     .Mk-tab-header {
       flex: 100%;
       border-right: none;
@@ -336,6 +459,14 @@
     {
       flex-direction: column;
     }
+    .Mk-DateAndUserName
+    {
+      margin: 5px 0px;
+    }
+    .Mk-DateAndUserName p
+    {
+      font-size: 13px;
+    }
     .Mk-NumOfRate
     {
       width: 60px;
@@ -344,10 +475,19 @@
     {
       flex-wrap: nowrap;
       font-size: 10px;
+      padding: 10px 5px;
     }
+ 
+    
   }
   
   @media (max-width: 480px) {
+    .Mk-CheckBoxandP
+    {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     .Mk-tab-header {
       padding: 10px 5px;
     }
@@ -381,6 +521,41 @@
       flex-wrap: nowrap;
       font-size: 9px;
     }
+    .Mk-PaginationButton
+    {
+      width: 30px;
+      height: 30px;
+    }
+    .Mk-PaginationPageNumber
+    {
+      width: 30px;
+      height: 30px
+    }
+    .Mk-AddingFlex{
+      flex-direction: column;
+    }
+    .Mk-CommentContent
+    {
+      margin: 10px 0px;
+    }
+  
+  }
+  @media (max-width:440px){
+    .Mk-CheckBoxandP
+    {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .Mk-PaginationButton
+  }
+  
+  @media (max-width:434px){
+    .Mk-CheckBoxReview
+    {
+      margin-bottom: 20px;
+    }
+
   }
   @media (max-width: 350px){
     .Mk-NumOfRate
@@ -392,5 +567,9 @@
       flex-wrap: nowrap;
       font-size: 8px;
     }
+    /* .Mk-CommentContent, .Mk-CommentUsername , .Mk-CommentDate
+    {
+      font-size: 10px !important;
+    } */
 
   }
