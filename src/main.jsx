@@ -21,7 +21,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/EduPressX7/",
+        path: "/EduPressX7",
         element: <Home />,
       },
       {
