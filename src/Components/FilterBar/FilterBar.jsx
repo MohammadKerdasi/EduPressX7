@@ -2,7 +2,12 @@ import React from "react";
 import "./FilterBar.css";
 import TagsH from "./../TagsH/Tags";
 
-export default function FilterBar() {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faArrowRight
+} from "@fortawesome/free-solid-svg-icons";
+
+export default function FilterBar(props) {
   // مصفوفة الفئات
   const Category = [
     { id: 1, catName: "Commercial", catNum: 15 },
@@ -32,7 +37,9 @@ export default function FilterBar() {
     },
   ];
   return (
-    <div>
+    <div className="NA-FilterBar">
+      <FontAwesomeIcon className='NA-filter-icon' icon={faArrowRight} onClick={props.onClick} />
+
       <div className="SHaaban-category-area">
         <h4 className="SHaaban-adding-margin-bottom SHaaban-category-area-title">
           Category
