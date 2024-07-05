@@ -5,6 +5,7 @@ import { faXTwitter, faPinterest, faInstagram, faFacebookF, faYoutube } from '@f
 // import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import "./../../index.css"
 import { Link } from 'react-router-dom';
+import logo from './../../../public/assetsProject/imges/LOGO.png';
 
 
 const Footer = () => {
@@ -22,7 +23,7 @@ const Footer = () => {
     <footer className="rb-footer">
     <div className="rb-footer-columns">
       <div className="rb-footer-column">
-        <h4><img className='rb-logo' src='./../../../public/assetsProject/imges/LOGO.png'/></h4>
+        <h4><img className='rb-logo' src= {logo} /></h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
       <div className="rb-footer-column ">
