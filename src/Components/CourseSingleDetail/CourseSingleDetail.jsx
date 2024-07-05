@@ -30,6 +30,7 @@ import {
 import SingleCourseFAQs from "../SinglePageFAQs/SinglePageFAQs.jsx";
 import filled_star from "./../../../public/assetsProject/imges/filled-star.png";
 import not_filled_star from "./../../../public/assetsProject/imges/not-filled-star.png";
+import Card_img from './../../../public/assetsProject/imges/card(6).png'
 
 
 
@@ -827,7 +828,7 @@ config={[
             <Card.Img
               className="Mk-CardImg"
               variant="top"
-              src="./../../../public/assetsProject/imges/card(6).png"
+              src={Card_img}
             />
             <Card.Body className="Mk-CardBody">
               <Card.Text className="Mk-CardText">
