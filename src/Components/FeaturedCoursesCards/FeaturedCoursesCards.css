@@ -1,3 +1,4 @@
+/* nahla */
 .NA-featuredCards {
   justify-content: space-between;
   align-items: center;
@@ -13,57 +14,7 @@
   overflow: hidden;
   transition: all 0.5s;
 }
-/* -------------------------------------------------------------------------------- */
-.rb-listing{ 
-  width: 990px; 
-  height: 250px; 
-  margin: 15px 0; 
-  display: flex; 
-  border-radius: 20px; 
-  border: 1px solid var(--light-gray); 
-  transition: all .5s; 
-  -webkit-transition: all .5s; 
-  -moz-transition: all .5s; 
-  -ms-transition: all .5s; 
-  -o-transition: all .5s; 
 
-} 
-.rb-listing .NA-feature-card-content { 
-padding: 20px; 
-} 
-.rb-listing  .NA-feature-card-img { 
-position: relative; 
-width: max-content; 
-} 
-
-.rb-listing  .NA-feature-card-img img{ 
-height: 249px; 
-border-radius: 14px 0 0 14px; 
-} 
-.Courses .NA-featuredCards { 
-justify-content: space-between; 
-align-items: center; 
-flex-wrap: wrap; 
-} 
-.Courses .NA-feature-card { 
-width: 480px;} 
-
-.rb-listing .NA-feature-card-content > div:nth-child(1) { 
-padding-bottom: 0; 
-height: max-content; 
-} 
-
-
-.rb-listing .NA-card-price { 
-border-top: 1px solid #EAEAEA;  
-padding-top: 16px; 
-justify-content: space-between; 
-gap: 363px; 
-} 
-.rb-listing .NA-feature-card-deatails{ 
-padding-bottom: 67px; 
-}
-/* ---------------------------------------------------------------------------- */
 .NA-feature-card:hover .NA-card-title {
   color: var(--main-color);
 }
@@ -107,11 +58,6 @@ padding-bottom: 67px;
   left: 5%;
   margin-bottom: 0; /*Taking off bootstrap margin*/
 }
-
-/* .NA-feature-card:nth-child(2), .NA-feature-card:nth-child(5){
-  margin: 0 15px;
-} */
- 
 .NA-feature-card:hover {
   box-shadow: 0px 4px 20px 0px #0000001A;
   margin: 0 0 16px 0 !important;
@@ -174,13 +120,64 @@ padding-bottom: 67px;
 .NA-feature-card .NA-card-price a:hover, .NA-feature-card .NA-card-price a:focus {
   text-decoration: underline !important;
 }
-.NA-article-card-content .NA-card-note {
-  display: none;
+/* -------------------------------------------------------------------------------- */
+/* rawan */
+.rb-listing{ 
+  width: 990px; 
+  height: 250px; 
+  margin: 15px 0; 
+  display: flex; 
+  border-radius: 20px; 
+  border: 1px solid var(--light-gray); 
+  transition: all .5s; 
+  -webkit-transition: all .5s; 
+  -moz-transition: all .5s; 
+  -ms-transition: all .5s; 
+  -o-transition: all .5s; 
+
+} 
+.rb-listing .NA-feature-card-content { 
+padding: 20px; 
+} 
+.rb-listing  .NA-feature-card-img { 
+position: relative; 
+width: max-content; 
+} 
+
+.rb-listing  .NA-feature-card-img img{ 
+height: 249px; 
+border-radius: 14px 0 0 14px; 
+} 
+.Courses .NA-featuredCards { 
+justify-content: space-between; 
+align-items: center; 
+flex-wrap: wrap; 
+} 
+.Courses .NA-feature-card { 
+width: 480px;} 
+
+.rb-listing .NA-feature-card-content > div:nth-child(1) { 
+padding-bottom: 0; 
+height: max-content; 
+} 
+
+
+.rb-listing .NA-card-price { 
+border-top: 1px solid #EAEAEA;  
+padding-top: 16px; 
+justify-content: space-between; 
+gap: 363px; 
+} 
+.rb-listing .NA-feature-card-deatails{ 
+padding-bottom: 67px; 
 }
+/* ---------------------------------------------------------------------------- */
+
+/* nahla */
 /* large screen */
 @media (min-width: 993px) and (max-width: 1566px) {
   .NA-feature-card {
-    width: 310px;
+    width: 310px !important;
   }
   .NA-feature-card-content {
     padding: 15px;
@@ -220,7 +217,7 @@ padding-bottom: 67px;
 /* medium screen */
 @media (min-width: 769px) and (max-width: 992px) {
   .NA-feature-card {
-    width: 250px;
+    width: 250px !important;
   }
   .NA-feature-card-content {
     padding: 15px;
@@ -308,7 +305,7 @@ padding-bottom: 67px;
     justify-content: center;
   }
   .NA-feature-card {
-    width: 340px;
+    width: 310px !important;
   }
   .NA-feature-card-content {
     padding: 10px;

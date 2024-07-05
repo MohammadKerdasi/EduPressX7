@@ -3,7 +3,6 @@ import { useState } from "react";
 // for css
 import "./../index.css";
 import "./../Components/FeaturedCoursesCards/FeaturedCoursesCards.css";
-// import "./../Components/HomePageHero/HomePageHero.css"
 
 // for components
 import FeaturedCoursesCards from "../Components/FeaturedCoursesCards/FeaturedCorsesCards";
@@ -102,7 +101,7 @@ export default function Home() {
     {
       id: 6,
       img: featuredcard5,
-      // note: "Photography",
+      note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
       time: "2Weeks",
@@ -120,21 +119,21 @@ export default function Home() {
         img: articlecard2,
         title: "Best LearnPress WordPress Theme Collection for 2023",
         date: "Jan 24, 2023",
-        decs: "Looking for an amazing & well-functional LearnPress WordPress Theme?..."
+        desc: "Looking for an amazing & well-functional LearnPress WordPress Theme?"
     },
     {
         id: 2,
         img: aeticlecard3,
         title: "Best LearnPress WordPress Theme Collection for 2023",
         date: "Jan 24, 2023",
-        decs: "Looking for an amazing & well-functional LearnPress WordPress Theme?..."
+        desc: "Looking for an amazing & well-functional LearnPress WordPress Theme?"
     },
     {
         id: 3,
         img: articlecard1,
         title: "Best LearnPress WordPress Theme Collection for 2023",
         date: "Jan 24, 2023",
-        decs: "Looking for an amazing & well-functional LearnPress WordPress Theme?..."
+        desc: "Looking for an amazing & well-functional LearnPress WordPress Theme?"
     },
 ])
 
@@ -175,7 +174,7 @@ export default function Home() {
         {/* <FeaturedCoursesCards FeaturedCards={FeaturedCards} articleContent='true' /> */}
 
         
-        <Link className="NA-header-btn NA-btn-effect NA-hidden-btn" to="/">
+        <Link className="NA-header-btn NA-btn-effect NA-hidden-btn" to="/Blog">
           all articles
         </Link>
       </section> {/* end of NA-articlesCards-Section */}

@@ -34,6 +34,7 @@
 }
 .NA-article-card-content p {
   color: var(--dark-grey);
+  font-size: 18px;
   margin: 0; /*Taking off bootstrap value*/
 }
 .NA-date-icon p {
@@ -47,11 +48,13 @@
 .NA-article-card:hover h3 {
   color: var(--main-color);
 }
-
+.NA-span2 {
+  display: none;
+}
 /* large screen */
 @media (min-width: 993px) and (max-width: 1566px) {
   .NA-article-card {
-    width: 310px;
+    width: 310px !important;
   }
   .NA-article-card-content h3 {
     font-size: 18px;
@@ -59,12 +62,13 @@
   .NA-article-card-content p {
     font-size: 14px;
   }
+  
 }
 
 /* medium screen && small screen  */
 @media (min-width: 577px) and (max-width: 992px) {
   .NA-article-card {
-    width: 250px;
+    width: 250px !important;
   }
   .NA-article-card-content h3 {
     font-size: 16px;
@@ -72,6 +76,7 @@
   .NA-article-card-content p {
     font-size: 12px;
   }
+
 }
 
 /* mobile screen */
@@ -80,7 +85,7 @@
     justify-content: center;
   } 
   .NA-article-card {
-    width: 340px;
+    width: 340px !important;
   }
   .NA-article-card-content h3 {
     font-size: 16px;
@@ -88,4 +93,5 @@
   .NA-article-card-content p {
     font-size: 12px;
   }
+  
 }
