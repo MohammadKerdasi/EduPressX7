@@ -10,10 +10,11 @@ import heroVector2 from "./../../../public/assetsProject/imges/header-Vector (2)
 import OnlineSchool from "./../../../public/assetsProject/imges/header-online.png";
 import HeaderObject1 from "./../../../public/assetsProject/imges/header-background.png";
 import HeaderObject2 from "./../../../public/assetsProject/imges/header-OBJECTS.png";
+import HeroBackGround from './../../../public/assetsProject/imges/header-Rectangle\ 88.png';
 
 export default function HomePageHero() {
   return (
-    <header className="NA-header">
+    <header className="NA-header" style={{backgroundImage : {HeroBackGround}  }}>
       <div className="Project-Container NA-hero-Wrapper NA-flex">
         <div className="NA-hero-content">
           <h1 className="NA-flex">
