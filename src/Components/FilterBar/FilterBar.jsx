@@ -6,6 +6,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowRight
 } from "@fortawesome/free-solid-svg-icons";
+import Post1 from "./../../../public/assetsProject/imges/blogListing-Recent posts(3).png"
+import Post2 from "./../../../public/assetsProject/imges/blogListing-Recent posts(1).png"
+import Post3 from "./../../../public/assetsProject/imges/blogListing-Recent posts(2).png"
 
 export default function FilterBar(props) {
   // مصفوفة الفئات
@@ -22,17 +25,17 @@ export default function FilterBar(props) {
   const RecentPosts = [
     {
       id: 1,
-      imageUrl: "./../../assetsProject/imges/blogListing-Recent posts(3).png",
+      imageUrl: Post1 ,
       recentPostText: "Best LearnPress WordPress Theme Collection for 2023",
     },
     {
       id: 2,
-      imageUrl: "./../../assetsProject/imges/blogListing-Recent posts(1).png",
+      imageUrl: Post2,
       recentPostText: "Best LearnPress WordPress Theme Collection for 2023",
     },
     {
       id: 3,
-      imageUrl: "./../../assetsProject/imges/blogListing-Recent posts(2).png",
+      imageUrl: Post3,
       recentPostText: "Best LearnPress WordPress Theme Collection for 2023",
     },
   ];
