@@ -31,6 +31,8 @@ import SingleCourseFAQs from "../SinglePageFAQs/SinglePageFAQs.jsx";
 import filled_star from "./../../../public/assetsProject/imges/filled-star.png";
 import not_filled_star from "./../../../public/assetsProject/imges/not-filled-star.png";
 import Card_img from './../../../public/assetsProject/imges/card(6).png'
+import GirlImg from "./../../../public/assetsProject/imges/card(12).png";
+import ReplayIcon from "./../../../public/assetsProject/imageFromHaidar/Vector.svg";
 
 
 
@@ -704,7 +706,7 @@ const Comment = ({
       <div className="SHaaban-adding-flex Mk-AddingFlex">
         <img
           className="SHaaban-adding-style-for-comment-imange"
-          src="./../../public/assetsProject/imges/card(12).png"
+          src={GirlImg}
           alt="user"
         />
         <div className="SHaaban-adding-flex-grow">
@@ -715,7 +717,7 @@ const Comment = ({
           <p className="SHaaban-comment-content Mk-CommentContent">{comment.text}</p>
           <div className="Mk-ReplayIconMargin">
             <img
-              src="../../public/assetsProject/imageFromHaidar/Vector.svg"
+              src={ReplayIcon}
               alt="reply"
             />
             <span className="SHaaban-adding-style-for-replay ">Reply</span>
