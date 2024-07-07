@@ -7,13 +7,12 @@
 }
 .rb-footer {
   position: relative;
-  padding: 0 16.4063%;
   width: 100%;
   background-color: #F5F5F5;
   color:  var(--dark-grey );
   }
   .rb-footer .rb-footer-columns{
-    padding: 90px 0;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -124,7 +123,7 @@ font-size: 18px;
 
   .rb-footer .rb-footer-columns {
   
-    gap: 7px;
+    gap: 23px;
 }
 
 
@@ -138,18 +137,62 @@ font-size: 18px;
   
     gap: 7px;
 }
+.rb-footer-column p, .rb-footer-column a {
+  margin-bottom: 9px;
+  font-size: 16px;
 }
 
+.rb-footer-column h4 {
+  margin-bottom: 12px;}
 
-/* Styles for small to medium screens---------------------------------------- */
-@media only screen and (max-width: 767px) {
+  .rb-footer .rb-Copyright{
+    font-size: 14px;
+    padding: 22px 0;
+  }
+}
 
+/* ================================================================= */
+@media only screen and (min-width: 577px) and  (max-width: 767px){
   .rb-footer .rb-footer-columns {
-
-    gap: 19px;
+    gap: 11px;
 }
 .rb-footer .rb-footer-addr {
   max-width: 219px;
 }
+.rb-footer-column h4 {
+  margin-bottom: 10px;
+  font-size: 19px;
+}
+.rb-footer-column p, .rb-footer-column a {
+  margin-bottom: 9px;
+  font-size: 16px;
+}
+.rb-footer .rb-Copyright{
+  font-size: 14px;
+  padding: 19px 0;
+}
+}
+/* Styles for small to medium screens---------------------------------------- */
+@media only screen and (max-width: 576px) {
 
+  .rb-footer .rb-footer-columns {
+    gap: 11px;
+}
+.rb-footer .rb-footer-addr {
+  max-width: 219px;
+}
+.rb-footer-column h4 {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+.rb-footer-column p, .rb-footer-column a {
+  margin-bottom: 9px;
+  font-size: 13px;}
+  .rb-footer .rb-footer-columns{
+    flex-direction: column;
+  }
+  .rb-footer .rb-Copyright{
+    font-size: 14px;
+    padding: 19px 0;
+  }
 }

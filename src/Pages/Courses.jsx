@@ -111,8 +111,10 @@ const Service1 = [
       title: "Create an lms website with learnPress",
       time: "2Weeks",
       number: "156 Students",
+      lessons: "20 Lessons",
+      viewMore: "view more",
+      price: "29.0",
       levels: "All Levels",
-
       category: "Educate",
       Review: "five",
       Level: "Beginner",
@@ -128,7 +130,7 @@ const Service1 = [
       title: "Create an lms website with learnPress",
       time: "2Weeks",
       number: "156 Students",
-
+      
       lessons: "20 Lessons",
       price: "29.0",
 
@@ -149,7 +151,7 @@ const Service1 = [
       time: "2Weeks",
       number: "156 Students",
       lessons: "20 Lessons",
-
+      price: "29.0",
       viewMore: "view more",
     category: "Educate",
     Review: "one",
@@ -348,16 +350,14 @@ const Service1 = [
 ];
 
 export default function Courses() {
-  /*لاتعدلي ----------------------------------------- */
   const [searchBox, setSearchBox] = useState("");
 
   const handleSearchChange = (value) => {
     setSearchBox(value);
   };
-  /*-------------------------------------------------------------------- */
 
-  // عدلي حسب الفلاتر يلي بال saidbar______________________________________________________________________________________________
-  const [selectedFilters, setSelectedFilters] = useState({
+
+ const [selectedFilters, setSelectedFilters] = useState({
     Commercial: false,
     Office: false,
     Shop: false,
@@ -421,14 +421,13 @@ export default function Courses() {
     );
     //_____________________________________________________________________________________________________________________________________
   }).filter((val) => {
-    /* من هاد السطر
-     */ if (searchBox === "") {
+   if (searchBox === "") {
       return val;
     } else if (val.title.toLowerCase().includes(searchBox.toLowerCase())) {
       return val;
     }
     return null;
-  }); /* لهاد لا تعدلي */
+  }); 
 
   return (
     <>

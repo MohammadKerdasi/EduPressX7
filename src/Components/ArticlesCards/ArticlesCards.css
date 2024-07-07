@@ -1,3 +1,4 @@
+
 .NA-articlesCards {
   justify-content: space-between;
   align-items: center;
@@ -19,7 +20,7 @@
   gap: 12px;
   flex-direction: column;
 }
-.NA-article-card-content h3 {
+.NA-article-card-content h4 {
   font-size: 20px;
   margin: 0; /*Taking off bootstrap value*/
   transition: .3s;
@@ -44,7 +45,7 @@
   margin: 0 0 16px 0;
   box-shadow: 0px 4px 20px 0px #0000001a;
 }
-.NA-article-card:hover h3 {
+.NA-article-card:hover h4 {
   color: var(--main-color);
 }
 
@@ -53,7 +54,7 @@
   .NA-article-card {
     width: 310px;
   }
-  .NA-article-card-content h3 {
+  .NA-article-card-content h4 {
     font-size: 18px;
   }
   .NA-article-card-content p {
@@ -66,7 +67,7 @@
   .NA-article-card {
     width: 250px;
   }
-  .NA-article-card-content h3 {
+  .NA-article-card-content h4 {
     font-size: 16px;
   }
   .NA-article-card-content p {
@@ -82,7 +83,7 @@
   .NA-article-card {
     width: 340px;
   }
-  .NA-article-card-content h3 {
+  .NA-article-card-content h4 {
     font-size: 16px;
   }
   .NA-article-card-content p {

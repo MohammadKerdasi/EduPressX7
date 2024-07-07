@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Jost", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
+  /* font-family: "Jost", sans-serif; */
+  /* font-weight: 400; */
+  /* font-size: 16px; */
 }
 
 .breadcrumb-container {
-  padding: 18px 16.45%;
+  padding: 18px 16.4063% ;
   background-color: #F5F5F5;
   border-radius: 5px;
   display: flex;
@@ -47,20 +47,69 @@
   color: #9D9D9D;
 }
 /* ====================================================== */
-@media (min-width: 1200px) and (max-width: 1491px){
-  .breadcrumb-container {
-    padding: 8px 16.45%
 
+@media (min-width: 1368px) and (max-width: 1500px){
+  .breadcrumb-container {
+    padding: 14px 16.4063%;}}
+/* large screen */
+@media (min-width: 993px) and (max-width: 1367px) {
+  .breadcrumb-container {
+    padding: 7px 16% ;
+    font-size: 12px;
+}
+.breadcrumb-item.active {
+  font-size: 12px;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+  margin: 3px 8px 0 0px;
+  font-size: 10px;
 }}
 
-@media (min-width: 992px) and (max-width: 1199px){
-  .breadcrumb-item a {
-    font-size: 14px;
-  }
+
+
+/* medium screen */
+@media (min-width: 769px) and (max-width: 992px) {
   .breadcrumb-container {
-    padding: 7px 16.45%}
+    padding: 8px 14% ;
+    font-size: 11px;
+}
+.breadcrumb-item.active {
+  font-size: 11px;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+  margin: 5px 8px 0 0px;
+  font-size: 7px;
 }
 
-@media (max-width: 767px){
-.breadcrumb-container {
-  padding: 11px 16.45%}}
+}
+
+/* small screen */
+@media (min-width: 577px) and (max-width: 768px) {
+
+  .breadcrumb-container {
+    font-size: 12px;
+    padding: 6px 10% ;
+}
+.breadcrumb-item.active {
+
+  font-size: 12px;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+  font-size: 8px;
+}
+}
+
+
+@media (max-width: 420px) {
+
+  .breadcrumb-container{
+    padding: 4px 12%;
+    font-size: 11px;
+  }
+  .breadcrumb-item.active {
+    font-size: 12px;
+}
+  .breadcrumb-item+.breadcrumb-item::before {
+    font-size: 9px;}
+
+}

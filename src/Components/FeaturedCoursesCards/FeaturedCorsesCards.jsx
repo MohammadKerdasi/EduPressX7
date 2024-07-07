@@ -23,7 +23,7 @@ export default function FeaturedCoursesCards(props) {
                 <div className="NA-feature-card-content">
                   <div>
                     <p className="NA-card-desc">by <span>{item.detail}</span></p>
-                    <h3 className="NA-card-title">{item.title}</h3>
+                    <h4 className="NA-card-title">{item.title}</h4>
                     <div className="NA-feature-card-deatails NA-flex">
                       <div>
                       <img src={clock} className="NA-icon" alt="clock-icon" />
@@ -48,7 +48,8 @@ export default function FeaturedCoursesCards(props) {
                       <span> &#36;{item.price}</span>
                       {item.id == 2 ? <p className="discount"> &#36;49.0</p> : <p className="free">Free</p>}
                     </div>
-                    <Link to="/CourseSingle">{item.viewMore}</Link>
+                    
+                    <Link to={`/Courses/${encodeURIComponent(item.title)}`}>{item.viewMore}</Link>
                   </div>
                 </div>
               </div>

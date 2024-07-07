@@ -91,7 +91,7 @@ export default function Blog() {
   };
 
   return (
-    <div>
+    <div className="blog">
       <BreadCrumbs />
       {/* <div><ShowFilter/></div> */}
       <div className="Project-Container d-flex justify-content-space-between">
@@ -99,6 +99,7 @@ export default function Blog() {
           searchBox={searchBox}
           onSearchChange={handleSearchChange}
           items={blog}
+          title="All Articles"
           x={false}
         />
         <FilterBar/>

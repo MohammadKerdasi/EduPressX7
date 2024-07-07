@@ -19,7 +19,7 @@ const Footer = () => {
 
   
   return (
-    <footer className="rb-footer">
+    <footer className="rb-footer Project-Container">
     <div className="rb-footer-columns">
       <div className="rb-footer-column">
         <h4><img className='rb-logo' src='./../../../public/assetsProject/imges/LOGO.png'/></h4>

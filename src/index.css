@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 /* NAHLA Changes */
 ::-webkit-scrollbar {
   width: 12px;
@@ -65,6 +66,10 @@ a {
 .Project-Container{
   padding: 60px 16.4063% 90px 16.4063%  ;
 }
+.ra-nav-Container{
+  padding: 0px 16.4063% !important ;
+}
+
 
 .Project-Container-FAQs{
 
@@ -80,9 +85,12 @@ a {
   .Project-Container {
     padding: 60px 16%  16%;
   }
+ .ra-nav-Container{
+  padding: 0 16% !important ;
+ }
 
   .Project-Container {
-    padding: 60px 12%;
+    padding: 60px 16%;
   }
 }
 
@@ -104,12 +112,19 @@ a {
   .Project-Container {
     padding: 60px 14% 90px 14%;
   }
+  .ra-nav-Container {
+    padding: 0px 14% !important ;
+  }
+
 }
 
 /* small screen */
 @media (min-width: 577px) and (max-width: 768px) {
   .Project-Container {
     padding: 60px 10% 90px 10%;
+  }
+  .ra-nav-Container {
+    padding: 0px 10% !important;
   }
 }
 
@@ -121,6 +136,11 @@ a {
   .Project-Container-FAQs {
     padding: 0px 10%;
   }
+  .ra-nav-Container {
+    padding: 0px 10% !important;
+  }
+
+
 }
 
 

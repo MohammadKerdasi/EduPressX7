@@ -6,6 +6,7 @@ import "./ArticlesCards.css"
 // import articlecard2 from "./../../../public/assetsProject/imges/card(8).png";
 // import aeticlecard3 from "./../../../public/assetsProject/imges/card(9).png";
 import date from "./../../../public/assetsProject/imges/date-vector.png";
+import { Link } from "react-router-dom";
 
 export default function ArticlesCards(props) {
     return (
@@ -18,7 +19,7 @@ export default function ArticlesCards(props) {
                         <img src={item.img} alt="article-img" />
                     </div>
                     <div className="NA-article-card-content NA-flex">
-                        <h3>{item.title}</h3>
+                        <h4>{item.title}</h4>
                         <div className="NA-date-icon NA-flex">
                             <img src={date} alt="date" />
                             <p>{item.date}</p>
