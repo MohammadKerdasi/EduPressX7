@@ -106,7 +106,7 @@ a {
     padding: 60px 16%  16% ;
   } 
   .ra-nav-Container{
-    padding: 0 16% !important ;
+    padding: 10px 16% !important ;
    }
  }
   /* .Project-Container {
@@ -132,7 +132,7 @@ a {
     padding: 60px 14% 90px 14%;
   }
   .ra-nav-Container {
-    padding: 0px 14% !important ;
+    padding: 10px 14% !important ;
   }
 } 
 
@@ -142,7 +142,7 @@ a {
     padding: 60px 10% 90px 10%;
   }
   .ra-nav-Container {
-    padding: 0px 10% !important;
+    padding: 5px 10% !important;
   }
 }
 
@@ -154,6 +154,6 @@ a {
     padding: 0px 10%;
   }
   .ra-nav-Container {
-    padding: 0px 10% !important;
+    padding: 5px 10% !important;
   }
 }
