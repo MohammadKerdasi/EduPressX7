@@ -6,7 +6,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const Location = () => {
   return (
     <>
-      <div className="d-flex Mk-padding-iframe w-100 justify-content-between gap-4 Mk-Wrapper">
+      <div className="d-flex Mk-padding-iframe w-100 justify-content-between gap-4 Mk-Wrapper ">
         <div className="Mk-ContactTitle">
           <h1>Need a direct line?</h1>
           <p>

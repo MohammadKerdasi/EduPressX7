@@ -35,6 +35,12 @@
 .NA-hidden-btn {
   display: none;
 }
+
+
+
+
+
+
 /* large screen */
 @media (min-width: 993px) and (max-width: 1367px) {
   .NA-categories-card {

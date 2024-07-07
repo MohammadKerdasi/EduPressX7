@@ -30,11 +30,31 @@
 }
 
 .CoursesSidebar .rb-flex-check label {
-
-    font-family: var(--paragarph);
+     color: var(--dark-grey);
+    font-family: var(--paragarph), sans-serif;
     font-weight: 400;
     font-size: 18px !important;
 }
+
+.rb-flex-label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .rb-flex-label input[type="checkbox"]:checked + label,
+  .rb-flex-label input[type="checkbox"]:checked + label + p {
+    color: black;
+  }
+  
+  .rb-flex-label input[type="checkbox"]:checked + label,
+  .rb-flex-label input[type="checkbox"]:checked + label + p {
+    color: black;
+  }
+  
+  .rb-flex-label input[type="checkbox"]:checked {
+    accent-color: #555555; 
+  }
+  
 
 .CoursesSidebar p {
     font-size: 18px !important;
@@ -216,21 +236,12 @@
     }
 
     .CoursesSidebar {
-        transition: all 1s ease;
-        width: 75%;
-        top: 0px;
-        height: max-content;
-        z-index: 50;
-        border-radius: 3px;
+        width: 38%;
         padding: 26px 0 7px 21px;
-        background-color: white;
-        right: 0px;
-        position: absolute;
-        border: 1px solid var(--light-gray);
-        opacity: 1;
-        -webkit-transition: all 1s ease;
-        -moz-transition: all 1s ease;
-        -ms-transition: all 1s ease;
-        -o-transition: all 1s ease;
+    }
+}
+@media (max-width: 576px){
+    .CoursesSidebar {
+        width: 60%;
     }
 }

@@ -8,7 +8,7 @@ import './CommentForm.css'
 
     const CommentForm  = () => {
         return (
-            <>
+            <div div className="block">
             <ContactTitle  Title='Contact Us' subTitle='Your email address will not be published. Required fields are marked *'/>
         <Form className="Mk-Form">
             <Row className="Mk-Coulmn">
@@ -43,7 +43,7 @@ import './CommentForm.css'
                 <p>Posts comment</p>
             </button>
         </Form>
-        </>
+        </div>
     );
 };
 

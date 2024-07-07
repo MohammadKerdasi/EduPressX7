@@ -27,7 +27,7 @@ export default function CounterCards () {
         }
     ])
 return (
-    <section className="NA-counterCards-Section NA-Project-Container NA-flex"> 
+    <section className="NA-counterCards-Section NA-Project-Container NA-flex block"> 
         {CounterCards.map((item) => {
             return(
                 <div key={item.id} className="NA-counter-card NA-flex">
