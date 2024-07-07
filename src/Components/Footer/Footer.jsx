@@ -11,12 +11,7 @@ import logo from './../../../public/assetsProject/imges/LOGO.png';
 const Footer = () => {
 
 
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    };
+  
 
   
   return (
@@ -56,7 +51,7 @@ const Footer = () => {
         </div>
       </div>
       </div>
-      <button onClick={scrollToTop} className="rb-scroll-to-top-button"><FontAwesomeIcon icon={faArrowUp} /></button>
+      
       <hr className='rb-footer-hr'/>
       <p className='rb-Copyright'>Copyright © 2024 LearnPress LMS | Powered by ThimPress</p>
     </footer>

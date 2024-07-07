@@ -79,21 +79,7 @@
   .rb-footer .rb-footer-addr {
     max-width: 268px;
   }
-.rb-scroll-to-top-button{
-  background-color: black;
-  right: 4.9%;
-  bottom: 9.19%;
-  position: absolute;
-  width: 37.5px;
-  height: 37.5px;
-  border: none;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  font-size: 1px;
-}
+
 .rb-scroll-to-top-button *{
 color: var(--white);
 font-size: 22px;
