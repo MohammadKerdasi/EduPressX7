@@ -40,7 +40,7 @@ import ReplayIcon from "./../../../public/assetsProject/imageFromHaidar/Vector.s
 const Overview = () => {
   return (
     <div>
-      <p>
+      <p style={{fontSize : 10}}>
         LearnPress is a comprehensive WordPress LMS Plugin for WordPress. This
         is one of the best WordPress LMS Plugins which can be used to easily
         create & sell courses online. You can create a course curriculum with

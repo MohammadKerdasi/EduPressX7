@@ -555,6 +555,10 @@
     {
       margin-bottom: 20px;
     }
+    .Mk-StarsRatings p 
+    {
+      font-size: 14px;
+    }
 
   }
   @media (max-width: 350px){
