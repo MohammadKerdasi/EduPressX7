@@ -96,7 +96,7 @@ export default function CategoriesCards() {
                 )
             })}
         </div>
-        <Link className="NA-header-btn NA-btn-effect NA-hidden-btn" to="/">All Categories</Link>
+        <Link className="NA-header-btn NA-btn-effect NA-hidden-btn" to="/{}">All Categories</Link>
     </section>
   );
 }

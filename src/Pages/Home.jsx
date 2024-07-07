@@ -150,7 +150,7 @@ export default function Home() {
           link="/Courses"
         />
         <FeaturedCoursesCards FeaturedCards={FeaturedCards} />
-        <Link className="NA-header-btn NA-btn-effect NA-hidden-btn" to="/">
+        <Link className="NA-header-btn NA-btn-effect NA-hidden-btn" to="/Courses">
           all courses
         </Link>
       </section> {/* end of NA-featuredCards-Section */}
@@ -171,9 +171,7 @@ export default function Home() {
           link="/Blog"
         />
         <ArticlesCards ArticleCards={ArticleCards}/>
-        {/* <FeaturedCoursesCards FeaturedCards={FeaturedCards} articleContent='true' /> */}
 
-        
         <Link className="NA-header-btn NA-btn-effect NA-hidden-btn" to="/Blog">
           all articles
         </Link>

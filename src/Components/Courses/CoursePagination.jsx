@@ -14,7 +14,6 @@ import {
 import ArticlesCards from "../ArticlesCards/ArticlesCards";
 import FilterBar from "../FilterBar/FilterBar";
 
-
 const CoursePagination = ({ searchBox, onSearchChange, items, title, x }) => {
   const [view, setView] = useState("NA-feature-card");
   const [currentPage, setCurrentPage] = useState(1);
@@ -34,15 +33,9 @@ const CoursePagination = ({ searchBox, onSearchChange, items, title, x }) => {
     currentPage * recordsPerPage
   );
 
-
-
-
-
-// for nahla filterBar
-const [sidebar, setSidebar] = useState(false)
-const showSidebar = () => setSidebar(!sidebar)
-
-
+  // for nahla filterBar
+  const [sidebar, setSidebar] = useState(false);
+  const showSidebar = () => setSidebar(!sidebar);
 
   return (
     <div className="rb-CoursePagination">
@@ -69,7 +62,7 @@ const showSidebar = () => setSidebar(!sidebar)
             onClick={() => handleButtonClick(1)}
           >
             <svg
-            className="NA-view-svg"
+              className="NA-view-svg"
               viewBox="0 0 16 16"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +71,6 @@ const showSidebar = () => setSidebar(!sidebar)
                 fill-rule="evenodd"
                 clip-rule="evenodd"
                 d="M0.5 0.5V7.16667H7.16667V0.5H0.5ZM0.5 8.83333V15.5H7.16667V8.83333H0.5ZM8.83333 0.5V7.16667H15.5V0.5H8.83333ZM8.83333 8.83333V15.5H15.5V8.83333H8.83333Z"
-                
               />
             </svg>
           </button>
@@ -93,22 +85,13 @@ const showSidebar = () => setSidebar(!sidebar)
               viewBox="0 0 16 11"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path
-                d="M0.291992 7.04175H2.58366V4.75008H0.291992V7.04175ZM0.291992 11.0001H2.58366V8.70842H0.291992V11.0001ZM0.291992 3.08341H2.58366V0.791748H0.291992V3.08341ZM4.25033 7.04175H15.7087V4.75008H4.25033V7.04175ZM4.25033 11.0001H15.7087V8.70842H4.25033V11.0001ZM4.25033 0.791748V3.08341H15.7087V0.791748H4.25033Z"
-                
-              />
+              <path d="M0.291992 7.04175H2.58366V4.75008H0.291992V7.04175ZM0.291992 11.0001H2.58366V8.70842H0.291992V11.0001ZM0.291992 3.08341H2.58366V0.791748H0.291992V3.08341ZM4.25033 7.04175H15.7087V4.75008H4.25033V7.04175ZM4.25033 11.0001H15.7087V8.70842H4.25033V11.0001ZM4.25033 0.791748V3.08341H15.7087V0.791748H4.25033Z" />
             </svg>
           </button>
-          
-
 
           <button className="NA-filter-btn" onClick={showSidebar}>
-          <FontAwesomeIcon icon={faFilter} />
+            <FontAwesomeIcon icon={faFilter} />
           </button>
-
-
-
-
         </div>
       </div>
 
@@ -143,8 +126,7 @@ const showSidebar = () => setSidebar(!sidebar)
         </li>
       </ul>
 
-      {sidebar ? <FilterBar onClick={showSidebar}/> : '' }
-
+      {sidebar ? <FilterBar onClick={showSidebar} /> : ""}
     </div>
   );
 };

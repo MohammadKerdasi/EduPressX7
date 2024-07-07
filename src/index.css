@@ -2,11 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 /* NAHLA Changes */
 ::-webkit-scrollbar {
-  width: 100px;
+  width: 12px;
   background-color: #fff;
   border-left: 2px solid #eee;
   box-shadow: 0px 0px 21px 0px #0003 inset;
@@ -18,21 +19,21 @@
 }
 ::selection {
   background-color: var(--mark);
-  opacity: 0.6;
+  opacity: 0.9;
   color: white;
 }
 
 :root {
   /* colors */
 
-  --main-color: #FF782D;
-  --orange: #F6B40A;
-  --green: #55BE24;
-  --red: #F51A1A;
-  --blue: #2580D5;
-  --light-gray: #EAEAEA;
-  --white-grey: #F5F5F5;
-  --grey: #9D9D9D;
+  --main-color: #ff782d;
+  --orange: #f6b40a;
+  --green: #55be24;
+  --red: #f51a1a;
+  --blue: #2580d5;
+  --light-gray: #eaeaea;
+  --white-grey: #f5f5f5;
+  --grey: #9d9d9d;
   --dark-grey: #555555;
   --white: white;
   --main-color: #ff782d;
@@ -44,14 +45,19 @@
   --grey: #9d9d9d;
   --dark-grey: #555555;
   --white: white;
-  --mark: #edb566;
+  --mark: #ead670ba;
 
   /* fonts */
   --Title: Exo;
   --paragarph: Jost;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Exo", sans-serif;
   font-weight: 600 !important;
 }
@@ -61,24 +67,21 @@ a {
   font-weight: 400;
 }
 
-
-.Project-Container{
-  padding: 60px 16.4063% 90px 16.4063%  ;
+.Project-Container {
+  padding: 60px 16.4063% 90px 16.4063%;
 }
 
-.Project-Container-FAQs{
-
+.Project-Container-FAQs {
   padding: 0px 16.4063%;
 }
 a {
   text-decoration: none !important;
 }
 
-
 /* large screen */
 @media (min-width: 993px) and (max-width: 1367px) {
   .Project-Container {
-    padding: 60px 16%  16%;
+    padding: 60px 16% 16%;
   }
 
   .Project-Container {
@@ -98,7 +101,6 @@ a {
   }
 } */
 
-
 /* medium screen */
 @media (min-width: 769px) and (max-width: 992px) {
   .Project-Container {
@@ -113,7 +115,6 @@ a {
   }
 }
 
-
 @media (max-width: 420px) {
   .Project-Container {
     padding: 60px 10%;
@@ -122,5 +123,3 @@ a {
     padding: 0px 10%;
   }
 }
-
-

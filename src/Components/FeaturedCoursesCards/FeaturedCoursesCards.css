@@ -175,49 +175,53 @@ padding-bottom: 67px;
 
 /* nahla */
 /* large screen */
-@media (min-width: 993px) and (max-width: 1566px) {
+@media (min-width: 993px) and (max-width: 1500px) {
   .NA-feature-card {
-    width: 310px !important;
+    width: 320px !important;
   }
   .NA-feature-card-content {
-    padding: 15px;
+    padding: 15px !important;
   }
   .NA-feature-card-content > div:nth-child(1) {
-    padding-bottom: 14px;
+    padding-bottom: 14px !important;
   }
   .NA-feature-card-content > div .NA-card-title {
-    font-size: 18px;
+    font-size: 18px !important;
   }
   .NA-feature-card-content > div .NA-card-desc {
-    margin-bottom: 10px;
-    font-size: 14px;
+    margin-bottom: 10px !important;
+    font-size: 14px !important;
   }
   .NA-card-desc span {
-    font-size: 14px;
+    font-size: 14px !important;
   }
   .NA-icon-desc {
-    font-size: 14px;
+    font-size: 14px !important;
   }
   .NA-card-price {
-    padding-top: 12px;
+    padding-top: 12px !important;
   }
   .NA-card-price span,
   .NA-card-price .discount,
   .NA-card-price .free,
   .NA-card-price a {
-    font-size: 16px;
+    font-size: 16px !important;
   }
   .NA-card-note {
-    width: auto;
-    padding: 6px 10px;
-    font-size: 14px;
+    width: auto !important;
+    padding: 6px 10px !important;
+    font-size: 14px !important;
   }
 }
 
 /* medium screen */
 @media (min-width: 769px) and (max-width: 992px) {
+  .NA-featuredCards {
+    justify-content: center;
+    gap: 30px;
+  }
   .NA-feature-card {
-    width: 250px !important;
+    width:280px !important;
   }
   .NA-feature-card-content {
     padding: 15px;
@@ -258,44 +262,45 @@ padding-bottom: 67px;
 /* small screen */
 @media (min-width: 577px) and (max-width: 768px) {
   .NA-featuredCards {
-    /* justify-content: center; */
+    gap: 30px;
+    justify-content: center;
   }
   .NA-feature-card {
-    width: 340px !important;
+    width: 280px !important;
   }
   .NA-feature-card-content {
     padding: 15px;
   }
     .NA-feature-card-content > div:nth-child(1) {
-      padding-bottom: 12px;
-      height: 120px;
+      padding-bottom: 12px !important;
+      height: 120px !important;
   }
   .NA-feature-card-content > div .NA-card-title {
-    font-size: 16px;
+    font-size: 16px !important;
   }
   .NA-feature-card-content > div .NA-card-desc {
-    margin-bottom: 10px;
-    font-size: 12px;
+    margin-bottom: 10px !important;
+    font-size: 12px !important;
   }
   .NA-card-desc span {
-    font-size: 12px;
+    font-size: 12px !important;
   }
   .NA-icon-desc {
-    font-size: 12px;
+    font-size: 12px !important;
   }
   .NA-card-price {
-    padding-top: 10px;
+    padding-top: 10px !important;
   }
   .NA-card-price span,
   .NA-card-price .discount,
   .NA-card-price .free,
   .NA-card-price a {
-    font-size: 14px;
+    font-size: 14px !important;
   }
   .NA-card-note {
-    width: auto;
-    padding: 6px 8px;
-    font-size: 12px;
+    width: auto !important;
+    padding: 6px 8px !important;
+    font-size: 12px !important;
   }
 }
 
@@ -305,37 +310,36 @@ padding-bottom: 67px;
     justify-content: center;
   }
   .NA-feature-card {
-    width: 310px !important;
+    width: 340px !important;
   }
   .NA-feature-card-content {
     padding: 10px;
   }
     .NA-feature-card-content > div:nth-child(1) {
-      padding-bottom: 12px;
-      height: 100px;
+      height: 115px !important;
   }
   .NA-feature-card-content > div .NA-card-title {
-    font-size: 15px;
-    margin-bottom: 13px;
+    font-size: 16px !important;
+    margin-bottom: 13px !important;
   }
   .NA-feature-card-content > div .NA-card-desc {
-    margin-bottom: 10px;
-    font-size: 11px;
+    margin-bottom: 10px !important;
+    font-size: 11px !important;
   }
   .NA-card-desc span {
-    font-size: 12px;
+    font-size: 12px !important;
   }
   .NA-icon-desc {
-    font-size: 12px;
+    font-size: 12px !important;
   }
   .NA-card-price {
-    padding-top: 10px;
+    padding-top: 10px !important;
   }
   .NA-card-price span,
   .NA-card-price .discount,
   .NA-card-price .free,
   .NA-card-price a {
-    font-size: 14px;
+    font-size: 14px !important;
   }
   .NA-card-note {
     width: auto;
