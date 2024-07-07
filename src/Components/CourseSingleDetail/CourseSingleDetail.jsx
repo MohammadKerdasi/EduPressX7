@@ -40,7 +40,7 @@ import ReplayIcon from "./../../../public/assetsProject/imageFromHaidar/Vector.s
 const Overview = () => {
   return (
     <div>
-      <p style={{fontSize : 10}}>
+      <p className="Mk-OverViewP">
         LearnPress is a comprehensive WordPress LMS Plugin for WordPress. This
         is one of the best WordPress LMS Plugins which can be used to easily
         create & sell courses online. You can create a course curriculum with
@@ -50,7 +50,7 @@ const Overview = () => {
         online-course websites with no coding knowledge required.
       </p>
 
-      <p>
+      <p className="Mk-OverViewP">
         LearnPress is free and always will be, but it is still a premium
         high-quality WordPress Plugin that definitely helps you with making
         money from your WordPress Based LMS. Just try and see how amazing it is.
@@ -65,7 +65,7 @@ const Overview = () => {
 const Curriculum = () => {
   return (
     <div>
-      <p>
+      <p className="Mk-OverViewP">
         LearnPress is a comprehensive WordPress LMS Plugin for WordPress. This
         is one of the best WordPress LMS Plugins which can be used to easily
         create & sell courses online.
@@ -720,7 +720,7 @@ const Comment = ({
               src={ReplayIcon}
               alt="reply"
             />
-            <span className="SHaaban-adding-style-for-replay ">Reply</span>
+            <span className="SHaaban-adding-style-for-replay Mk-ReplayP ">Reply</span>
           </div>
         </div>
       </div>
