@@ -1,5 +1,6 @@
 .CoursesSidebar {
     width: 28.931%;
+    z-index: 999;
 }
 
 .CoursesSidebar .rb-flex-check {
@@ -134,7 +135,7 @@
         transition: all 1s ease;
         width: 25%;
         top: 0px;
-        height: 100%;
+        height: max-content;
         z-index: 50;
         border-radius: 3px;
         padding: 45px 0 59px 21px;

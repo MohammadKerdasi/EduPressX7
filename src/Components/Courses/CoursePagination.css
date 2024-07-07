@@ -1,6 +1,6 @@
 /* -------------------------------------------------------------------------------- */
 .rb-CoursePagination .NA-feature-card-deatails div {
-  align-items: stretch;
+  width: 80%;
 }
 .rb-listing{ 
   width: 100%; 
@@ -36,7 +36,7 @@ border-radius: 14px 0 0 14px;
 } 
  
 .rb-CoursePagination .NA-feature-card { 
-  width: 48.48%;} 
+  width: 47%;} 
 
 .rb-listing .NA-feature-card-content > div:nth-child(1) { 
 padding-bottom: 0; 
@@ -67,8 +67,8 @@ padding-bottom: 67px;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  gap: 442px;;
   margin-bottom: 25px;
+  width: 100%;
 }
 .rb-CoursePagination  .rb-view-icon{
   font-size: 20px;
@@ -172,7 +172,6 @@ padding-bottom: 67px;
 
     .rb-CoursePagination  .NA-feature-card-content > div .NA-card-title
     ,.NA-article-card-content h4 {
-      width: max-content;
       font-size: 20px;
       margin-bottom: 16px;}
 
@@ -192,6 +191,16 @@ padding-bottom: 67px;
       .rb-CoursePagination .NA-article-card-content p {
         font-size: 18px;
         }
+        .NA-view-svg {
+          width: 15px;
+          height: 15px;
+        }
+        .NA-view-svg path {
+          fill: black;
+        }
+        .NA-view-svg:hover path, .NA-view-svg:focus path {
+          fill: var(--main-color);
+        } 
     /* ---------------------------------------------------------------- */
 
 
@@ -203,7 +212,7 @@ padding-bottom: 67px;
 }
 
   .rb-CoursePagination .NA-feature-card{
-    width: 49.255%;
+    width: 47%;
   }
   .rb-CoursePagination .NA-card-price a {
     font-size: 16px;}
@@ -214,7 +223,6 @@ padding-bottom: 67px;
 
     .rb-CoursePagination .NA-feature-card .NA-feature-card-content > div:nth-child(1) {
       padding: 9px !important;
-      height: 109px;
   }
   .rb-CoursePagination .NA-feature-card .NA-feature-card-content {
     padding: 14px ;
@@ -244,8 +252,7 @@ padding-bottom: 67px;
   .rb-CoursePagination .rb-CoursePagination-head {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 355px;
+    justify-content: space-between;
     margin-bottom: 20px;
 }
 .rb-listing {
@@ -292,7 +299,7 @@ padding-bottom: 67px;
   }
 
   .rb-CoursePagination .NA-feature-card .NA-feature-card-content > div:nth-child(1) {
-    height: 96px;
+    
 }
 .NA-feature-card .NA-card-price a {
   font-size: 15px;}
@@ -406,7 +413,7 @@ padding-bottom: 67px;
 }
 .rb-CoursePagination .NA-feature-card .NA-feature-card-content > div:nth-child(1) {
   padding-bottom: 0;
-  height: 78px;
+  height: 90px;
 }
 .rb-CoursePagination .NA-card-price span,
  .rb-CoursePagination .NA-card-price .discount,
@@ -648,7 +655,6 @@ padding-bottom: 67px;
 
 .rb-CoursePagination .NA-feature-card .NA-feature-card-content > div:nth-child(1) {
   padding-bottom: 0px;
-  height: 88px;
 }
 .rb-CoursePagination.NA-card-desc span {
   font-size: 11px;
@@ -695,7 +701,7 @@ padding-bottom: 67px;
   width: 28px;
   height: 28px;
   font-size: 11px;
-  padding-top: 5px;}
+  padding-top: 0px;}
 
   .rb-CoursePagination .rb-ul-pagination {
     gap: 2px;
@@ -703,3 +709,12 @@ padding-bottom: 67px;
 }
 
 }
+@media (max-width: 450px){
+  .rb-CoursePagination .NA-feature-card {
+    width: 100% !important;
+}
+
+}
+
+
+

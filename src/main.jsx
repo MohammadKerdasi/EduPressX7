@@ -14,7 +14,6 @@ import CourseSingle from './Pages/CourseSingle.jsx';
 import BlogSingle from './Pages/BlogSingle.jsx';
 import Errorpage from './Pages/Errorpage.jsx';
 
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,6 +28,10 @@ const router = createBrowserRouter([
         element: <Courses />,
       },
       {
+        path: "Courses/:courseTitle",
+        element: <CourseSingle />,
+      },
+      {
         path: "Blog",
         element: <Blog />,
       },
@@ -41,21 +44,17 @@ const router = createBrowserRouter([
         element: <FAQs />,
       },
       {
-      path: "LoginRegister",
-      element: <LoginRegister />,
-    },
-    {
-      path: "CourseSingle",
-      element: <CourseSingle />,
-    },
-    {
-      path: "BlogSingle", 
-      element: <BlogSingle />,
-    },
-    {
-      path: "*", 
-      element: <Errorpage />,
-    },
+        path: "LoginRegister",
+        element: <LoginRegister />,
+      },
+      {
+        path: "Blog/:blogTitle",
+        element: <BlogSingle />,
+      },
+      {
+        path: "*",
+        element: <Errorpage />,
+      },
     ],
   },
 ]);

@@ -15,9 +15,7 @@ export default function ArticlesCards(props) {
         return (
           <div key={item.id} className={props.view || "NA-article-card"}>
             <div className="NA-article-card-img">
-              <Link to="/BlogSingle">
-                <img src={item.img} alt="article-img" />
-              </Link>
+            <Link to={`/Blog/${encodeURIComponent(item.title)}`}><img src={item.img} alt="article-img" /></Link>
             </div>
             <div className="NA-article-card-content NA-flex">
               <h3>{item.title}</h3>
@@ -38,3 +36,5 @@ export default function ArticlesCards(props) {
     </div>
   );
 }
+
+

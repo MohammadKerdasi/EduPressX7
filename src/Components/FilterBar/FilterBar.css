@@ -42,6 +42,7 @@
 
 .SHaaban-recent-post-body {
   display: flex;
+  align-items: center;
   gap: 16px;
   margin-bottom: 16px;
   transition: color 0.2s;
@@ -80,9 +81,6 @@
 }
 
 @media (max-width: 1463px) and (min-width: 1333px) {
-  .SHaaban-recent-post-body {
-    flex-direction: column;
-  }
 
   .SHaaban-category-area-title,
   .SHaaban-category-name,
@@ -96,30 +94,17 @@
   .SHaaban-adding-style-for-recent-posts-paragraph {
     font-size: 11px !important;
   }
-  .SHaaban-recent-post-body {
-    flex-direction: column;
-  }
 }
 
 @media (max-width: 1241px) and (min-width: 1173px) {
   .SHaaban-adding-style-for-recent-posts-paragraph {
     font-size: 11px !important;
   }
-  .SHaaban-recent-post-body {
-    flex-direction: column;
-  }
 }
 
 @media (max-width: 1173px) and (min-width: 1110px) {
   .SHaaban-adding-style-for-recent-posts-paragraph {
     font-size: 10px !important;
-  }
-  .SHaaban-recent-post-body {
-    flex-direction: column;
-  }
-
-  .SHaaban-recent-post-body {
-    flex-direction: column;
   }
 }
 
@@ -128,18 +113,12 @@
   .SHaaban-category-name {
     font-size: 15px !important;
   }
-  .SHaaban-recent-post-body {
-    flex-direction: column;
-  }
 }
 
 @media (max-width: 915px) and (min-width: 700px) {
   .SHaaban-adding-style-for-recent-posts-paragraph,
   .SHaaban-category-name {
     font-size: 14px !important;
-  }
-  .SHaaban-recent-post-body {
-    flex-direction: column;
   }
 }
 
@@ -148,6 +127,7 @@
   .SHaaban-category-name {
     font-size: 13px !important;
   }
+
 }
 
 @media (max-width: 550px) and (min-width: 350px) {
@@ -155,6 +135,7 @@
   .SHaaban-category-name {
     font-size: 12px !important;
   }
+
 }
 
 @media (max-width: 350px) {
@@ -162,4 +143,5 @@
   .SHaaban-category-name {
     font-size: 11px !important;
   }
+
 }

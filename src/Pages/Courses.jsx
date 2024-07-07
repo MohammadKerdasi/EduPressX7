@@ -4,22 +4,22 @@ import CoursePagination from "../Components/Courses/CoursePagination";
 import CoursesSidebar from "../Components/CoursesSidebar/CoursesSidebar";
 import "../Components/CoursesSidebar/CoursesSidebar.css";
 import "./Courses.css";
-import CoursesCard1 from './../../public/assetsProject/imges/card-rb(1).png';
-import CoursesCard2 from './../../public/assetsProject/imges/card-rb(2).png';
-import CoursesCard3 from './../../public/assetsProject/imges/card-rb(3).png';
-import CoursesCard4 from './../../public/assetsProject/imges/card-rb(4).png';
-import CoursesCard5 from './../../public/assetsProject/imges/card-rb(5).png';
-import CoursesCard6 from './../../public/assetsProject/imges/card-rb(6).png';
-import CoursesCard7 from './../../public/assetsProject/imges/card-rb(7).png';
-import CoursesCard8 from './../../public/assetsProject/imges/card-rb(8).png';
-import CoursesCard9 from './../../public/assetsProject/imges/card-rb(9).png';
+import CardImg1 from './../../public/assetsProject/imges/card-rb(1).png'
+import CardImg2 from './../../public/assetsProject/imges/card-rb(2).png'
+import CardImg3 from './../../public/assetsProject/imges/card-rb(3).png'
+import CardImg4 from './../../public/assetsProject/imges/card-rb(4).png'
+import CardImg5 from './../../public/assetsProject/imges/card-rb(5).png'
+import CardImg6 from './../../public/assetsProject/imges/card-rb(6).png'
+import CardImg7 from './../../public/assetsProject/imges/card-rb(7).png'
+import CardImg8 from './../../public/assetsProject/imges/card-rb(8).png'
+import CardImg9 from './../../public/assetsProject/imges/card-rb(9).png'
 
 //mycode
 const Service1 = [
   {
   id: 1,
 
-      img: CoursesCard1,
+      img: CardImg1 ,
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -38,7 +38,7 @@ const Service1 = [
   },
   {
   id: 2,
-      img: CoursesCard2,
+      img: CardImg2,
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -57,7 +57,7 @@ const Service1 = [
   },
   {
   id: 3,
-      img: CoursesCard3,
+      img: CardImg3,
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -76,7 +76,7 @@ const Service1 = [
   },
   {
   id: 4,
-      img: CoursesCard4,
+      img: CardImg4,
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -95,7 +95,7 @@ const Service1 = [
   },
   {
   id: 5,
-      img: CoursesCard5,
+      img: CardImg5,
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -114,14 +114,16 @@ const Service1 = [
   },
   {
   id: 6,
-      img: CoursesCard6,
+      img: CardImg6,
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
       time: "2Weeks",
       number: "156 Students",
+      lessons: "20 Lessons",
+      viewMore: "view more",
+      price: "29.0",
       levels: "All Levels",
-
       category: "Educate",
       Review: "five",
       Level: "Beginner",
@@ -131,13 +133,13 @@ const Service1 = [
   },
   {
   id: 7,
-      img: CoursesCard7,
+      img: CardImg7,
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
       time: "2Weeks",
       number: "156 Students",
-
+      
       lessons: "20 Lessons",
       price: "29.0",
 
@@ -151,14 +153,14 @@ const Service1 = [
   },
   {
   id: 8,
-      img: CoursesCard8,
+      img: CardImg8,
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
       time: "2Weeks",
       number: "156 Students",
       lessons: "20 Lessons",
-
+      price: "29.0",
       viewMore: "view more",
     category: "Educate",
     Review: "one",
@@ -169,7 +171,7 @@ const Service1 = [
   {
 
   id: 9,
-      img: CoursesCard9,
+      img: CardImg9,
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -188,7 +190,7 @@ const Service1 = [
   },
   {
   id: 10,
-      img: CoursesCard1,
+      img: CardImg1,
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -207,7 +209,7 @@ const Service1 = [
   },
   {
   id: 11,
-      img: CoursesCard2,
+      img: CardImg2,
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -226,7 +228,7 @@ const Service1 = [
   },
   {
   id: 12,
-      img: CoursesCard3,
+      img: CardImg3,
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -245,7 +247,7 @@ const Service1 = [
   },
   {
   id: 13,
-      img: CoursesCard4,
+      img: CardImg4,
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -264,7 +266,7 @@ const Service1 = [
   },
   {
   id: 14,
-      img: CoursesCard5,
+      img: CardImg5,
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -281,7 +283,7 @@ const Service1 = [
   },
   {
   id: 15,
-      img: CoursesCard6,
+      img: CardImg6,
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -300,7 +302,7 @@ const Service1 = [
   },
   {
   id: 16,
-      img: CoursesCard7,
+      img: CardImg7,
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -318,7 +320,7 @@ const Service1 = [
   {
 
   id: 17,
-      img: CoursesCard8,
+      img: CardImg8,
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -337,7 +339,7 @@ const Service1 = [
   },
   {
   id: 18,
-      img: CoursesCard9,
+      img: CardImg9,
       note: "Photography",
       detail: " Determined-Poitras",
       title: "Create an lms website with learnPress",
@@ -357,16 +359,14 @@ const Service1 = [
 ];
 
 export default function Courses() {
-  /*لاتعدلي ----------------------------------------- */
   const [searchBox, setSearchBox] = useState("");
 
   const handleSearchChange = (value) => {
     setSearchBox(value);
   };
-  /*-------------------------------------------------------------------- */
 
-  // عدلي حسب الفلاتر يلي بال saidbar______________________________________________________________________________________________
-  const [selectedFilters, setSelectedFilters] = useState({
+
+ const [selectedFilters, setSelectedFilters] = useState({
     Commercial: false,
     Office: false,
     Shop: false,
@@ -430,14 +430,13 @@ export default function Courses() {
     );
     //_____________________________________________________________________________________________________________________________________
   }).filter((val) => {
-    /* من هاد السطر
-     */ if (searchBox === "") {
+   if (searchBox === "") {
       return val;
     } else if (val.title.toLowerCase().includes(searchBox.toLowerCase())) {
       return val;
     }
     return null;
-  }); /* لهاد لا تعدلي */
+  }); 
 
   return (
     <>
