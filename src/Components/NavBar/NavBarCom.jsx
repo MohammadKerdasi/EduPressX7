@@ -6,6 +6,7 @@ import './NavBar.css';
 import './../../index.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import logo from './../../../public/assetsProject/imges/LOGO.png' 
 
 export default function NavBarCom() {
     const [isSticky, setIsSticky] = useState(false);
@@ -44,7 +45,7 @@ export default function NavBarCom() {
     return (
         <Navbar expand="lg" className={`bg-white ra-nav-Container ra-nav-comp ${isSticky ? 'rb-navbar-fixed' : 'rb-navbar-sticky'}`} expanded={expanded}>
             <Container fluid className='flex'>
-                <Navbar.Brand className="rb-logo-nav" href="#"><img className='rb-logo' src='./../../../public/assetsProject/imges/LOGO.png' alt="Logo" /></Navbar.Brand>
+                <Navbar.Brand className="rb-logo-nav" href="#"><img className='rb-logo' src={logo} alt="Logo" /></Navbar.Brand>
                 <Navbar.Toggle
                     aria-controls="navbarScroll"
                     onClick={() => setExpanded(!expanded)}
