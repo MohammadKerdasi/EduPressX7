@@ -61,8 +61,9 @@ const Overview = () => {
     </div>
   );
 };
-
+ import './../CourseSingleAccordions/CourseSingleAccordions.css'
 const Curriculum = () => {
+
   return (
     <div>
       <p className="Mk-OverViewP">
