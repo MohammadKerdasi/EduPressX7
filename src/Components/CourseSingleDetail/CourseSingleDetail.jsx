@@ -207,7 +207,6 @@ const Curriculum = () => {
           </li>
         </ul>
       </Accordion>
-
       <Accordion
         title="Lessons With Video Content"
         subTitle="5 Lessons "
