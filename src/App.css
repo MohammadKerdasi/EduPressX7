@@ -26,7 +26,7 @@
     opacity: 0.9;
   }
 
- ::-webkit-scrollbar-thumb {
+ /* ::-webkit-scrollbar-thumb {
     background: var(--grey);
     border-radius: 25%;
     -webkit-border-radius: 10px;
@@ -35,11 +35,11 @@
     -o-border-radius: 25%;
   
     cursor: pointer;
-}
-::-webkit-scrollbar {
+} */
+/* ::-webkit-scrollbar {
     width: 7px;
     background-color: var(--white-grey);  
-} 
+}  */
 
 
 /*media ------------------------------------------------------------------------------------ */

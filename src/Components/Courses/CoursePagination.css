@@ -326,7 +326,6 @@ padding-bottom: 67px;
 
   .rb-CoursePagination .rb-CoursePagination-head {
     justify-content: space-between;
-    gap: 240px;
 }
 .rb-CoursePagination .rb-view-icon {
   font-size: 18px;
@@ -693,7 +692,7 @@ padding-bottom: 67px;
 .rb-CoursePagination .rb-CoursePagination-head {
   align-items: baseline;
   gap: 0px;
-  margin-bottom: 9px;
+  margin-bottom: 20px;
   justify-content: space-between;
  /*  */
 }
