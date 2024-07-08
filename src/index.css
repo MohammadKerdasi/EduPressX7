@@ -6,7 +6,7 @@
 }
 
 /* NAHLA Changes */
-/* ::-webkit-scrollbar {
+ ::-webkit-scrollbar {
   width: 12px;
   width: 12px;
   background-color: #fff;
@@ -22,7 +22,7 @@
   background-color: var(--mark);
   opacity: 0.9;
   color: white;
-} */
+} 
 
 :root {
   /* colors */

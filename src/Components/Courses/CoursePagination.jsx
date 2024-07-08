@@ -49,7 +49,7 @@ const CoursePagination = ({ searchBox, onSearchChange, items, title, x }) => {
   const showSidebar = () => setSidebar(!sidebar);
 
   return (
-    <div className="rb-CoursePagination w-100 ">
+    <div className="rb-CoursePagination ">
       <div className="rb-CoursePagination-head">
         <h1>{title}</h1>
         <div className="search-view">
