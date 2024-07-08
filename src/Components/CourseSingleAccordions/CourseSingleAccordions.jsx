@@ -2,7 +2,6 @@ import{ useState, useRef, useEffect } from 'react';
 import './CourseSingleAccordions.css';
 import arrow_icon from './../../../public/assetsProject/imges/navBar-Vector.png';
 
-// eslint-disable-next-line react/prop-types
 const Accordion = ({ title, subTitle, subTitle2, children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const contentRef = useRef(null);

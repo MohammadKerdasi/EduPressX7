@@ -1,5 +1,6 @@
 .CoursesSidebar {
     width: 28.931%;
+    z-index: 999;
 }
 
 .CoursesSidebar .rb-flex-check {
@@ -30,11 +31,31 @@
 }
 
 .CoursesSidebar .rb-flex-check label {
-
-    font-family: var(--paragarph);
+     color: var(--dark-grey);
+    font-family: var(--paragarph), sans-serif;
     font-weight: 400;
     font-size: 18px !important;
 }
+
+.rb-flex-label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .rb-flex-label input[type="checkbox"]:checked + label,
+  .rb-flex-label input[type="checkbox"]:checked + label + p {
+    color: black;
+  }
+  
+  .rb-flex-label input[type="checkbox"]:checked + label,
+  .rb-flex-label input[type="checkbox"]:checked + label + p {
+    color: black;
+  }
+  
+  .rb-flex-label input[type="checkbox"]:checked {
+    accent-color: #555555; 
+  }
+  
 
 .CoursesSidebar p {
     font-size: 18px !important;
@@ -114,7 +135,7 @@
         transition: all 1s ease;
         width: 25%;
         top: 0px;
-        height: 100%;
+        height: max-content;
         z-index: 50;
         border-radius: 3px;
         padding: 45px 0 59px 21px;
@@ -216,21 +237,12 @@
     }
 
     .CoursesSidebar {
-        transition: all 1s ease;
-        width: 75%;
-        top: 0px;
-        height: max-content;
-        z-index: 50;
-        border-radius: 3px;
+        width: 38%;
         padding: 26px 0 7px 21px;
-        background-color: white;
-        right: 0px;
-        position: absolute;
-        border: 1px solid var(--light-gray);
-        opacity: 1;
-        -webkit-transition: all 1s ease;
-        -moz-transition: all 1s ease;
-        -ms-transition: all 1s ease;
-        -o-transition: all 1s ease;
+    }
+}
+@media (max-width: 576px){
+    .CoursesSidebar {
+        width: 60%;
     }
 }

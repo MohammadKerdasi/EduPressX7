@@ -6,7 +6,8 @@
 }
 
 /* NAHLA Changes */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
+  width: 12px;
   width: 12px;
   background-color: #fff;
   border-left: 2px solid #eee;
@@ -21,7 +22,7 @@
   background-color: var(--mark);
   opacity: 0.9;
   color: white;
-}
+} */
 
 :root {
   /* colors */
@@ -74,20 +75,44 @@ a {
 .Project-Container-FAQs {
   padding: 0px 16.4063%;
 }
+.ra-nav-Container{
+  padding: 0px 16.4063% !important ;
+}
 a {
   text-decoration: none !important;
 }
 
-/* large screen */
-@media (min-width: 993px) and (max-width: 1367px) {
-  .Project-Container {
-    padding: 60px 16% 16%;
+@keyframes appear {
+  from{
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
   }
 
-  .Project-Container {
-    padding: 60px 12%;
-  }
 }
+.block{
+  animation: appear linear;
+  animation-timeline: view() ;
+  animation-range: entry 0;
+}
+
+
+/* large screen */
+ @media (min-width: 993px) and (max-width: 1367px) {
+  .Project-Container   {
+    padding: 60px 16%  16% ;
+  } 
+  .ra-nav-Container{
+    padding: 10px 16% !important ;
+   }
+ }
+  /* .Project-Container {
+    padding: 60px 12%;
+  } */
+
 
 /* @media (max-width:670px)
 {
@@ -102,16 +127,22 @@ a {
 } */
 
 /* medium screen */
-@media (min-width: 769px) and (max-width: 992px) {
+ @media (min-width: 769px) and (max-width: 992px) {
   .Project-Container {
     padding: 60px 14% 90px 14%;
   }
-}
+  .ra-nav-Container {
+    padding: 10px 14% !important ;
+  }
+} 
 
 /* small screen */
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 421px) and (max-width: 768px) {
   .Project-Container {
     padding: 60px 10% 90px 10%;
+  }
+  .ra-nav-Container {
+    padding: 5px 10% !important;
   }
 }
 
@@ -121,5 +152,8 @@ a {
   }
   .Project-Container-FAQs {
     padding: 0px 10%;
+  }
+  .ra-nav-Container {
+    padding: 5px 10% !important;
   }
 }

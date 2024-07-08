@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import "./CourseSingleDetail.css";
 //  import Col from "react-bootstrap/Col";
 //  import Form from "react-bootstrap/Form";
@@ -30,6 +30,9 @@ import {
 import SingleCourseFAQs from "../SinglePageFAQs/SinglePageFAQs.jsx";
 import filled_star from "./../../../public/assetsProject/imges/filled-star.png";
 import not_filled_star from "./../../../public/assetsProject/imges/not-filled-star.png";
+import Card_img from './../../../public/assetsProject/imges/card(6).png'
+import GirlImg from "./../../../public/assetsProject/imges/card(12).png";
+import ReplayIcon from "./../../../public/assetsProject/imageFromHaidar/Vector.svg";
 
 
 
@@ -37,7 +40,7 @@ import not_filled_star from "./../../../public/assetsProject/imges/not-filled-st
 const Overview = () => {
   return (
     <div>
-      <p>
+      <p className="Mk-OverViewP">
         LearnPress is a comprehensive WordPress LMS Plugin for WordPress. This
         is one of the best WordPress LMS Plugins which can be used to easily
         create & sell courses online. You can create a course curriculum with
@@ -47,7 +50,7 @@ const Overview = () => {
         online-course websites with no coding knowledge required.
       </p>
 
-      <p>
+      <p className="Mk-OverViewP">
         LearnPress is free and always will be, but it is still a premium
         high-quality WordPress Plugin that definitely helps you with making
         money from your WordPress Based LMS. Just try and see how amazing it is.
@@ -58,16 +61,53 @@ const Overview = () => {
     </div>
   );
 };
-
+ import './../CourseSingleAccordions/CourseSingleAccordions.css'
+ import arrow_icon from './../../../public/assetsProject/imges/navBar-Vector.png';
 const Curriculum = () => {
+  const Accordion = ({ title, subTitle, subTitle2, children }) => {
+    const [isOpen, setIsOpen] = useState(false);
+    const contentRef = useRef(null);
+    
+  
+    useEffect(() => {
+      if (isOpen) {
+        contentRef.current.style.maxHeight = contentRef.current.scrollHeight + 'px';
+      } else {
+        contentRef.current.style.maxHeight = '0px';
+      }
+    }, [isOpen]);
+  
+    return (
+      <div className="Mk-accordion">
+        <div className="Mk-accordion-titleAndSub" onClick={() => setIsOpen(!isOpen)}>
+          <div className={`Mk-AccordionTitle ${isOpen ? 'open' : ''}`} >
+            <img
+              className={`Mk-AccordionArrowIcon ${isOpen ? 'open' : ''}`}
+              src={arrow_icon}
+              alt="arrow icon"
+            />
+            {title}
+          </div>
+          <div className='Mk-AccordionsubTitle'>
+            <span>{subTitle}</span>
+            <span>{subTitle2}</span>
+          </div>
+        </div>
+        <div ref={contentRef} className={`Mk-accordion-content ${isOpen ? 'open' : ''}`}>
+          {children}
+        </div>
+      </div>
+    );
+
+  };
   return (
     <div>
-      <p>
+      <p className="Mk-OverViewP">
         LearnPress is a comprehensive WordPress LMS Plugin for WordPress. This
         is one of the best WordPress LMS Plugins which can be used to easily
         create & sell courses online.
       </p>
-
+      <div>
       <Accordion
         title="Lessons With Video Content"
         subTitle="5 Lessons "
@@ -454,6 +494,7 @@ const Curriculum = () => {
           </li>
         </ul>
       </Accordion>
+      </div>
     </div>
   );
 };
@@ -703,7 +744,7 @@ const Comment = ({
       <div className="SHaaban-adding-flex Mk-AddingFlex">
         <img
           className="SHaaban-adding-style-for-comment-imange"
-          src="./../../public/assetsProject/imges/card(12).png"
+          src={GirlImg}
           alt="user"
         />
         <div className="SHaaban-adding-flex-grow">
@@ -714,10 +755,10 @@ const Comment = ({
           <p className="SHaaban-comment-content Mk-CommentContent">{comment.text}</p>
           <div className="Mk-ReplayIconMargin">
             <img
-              src="../../public/assetsProject/imageFromHaidar/Vector.svg"
+              src={ReplayIcon}
               alt="reply"
             />
-            <span className="SHaaban-adding-style-for-replay ">Reply</span>
+            <span className="SHaaban-adding-style-for-replay Mk-ReplayP ">Reply</span>
           </div>
         </div>
       </div>
@@ -827,7 +868,7 @@ config={[
             <Card.Img
               className="Mk-CardImg"
               variant="top"
-              src="./../../../public/assetsProject/imges/card(6).png"
+              src={Card_img}
             />
             <Card.Body className="Mk-CardBody">
               <Card.Text className="Mk-CardText">

@@ -362,6 +362,14 @@
   font-size: 12.7px !important;
   line-height: 20px !important;
 }
+.Mk-CommentDate
+{
+  font-size: 15px ;
+}
+.Mk-ReplayP
+{
+  font-size: 15px;
+}
 
 @media (max-width:1521px){
   .Mk-CardBody
@@ -547,7 +555,19 @@
       align-items: center;
       justify-content: center;
     }
-    .Mk-PaginationButton
+    .Mk-OverViewP
+    {
+      font-size: 10px;
+    }
+    .Mk-SingleCourseAnswer p 
+    {
+      font-size: 10px !important;
+      padding: 10px 10px !important;
+    }
+    .Mk-StarsRatings p 
+    {
+      font-size: 10px;
+    }
   }
   
   @media (max-width:434px){
@@ -555,7 +575,6 @@
     {
       margin-bottom: 20px;
     }
-
   }
   @media (max-width: 350px){
     .Mk-NumOfRate
@@ -567,9 +586,8 @@
       flex-wrap: nowrap;
       font-size: 8px;
     }
+  }
     /* .Mk-CommentContent, .Mk-CommentUsername , .Mk-CommentDate
     {
       font-size: 10px !important;
-    } */
-
-  }
+    } 

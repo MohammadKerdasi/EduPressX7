@@ -1,7 +1,7 @@
 .app .rb-scroll-to-top-button {
     position: fixed;
-    bottom: 16.493%;
-    right: 2.6042%; /* تعديل المسافة من اليمين */
+    bottom: 10.493%;
+    right: 3.6042%; /* تعديل المسافة من اليمين */
     background-color: black;
     width: 60px;
     height: 60px;
@@ -26,7 +26,7 @@
     opacity: 0.9;
   }
 
-/* ::-webkit-scrollbar-thumb {
+ ::-webkit-scrollbar-thumb {
     background: var(--grey);
     border-radius: 25%;
     -webkit-border-radius: 10px;
@@ -39,7 +39,7 @@
 ::-webkit-scrollbar {
     width: 7px;
     background-color: var(--white-grey);  
-} */
+} 
 
 
 /*media ------------------------------------------------------------------------------------ */
@@ -64,6 +64,7 @@
     .app .rb-scroll-to-top-button {
         width: 38px;
         height: 38px;
+        bottom: 8.493%;
     }
 
       .app .rb-scroll-to-top-button *{

@@ -13,15 +13,26 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import ArticlesCards from "../ArticlesCards/ArticlesCards";
 import FilterBar from "../FilterBar/FilterBar";
+import { useMediaQuery } from 'react-responsive';
 
 const CoursePagination = ({ searchBox, onSearchChange, items, title, x }) => {
-  const [view, setView] = useState("NA-feature-card");
+ 
+  const isMobileView = useMediaQuery({ maxWidth: 767 });
+  const [view, setView] = useState('NA-feature-card');
   const [currentPage, setCurrentPage] = useState(1);
   const recordsPerPage = 6;
   const totalPages = Math.ceil(items.length / recordsPerPage);
 
+  useEffect(() => {
+    if (isMobileView) {
+      setView('NA-feature-card');
+    }
+  }, [isMobileView]);
+
   const handleButtonClick = (viewType) => {
-    setView(viewType === 1 ? "NA-feature-card" : "rb-listing");
+    if (!isMobileView) {
+      setView(viewType === 1 ? 'NA-feature-card' : 'rb-listing');
+    }
   };
 
   const handlePageChange = (page) => {
@@ -38,7 +49,7 @@ const CoursePagination = ({ searchBox, onSearchChange, items, title, x }) => {
   const showSidebar = () => setSidebar(!sidebar);
 
   return (
-    <div className="rb-CoursePagination">
+    <div className="rb-CoursePagination w-100 ">
       <div className="rb-CoursePagination-head">
         <h1>{title}</h1>
         <div className="search-view">

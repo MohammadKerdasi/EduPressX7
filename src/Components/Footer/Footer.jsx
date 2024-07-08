@@ -5,24 +5,20 @@ import { faXTwitter, faPinterest, faInstagram, faFacebookF, faYoutube } from '@f
 // import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import "./../../index.css"
 import { Link } from 'react-router-dom';
+import logo from './../../../public/assetsProject/imges/LOGO.png';
 
 
 const Footer = () => {
 
 
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    };
+  
 
   
   return (
-    <footer className="rb-footer">
+    <footer className="rb-footer Project-Container">
     <div className="rb-footer-columns">
       <div className="rb-footer-column">
-        <h4><img className='rb-logo' src='./../../../public/assetsProject/imges/LOGO.png'/></h4>
+        <h4><img className='rb-logo' src= {logo} /></h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
       <div className="rb-footer-column ">
@@ -55,7 +51,7 @@ const Footer = () => {
         </div>
       </div>
       </div>
-      <button onClick={scrollToTop} className="rb-scroll-to-top-button"><FontAwesomeIcon icon={faArrowUp} /></button>
+      
       <hr className='rb-footer-hr'/>
       <p className='rb-Copyright'>Copyright © 2024 LearnPress LMS | Powered by ThimPress</p>
     </footer>

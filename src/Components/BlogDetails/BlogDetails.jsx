@@ -18,16 +18,29 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import FilterBar from "../FilterBar/FilterBar";
 import ShowFilter from "./ShowFilter/ShowFilter";
+import PersonImg from "./../../../public/assetsProject/imageFromHaidar/person.svg";
+import CalenderImg from "./../../../public/assetsProject/imageFromHaidar/calender.svg";
+import MeassgeImg from "./../../../public/assetsProject/imageFromHaidar/message.svg";
+import Card8 from "./../../../public/assetsProject/imges/card(8).png";
+import Card9 from "./../../../public/assetsProject/imges/card(9).png";
+import Card7 from "./../../../public/assetsProject/imges/card(7).png";
+import Card11 from "./../../../public/assetsProject/imges/card(11).png";
+import Card10 from "./../../../public/assetsProject/imges/card(10).png";
+import Card5 from "./../../../public/assetsProject/imges/card(5).png";
+import GirlImg from "./../../../public/assetsProject/imges/card(12).png";
+import ReplayIcon from "./../../../public/assetsProject/imageFromHaidar/Vector.svg";
+
 
 export default function BlogDtails() {
   // مصفوفة مسارات الصور للتبديل بين الصور عند النقر على المقالة السابقة واللاحقة
   const MainImages = [
-    "./../../public/assetsProject/imges/card(8).png",
-    "./../../public/assetsProject/imges/card(9).png",
-    "./../../public/assetsProject/imges/card(7).png",
-    "./../../public/assetsProject/imges/card(11).png",
-    "./../../public/assetsProject/imges/card(10).png",
-    "./../../public/assetsProject/imges/card(5).png",
+    
+    Card8,
+    Card9,
+    Card7,
+    Card11,
+    Card10,
+    Card5,
   ];
 
   // قسم الهوكس
@@ -350,21 +363,21 @@ export default function BlogDtails() {
             <div className="SHaaban-title-and-meta-info-container">
               <div className="SHaaban-title-and-meta-info">
                 <img
-                  src="./../../public/assetsProject/imageFromHaidar/person.svg"
+                  src={PersonImg}
                   alt=""
                 />
                 <p>Determined-poitras</p>
               </div>
               <div className="SHaaban-title-and-meta-info">
                 <img
-                  src="./../../public/assetsProject/imageFromHaidar/calender.svg"
+                  src={CalenderImg}
                   alt=""
                 />
                 <p>{formattedDate}</p>
               </div>
               <div className="SHaaban-title-and-meta-info">
                 <img
-                  src="./../../public/assetsProject/imageFromHaidar/message.svg"
+                  src={MeassgeImg}
                   alt=""
                 />
                 <p>
@@ -482,7 +495,7 @@ export default function BlogDtails() {
                   <div className="SHaaban-adding-flex">
                     <img
                       className="SHaaban-adding-style-for-comment-imange"
-                      src="./../../public/assetsProject/imges/card(12).png"
+                      src={GirlImg}
                       alt=""
                     />
                     <div className="SHaaban-adding-flex-grow">
@@ -524,7 +537,7 @@ export default function BlogDtails() {
                         >
                           <img
                             className="SHaaban-adding-style-for-comment-imange"
-                            src="./../../public/assetsProject/imges/card(12).png"
+                            src={GirlImg}
                             alt=""
                           />
                           <div className="SHaaban-adding-flex-grow">
@@ -548,7 +561,7 @@ export default function BlogDtails() {
                               className="SHaaban-adding-margin-bottom SHaaban-adding-style-with-hover"
                             >
                               <img
-                                src="../../public/assetsProject/imageFromHaidar/Vector.svg"
+                                src={ReplayIcon}
                                 alt=""
                               />
                               <span className="SHaaban-adding-style-for-replay">

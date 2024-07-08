@@ -48,7 +48,7 @@ export default function FeaturedCoursesCards(props) {
                       <span> &#36;{item.price}</span>
                       {item.id == 2 ? <p className="discount"> &#36;49.0</p> : <p className="free">Free</p>}
                     </div>
-                    <Link to="/CourseSingle">{item.viewMore}</Link>
+                    <Link to={`/Courses/${encodeURIComponent(item.title)}`}>{item.viewMore}</Link>
                   </div>
                 </div>
               </div>
