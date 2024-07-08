@@ -70,7 +70,7 @@ const Curriculum = () => {
         is one of the best WordPress LMS Plugins which can be used to easily
         create & sell courses online.
       </p>
-
+      <div>
       <Accordion
         title="Lessons With Video Content"
         subTitle="5 Lessons "
@@ -457,6 +457,7 @@ const Curriculum = () => {
           </li>
         </ul>
       </Accordion>
+      </div>
     </div>
   );
 };
